@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/source-anahata/static/js/main.19434dda.js",
+    "main.js": "/source-anahata/static/js/main.c0526d44.js",
     "static/media/epilation.jpg": "/source-anahata/static/media/epilation.a0ace71b7365dc8dc42a.jpg",
     "static/media/institut2.jpg": "/source-anahata/static/media/institut2.969c13a35078ab1f22b6.jpg",
     "static/media/soin-visage.jpg": "/source-anahata/static/media/soin-visage.e6361779d9efd7b19318.jpg",
     "static/media/logo.png": "/source-anahata/static/media/logo.0af082d7ae2ddb8324d7.png",
     "index.html": "/source-anahata/index.html",
-    "main.19434dda.js.map": "/source-anahata/static/js/main.19434dda.js.map"
+    "main.c0526d44.js.map": "/source-anahata/static/js/main.c0526d44.js.map"
   },
   "entrypoints": [
-    "static/js/main.19434dda.js"
+    "static/js/main.c0526d44.js"
   ]
 }
