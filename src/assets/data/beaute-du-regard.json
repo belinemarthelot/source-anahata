@@ -1,0 +1,21 @@
+{
+    "title": "Beauté du regard",
+    "img": "soin-visage.jpg",
+    "prestations": [
+        {
+            "title": "Réhaussement de cils - 60 min",
+            "description": "",
+            "price": 50
+        },
+        {
+            "title": "Teinture cils - 30 min",
+            "description": "",
+            "price": 20
+        },
+        {
+            "title": "Teinture sourcils - 20 min",
+            "description": "",
+            "price": 15
+        }    
+    ]
+}

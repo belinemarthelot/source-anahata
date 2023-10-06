@@ -1,0 +1,81 @@
+{
+    "title": "Épilation",
+    "img": "epilation.jpg",
+    "prestations": [
+        {
+            "title": "1 Zone visage - 15 min",
+            "description": "Lèvre, menton, joues, nez, cou",
+            "price": 9
+        },
+        {
+            "title": "Sourcil - 20 min",
+            "description": "",
+            "price": 11
+        },
+        {
+            "title": "Maillot classique - 15 min",
+            "description": "",
+            "price": 12
+        },
+        {
+            "title": "Maillot échancré - 20 min",
+            "description": "",
+            "price": 16
+        },
+        {
+            "title": "Maillot intégral - 30 min",
+            "description": "",
+            "price": 25
+        },
+        {
+            "title": "1/2 Jambes - 20 min",
+            "description": "",
+            "price": 17
+        },
+        {
+            "title": "3/4 Jambes - 30 min",
+            "description": "",
+            "price": 23
+        },
+        {
+            "title": "Jambes complètes - 50 min",
+            "description": "",
+            "price": 30
+        },
+        {
+            "title": "Cuisses - 20 min",
+            "description": "",
+            "price": 18
+        }, 
+        {
+            "title": "Arrière cuisses - 15 min",
+            "description": "",
+            "price": 11
+        },
+        {
+            "title": "Aisselles - 15 min",
+            "description": "",
+            "price": 10
+        },
+        {
+            "title": "Fesses - 20 min",
+            "description": "",
+            "price": 12
+        }, 
+        {
+            "title": "Dos ou Torse - 30 min",
+            "description": "",
+            "price": 24
+        }, 
+        {
+            "title": "Bras - 30 min",
+            "description": "",
+            "price": 20
+        }, 
+        {
+            "title": "1/2 Bras - 20 min",
+            "description": "",
+            "price": 17
+        }
+    ]
+}

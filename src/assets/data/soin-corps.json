@@ -1,0 +1,36 @@
+{
+    "title": "Soin corps",
+    "img": "soin-visage.jpg",
+    "prestations": [
+        {
+            "title": "Gommage - 45 min",
+            "description": "",
+            "price": 40
+        },
+        {
+            "title": "Modelage - 30 min",
+            "description": "",
+            "price": 33
+        },
+        {
+            "title": "Modelage - 45 min",
+            "description": "",
+            "price": 45
+        },
+        {
+            "title": "Modelage - 60 min",
+            "description": "",
+            "price": 59
+        },
+        {
+            "title": "Modelage - 75 min",
+            "description": "",
+            "price": 72
+        },
+        {
+            "title": "Modelage - 90 min",
+            "description": "",
+            "price": 85
+        }    
+    ]
+}

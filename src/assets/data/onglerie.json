@@ -1,0 +1,37 @@
+{
+    "title": "Onglerie",
+    "img": "soin-visage.jpg",
+    "prestations": [
+        {
+            "title": "Manucure classique - 45 min",
+            "description": "Mise en beauté des ongles + base brillante",
+            "price": 30,
+            "options": [
+                {
+                    "title": "Pose de vernis semi-permanent - +30 min",
+                    "price": 7
+                }
+            ]
+        },
+        {
+            "title": "Manucure russe et renfort semi-permanent  - 105 min",
+            "description": "Mains ou pieds. Dépose comprise",
+            "price": 40
+        },
+        {
+            "title": "Rape pieds - 10 min",
+            "description": "",
+            "price": 2
+        },
+        {
+            "title": "Modelage mains ou pieds  - 15 min",
+            "description": "",
+            "price": 13
+        },
+        {
+            "title": "Reconstruction d'1 ongle  - 10 min",
+            "description": "",
+            "price": 2
+        }        
+    ]
+}

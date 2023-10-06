@@ -25,7 +25,7 @@ export default function StyledAppBarLogic() {
 		<StyledAppBarButton
 			key={'Épilation'}
 			title="Épilation"
-			name="épilation"
+			name="epilation"
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}
 		/>,
@@ -33,6 +33,13 @@ export default function StyledAppBarLogic() {
 			key={'Soin visage'}
 			title="Soin visage"
 			name="soin-visage"
+			activeName={activeName}
+			handleButtonClick={handleButtonClick}
+		/>,
+		<StyledAppBarButton
+			key={'Beauté du regard'}
+			title="Beauté du regard"
+			name="beaute-du-regard"
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}
 		/>,
