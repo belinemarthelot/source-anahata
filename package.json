@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://belinemarthelot.github.io/source-anahata",
+  "homepage": "https://institut-source-anahata.fr",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.1",
