@@ -1,17 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.76788039.js",
+    "main.js": "/static/js/main.b5120d70.js",
+    "static/media/Espace-detente-portrait.jpg": "/static/media/Espace-detente-portrait.96d5841e9bdbfa8e2e63.jpg",
     "static/media/institut.jpg": "/static/media/institut.36ad8c23662974c99516.jpg",
+    "static/media/Institut-paysage.jpg": "/static/media/Institut-paysage.4cef87ec94b5953dc969.jpg",
+    "static/media/Institut-portrait.jpg": "/static/media/Institut-portrait.435047971fdd04b0eddf.jpg",
+    "static/media/Institut-paysage2.jpg": "/static/media/Institut-paysage2.e47b4d8598fdf7e5ecaa.jpg",
+    "static/media/Lit-bougie-portrait.jpg": "/static/media/Lit-bougie-portrait.2ca5bbf2adc50709256a.jpg",
+    "static/media/Lit-bougie-paysage.jpg": "/static/media/Lit-bougie-paysage.04da0c238420e3f42e22.jpg",
     "static/media/epilation.jpg": "/static/media/epilation.a0ace71b7365dc8dc42a.jpg",
     "static/media/institut2.jpg": "/static/media/institut2.969c13a35078ab1f22b6.jpg",
+    "static/media/Institut-paysage-crop.jpg": "/static/media/Institut-paysage-crop.be2691c94559aa8db693.jpg",
+    "static/media/Institut-paysage2-crop.jpg": "/static/media/Institut-paysage2-crop.10399b39290e98af68b2.jpg",
     "static/media/soin-visage.jpg": "/static/media/soin-visage.e6361779d9efd7b19318.jpg",
     "static/media/logo.png": "/static/media/logo.0af082d7ae2ddb8324d7.png",
     "static/media/logo2.png": "/static/media/logo2.fd188d5ca925f97f31cf.png",
     "static/media/logo3.png": "/static/media/logo3.6789b3bf8f7bef0b5365.png",
+    "static/media/logo-source.jpg": "/static/media/logo-source.181c5fc23ff16b5068d4.jpg",
     "index.html": "/index.html",
-    "main.76788039.js.map": "/static/js/main.76788039.js.map"
+    "main.b5120d70.js.map": "/static/js/main.b5120d70.js.map"
   },
   "entrypoints": [
-    "static/js/main.76788039.js"
+    "static/js/main.b5120d70.js"
   ]
 }
