@@ -44,7 +44,7 @@ export default function Prestation(props: { jsonFile: String }) {
   }, [location]);
 
   return (
-    <Grid container alignItems={"center"} flexDirection={"column"} mb={2}>
+    <Grid container alignItems={"center"} flexDirection={"column"} mb={5}>
       <Grid container style={{ width: isMdScreen ? "100%" : "80%" }}>
         <Grid item sm={5}>
           <img style={{ width: "100%" }} src={img} alt="Image épilation" />

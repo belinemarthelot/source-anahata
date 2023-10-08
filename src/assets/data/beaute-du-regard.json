@@ -5,17 +5,28 @@
         {
             "title": "Réhaussement de cils - 60 min",
             "description": "",
-            "price": 50
+            "price": 50,
+            "options": [
+                {
+                    "title": "Teinture cils +20 min",
+                    "price": 15
+                }
+            ]
         },
         {
             "title": "Teinture cils - 30 min",
             "description": "",
-            "price": 20
+            "price": 18
         },
         {
             "title": "Teinture sourcils - 20 min",
             "description": "",
             "price": 15
-        }    
+        },
+        {
+            "title": "Teinture cils et sourcils - 45 min",
+            "description": "",
+            "price": 30
+        }   
     ]
 }

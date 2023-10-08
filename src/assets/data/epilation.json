@@ -3,6 +3,10 @@
     "img": "epilation.jpg",
     "prestations": [
         {
+            "title":"Pour chaque épilation cumulée, bénéficiez de 1€ de réducation",
+            "description": "Ex: 3 épilations = 2€ de réduction, 5 épilations = 4€ de réduction."
+        },
+        {
             "title": "1 zone visage - 15 min",
             "description": "Zone au choix: lèvre, menton, joues, nez, cou",
             "price": 9

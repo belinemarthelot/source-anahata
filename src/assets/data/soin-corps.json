@@ -1,43 +1,41 @@
 {
-    "title": "Soin corps",
-    "img": "soin-visage.jpg",
-    "prestations": [
-        {
-            "title": "Gommage - 45 min",
-            "description": "Gommage du corps entier, suivi d'une douche et d'une application d'un lait hydratant.",
-            "price": 40
-        },
-        {
-            "title": "Modelage - 30 min",
-            "description": "Gommage du corps entier, suivi d'une douche et d'une application d'un lait hydratant.",
-            "price": 33,
-            "options": [
-                {
-                    "title": "Massage à la bougie",
-                    "description": "Utilisation d'une bougie senteur vanille.",
-                    "price": 3
-                }
-            ]	
-        },
-        {
-            "title": "Modelage - 45 min",
-            "description": "",
-            "price": 45
-        },
-        {
-            "title": "Modelage - 60 min",
-            "description": "",
-            "price": 59
-        },
-        {
-            "title": "Modelage - 75 min",
-            "description": "",
-            "price": 72
-        },
-        {
-            "title": "Modelage - 90 min",
-            "description": "",
-            "price": 85
-        }    
-    ]
+  "title": "Soins corps",
+  "img": "soin-visage.jpg",
+  "prestations": [
+    {
+      "title": "Gommage - 45 min",
+      "description": "Gommage du corps entier, suivi d'une douche et d'une application d'un lait hydratant.",
+      "price": 40
+    },
+    {
+        "title": "Pour tous les modelages, vous pouvez choisir en option l'utilisation d'une bougie senteur vanille.",
+        "description": "",
+        "price": 3
+    },
+    {
+      "title": "Modelage - 30 min",
+      "description": "Effleurage de l'arrière du corps ou  travail du dos",
+      "price": 33
+    },
+    {
+      "title": "Modelage - 45 min",
+      "description": "Travail de l'arrière du corps",
+      "price": 45
+    },
+    {
+      "title": "Modelage - 60 min",
+      "description": "Travail de l'arrière du corps ou effleurage du corps entier",
+      "price": 59
+    },
+    {
+      "title": "Modelage - 75 min",
+      "description": "Corps entier plus massage crânien",
+      "price": 72
+    },
+    {
+      "title": "Modelage - 90 min",
+      "description": "Corps entier plus massage crânien et visage",
+      "price": 85
+    }
+  ]
 }

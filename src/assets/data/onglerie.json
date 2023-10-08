@@ -1,37 +1,55 @@
 {
-    "title": "Onglerie",
-    "img": "soin-visage.jpg",
-    "prestations": [
+  "title": "Onglerie",
+  "img": "soin-visage.jpg",
+  "prestations": [
+    {
+      "title": "Manucure classique - 60 min",
+      "description": "Mise en beauté des ongles + base brillante",
+      "price": 26,
+      "options": [
         {
-            "title": "Manucure classique - 45 min",
-            "description": "Mise en beauté des ongles + base brillante",
-            "price": 30,
-            "options": [
-                {
-                    "title": "Pose de vernis semi-permanent - +30 min",
-                    "price": 7
-                }
-            ]
+          "title": "Pose de vernis semi-permanent +30 min",
+          "description": "Mains ou pieds. Dépose comprise",
+          "price": 10,
+          "options": [
+            {
+              "title": "Reconstruction d'un ongle - 10 min",
+              "description": "",
+              "price": 2
+            }
+          ]
         },
         {
-            "title": "Manucure russe et renfort semi-permanent  - 105 min",
-            "description": "Mains ou pieds. Dépose comprise",
-            "price": 40
-        },
-        {
-            "title": "Rape pieds - 10 min",
-            "description": "",
-            "price": 2
-        },
-        {
-            "title": "Modelage mains ou pieds  - 15 min",
-            "description": "",
-            "price": 13
-        },
-        {
-            "title": "Reconstruction d'1 ongle  - 10 min",
-            "description": "",
-            "price": 2
-        }        
-    ]
+          "title": "Pose de vernis classique +30 min",
+          "description": "Mains ou pieds. Dépose comprise",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "title": "Manucure combinée + remfort semi-permanant - 120 min",
+      "description": "Mains ou pieds. Dépose comprise",
+      "price": 43
+    },
+    {
+      "title": "Yumi feet \"De si jolis pieds\" - 40 min",
+      "description": "",
+      "price": 35
+    },
+    {
+        "title": "Soin des mains ou pieds - 45 min",
+        "description": "",
+        "price": 45
+      },
+    {
+      "title": "Rape pieds - 10 min",
+      "description": "",
+      "price": 5
+    },
+    {
+      "title": "Modelage mains ou pieds - 15 min",
+      "description": "",
+      "price": 14
+    }
+  ]
 }

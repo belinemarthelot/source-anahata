@@ -1,5 +1,5 @@
 {
-  "title": "Soin visage",
+  "title": "Soins visage",
   "img": "soin-visage.jpg",
   "prestations": [
     {
@@ -8,34 +8,53 @@
       "price": 34
     },
     {
+      "title": "Modelage visage - 30 min",
+      "description": "",
+      "price": 29
+    },
+    {
+      "title": "Les soins \"+\" ajoutent l'utilisation d'appareils",
+      "description": ""
+    },
+    {
       "title": "Pro âge - 75 min",
-      "description": "Grâce à des techniques manuelles, ce soin anti-âge permet de raffermir, lisser. La peau est reboostée. Les rides et cernes sont atténuées pour un visage rajeuni.",
+      "description": "",
       "price": 66
     },
     {
       "title": "Pro âge+ - 90 min",
-      "description": "Grâce à la synergie des techniques manuelles et d'appareils, ce soin anti-âge permet de raffermir, lisser. La peau est reboostée. Les rides et cernes sont atténuées pour un visage rajeuni.",
+      "description": "Ce soin anti-âge permet de raffermir, lisser. La peau est reboostée. Les rides et cernes sont atténuées pour un visage rajeuni.",
       "price": 79
     },
     {
-        "title": "Soin regard - 40 min",
-        "description": "Grâce à des techniques manuelles, ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
-        "price": 34
+      "title": "Soin regard - 40 min",
+      "description": "",
+      "price": 34
     },
     {
-        "title": "Soin regard+ - 50 min",
-        "description": "Grâce à la synergie des techniques manuelles et d'appareils, ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
-        "price": 43
+      "title": "Soin regard+ - 50 min",
+      "description": "Ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
+      "price": 43
     },
     {
       "title": "Hydra fresh - 60 min",
-      "description": "Grâce à des techniques manuelles,",
+      "description": "",
       "price": 57
     },
     {
-      "title": "Pollution control - 20 min",
-      "description": "Purifiant, détoxifiant, matifiant",
-      "price": 15
+      "title": "Hydra fresh+ - 75 min",
+      "description": "Un soin hydratant intense et sublimateur, pour une peau rayonnante. La peau du visage est comme repulpée, lissée. Elle retrouve toute sa souplesse et son éclat.",
+      "price": 66
+    },
+    {
+      "title": "Pollution control - 60 min",
+      "description": "",
+      "price": 57
+    },
+    {
+      "title": "Pollution control+ - 75 min",
+      "description": "Ce soin permet de retrouver un teint unifié, frais et lumineux. Une vrai bouffée d'oxygène pour votre peau qui est purifiée et detoxifiée.",
+      "price": 66
     }
   ]
 }

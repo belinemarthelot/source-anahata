@@ -31,7 +31,7 @@ export default function StyledAppBarLogic() {
 		/>,
 		<StyledAppBarButton
 			key={'Soin visage'}
-			title="Soin visage"
+			title="Soins visage"
 			name="soin-visage"
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}
@@ -45,7 +45,7 @@ export default function StyledAppBarLogic() {
 		/>,
 		<StyledAppBarButton
 			key={'Soin corps'}
-			title="Soin corps"
+			title="Soins corps"
 			name="soin-corps"
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}
