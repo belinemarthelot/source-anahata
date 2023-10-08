@@ -49,7 +49,14 @@ export default function Prestation(props: { jsonFile: String }) {
         <Grid item sm={5}>
           <img style={{ width: "100%" }} src={img} alt="Image épilation" />
         </Grid>
-        <Grid item sm={7} container justifyContent={"center"} mt={2}>
+        <Grid
+          item
+          sm={7}
+          container
+          justifyContent={"center"}
+          alignItems={"flex-start"}
+          mt={2}
+        >
           <Grid width={"90%"} container justifyContent={"center"}>
             <Typography
               variant="h4"

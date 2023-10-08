@@ -24,9 +24,10 @@ export default function InstitutPresentation() {
 				xs={12}
 				md={5}
 				flexDirection={'column'}
+				justifyContent={'center'}
 				p={8}
 				gap={3}
-				mt={isMdScreen ? 8 : 0}
+				mt={isMdScreen ? 0 : 0}
 				sx={{
 					transform: 'scale(1)',
 					transition: 'transform 0.2s ease',

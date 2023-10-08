@@ -3,10 +3,13 @@ import React from "react";
 
 import HeroBanner from "../../components/HeroBanner";
 
-import logo from "../../assets/images/logo.png";
-import soinVisageImage from "../../assets/images/soin-visage.jpg";
-import epilationImage from "../../assets/images/epilation.jpg";
+import logo from "../../assets/images/logo-source.jpg";
 import InstitutPresentation from "../../components/InsitutPresentation";
+import InstitutPaysage from '../../assets/images/Institut-paysage.jpg';
+import InstitutPaysage2 from '../../assets/images/Institut-paysage2.jpg';
+import InstitutPortrait from '../../assets/images/Institut-portrait.jpg';
+import LitPaysage from '../../assets/images/Lit-bougie-paysage.jpg';
+import LitPortrait from '../../assets/images/Lit-bougie-portrait.jpg';
 
 export default function Home() {
   const theme = useTheme();
@@ -27,11 +30,11 @@ export default function Home() {
         </Typography>
       </Grid>
       <InstitutPresentation />
-      <Grid item container justifyContent={"center"} gap={6} pt={3}>
+      <Grid item container justifyContent={"center"} pt={3} mb={3}>
         <HeroBanner
           side={0}
           title="Soins corps"
-          image={epilationImage}
+          image={LitPaysage}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget"
           button="Découvrez les soins corps"
 		  buttonLink="/soins-corps"
@@ -39,7 +42,7 @@ export default function Home() {
         <HeroBanner
           side={1}
           title="Soins visage"
-          image={epilationImage}
+          image={InstitutPaysage}
           description="Le soin du visage est l’un des massages les plus apaisants pour le corps. Il permet de détendre les
 		  muscles et de favoriser l’évacuation du stress et de la fatigue. Ce rituel beauté s’inscrit de la
 		  longévité d’une peau fraîche et rajeunie."
@@ -49,7 +52,7 @@ export default function Home() {
         <HeroBanner
           side={0}
           title="Épilations"
-          image={epilationImage}
+          image={InstitutPaysage2}
           description="Parce qu’une peau douce est synonyme de féminité, laissez nous vous apportez notre savoir faire pour un confort optimal."
           button="Découvrez les épilations"
 		  buttonLink="/epilations"
@@ -57,7 +60,7 @@ export default function Home() {
         <HeroBanner
           side={1}
           title="Beauté du regard"
-          image={soinVisageImage}
+          image={LitPaysage}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget"
           button="Découvrez la beauté du regard"
 		  buttonLink="/beaute-du-regard"
@@ -65,7 +68,7 @@ export default function Home() {
         <HeroBanner
           side={0}
           title="Onglerie"
-          image={soinVisageImage}
+          image={InstitutPaysage}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget"
           button="Découvrez l'onglerie"
 		  buttonLink="/onglerie"

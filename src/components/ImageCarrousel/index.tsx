@@ -1,15 +1,15 @@
 import { Box, IconButton, useTheme } from '@mui/material';
 
 import { SkipNext, SkipPrevious } from '@mui/icons-material';
-import epilation from '../../assets/images/epilation.jpg';
-import institut2 from '../../assets/images/institut2.jpg';
-import institut from '../../assets/images/soin-visage.jpg';
+import InstitutPaysage from '../../assets/images/Institut-paysage.jpg';
+import InstitutPaysage2 from '../../assets/images/Institut-paysage2.jpg';
+import LitPaysage from '../../assets/images/Lit-bougie-paysage.jpg';
 
 import ImageCarouselLogic from './ImageCarouselLogic';
 import ImageCarouselButton from './ImageCarouselButton';
 import ImageCarouselDots from './ImageCarouselDots';
 
-const images = [epilation, institut, institut2];
+const images = [InstitutPaysage, InstitutPaysage2, LitPaysage];
 
 export default function ImageCarousel() {
 	const theme = useTheme();

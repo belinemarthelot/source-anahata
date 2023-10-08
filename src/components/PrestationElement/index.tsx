@@ -13,6 +13,7 @@ export default function PrestationElement(props: {
     <Grid container justifyContent={"center"}>
       <Grid
         container
+        alignItems={"center"}
         style={{ width: "100%" }}
         gap={1}
         mb={1}
