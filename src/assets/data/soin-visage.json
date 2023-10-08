@@ -1,36 +1,41 @@
 {
-    "title": "Soin visage",
-    "img": "soin-visage.jpg",
-    "prestations": [
-        {
-            "title": "Pro âge - 60 min",
-            "description": "Anti-âge, fermeté, nutrition",
-            "price": 1,
-            "options": [
-                {
-                    "title": "Appareil - +20 min",
-                    "price": 1
-                },
-                {
-                    "title": "Feuille de collagène - + min",
-                    "price": 1
-                }
-            ]
-        },
-        {
-            "title": "Hydra fresh - 30 min",
-            "description": "Hydratant, repulpant, éclat",
-            "price": 20
-        },
-        {
-            "title": "Pollution control - 20 min",
-            "description": "Purifiant, détoxifiant, matifiant",
-            "price": 15
-        },
-        {
-            "title": "Boost scupt - 30 min",
-            "description": "Tonicité, anti-fatigue, éclat",
-            "price": 15
-        }    
-    ]
+  "title": "Soin visage",
+  "img": "soin-visage.jpg",
+  "prestations": [
+    {
+      "title": "Boost sculpt - 30 min",
+      "description": "Ce soin court et dynamique vous donnera un effet bonne mine instantané.",
+      "price": 34
+    },
+    {
+      "title": "Pro âge - 75 min",
+      "description": "Grâce à des techniques manuelles, ce soin anti-âge permet de raffermir, lisser. La peau est reboostée. Les rides et cernes sont atténuées pour un visage rajeuni.",
+      "price": 66
+    },
+    {
+      "title": "Pro âge+ - 90 min",
+      "description": "Grâce à la synergie des techniques manuelles et d'appareils, ce soin anti-âge permet de raffermir, lisser. La peau est reboostée. Les rides et cernes sont atténuées pour un visage rajeuni.",
+      "price": 79
+    },
+    {
+        "title": "Soin regard - 40 min",
+        "description": "Grâce à des techniques manuelles, ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
+        "price": 34
+    },
+    {
+        "title": "Soin regard+ - 50 min",
+        "description": "Grâce à la synergie des techniques manuelles et d'appareils, ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
+        "price": 43
+    },
+    {
+      "title": "Hydra fresh - 60 min",
+      "description": "Grâce à des techniques manuelles,",
+      "price": 57
+    },
+    {
+      "title": "Pollution control - 20 min",
+      "description": "Purifiant, détoxifiant, matifiant",
+      "price": 15
+    }
+  ]
 }

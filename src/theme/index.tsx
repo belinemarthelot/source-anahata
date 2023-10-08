@@ -11,7 +11,7 @@ const baseTheme = {
 		}
 	},
 	typography: {
-		fontFamily: 'Lumanosimo, cursive',
+		fontFamily: 'Cardo, cursive',
 		h1: {
 			fontWeight: 'bold'
 		},
@@ -22,23 +22,22 @@ const baseTheme = {
 			fontWeight: 'bold'
 		},
 		body1: {
-			fontFamily: 'Roboto mono, sans-serif',
-			fontWeight: 'regular'
+			fontFamily: 'Cardo, sans-serif',
+			fontWeight: 'regular',
 		},
 		body2: {
-			fontFamily: 'Roboto mono, sans-serif',
-			fontWeight: 'regular'
+			fontFamily: 'Cardo, sans-serif',
+			fontWeight: 'regular',
 		},
 		subtitle1: {
-			fontFamily: 'Roboto mono, sans-serif',
-			fontSize: '.9em'
+			fontFamily: 'Cardo, sans-serif',
 		},
 		subtitle2: {
-			fontFamily: 'Roboto mono, sans-serif',
+			fontFamily: 'Cardo, sans-serif',
 			fontWeight: 'bold'
 		},
 		button: {
-			fontFamily: 'Roboto mono, sans-serif',
+			fontFamily: 'Cardo, sans-serif',
 			fontWeight: 'semibold'
 		}
 	}

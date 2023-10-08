@@ -3,14 +3,19 @@
     "img": "epilation.jpg",
     "prestations": [
         {
-            "title": "1 Zone visage - 15 min",
-            "description": "Lèvre, menton, joues, nez, cou",
+            "title": "1 zone visage - 15 min",
+            "description": "Zone au choix: lèvre, menton, joues, nez, cou",
             "price": 9
         },
         {
-            "title": "Sourcil - 20 min",
+            "title": "Sourcils - 20 min",
             "description": "",
             "price": 11
+        },
+        {
+            "title": "Aisselles - 15 min",
+            "description": "",
+            "price": 10
         },
         {
             "title": "Maillot classique - 15 min",
@@ -28,12 +33,17 @@
             "price": 25
         },
         {
-            "title": "1/2 Jambes - 20 min",
+            "title": "Fesses - 20 min",
+            "description": "",
+            "price": 12
+        }, 
+        {
+            "title": "1/2 jambes - 20 min",
             "description": "",
             "price": 17
         },
         {
-            "title": "3/4 Jambes - 30 min",
+            "title": "3/4 jambes - 30 min",
             "description": "",
             "price": 23
         },
@@ -53,16 +63,6 @@
             "price": 11
         },
         {
-            "title": "Aisselles - 15 min",
-            "description": "",
-            "price": 10
-        },
-        {
-            "title": "Fesses - 20 min",
-            "description": "",
-            "price": 12
-        }, 
-        {
             "title": "Dos ou Torse - 30 min",
             "description": "",
             "price": 24
@@ -73,7 +73,7 @@
             "price": 20
         }, 
         {
-            "title": "1/2 Bras - 20 min",
+            "title": "1/2 bras - 20 min",
             "description": "",
             "price": 17
         }

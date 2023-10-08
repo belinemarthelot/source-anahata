@@ -4,13 +4,20 @@
     "prestations": [
         {
             "title": "Gommage - 45 min",
-            "description": "",
+            "description": "Gommage du corps entier, suivi d'une douche et d'une application d'un lait hydratant.",
             "price": 40
         },
         {
             "title": "Modelage - 30 min",
-            "description": "",
-            "price": 33
+            "description": "Gommage du corps entier, suivi d'une douche et d'une application d'un lait hydratant.",
+            "price": 33,
+            "options": [
+                {
+                    "title": "Massage à la bougie",
+                    "description": "Utilisation d'une bougie senteur vanille.",
+                    "price": 3
+                }
+            ]	
         },
         {
             "title": "Modelage - 45 min",
