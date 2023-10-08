@@ -53,11 +53,11 @@ export default function InstitutPresentation() {
 						méritez. Vous offrir un moment privilégié pour vous ressourcer est ma priorité. Béline
 					</Typography>
 				</Grid>
-				<Grid item container justifyContent={'center'}>
+				{/* <Grid item container justifyContent={'center'}>
 					<Button variant="contained" color="primary">
 						Info pratiques
 					</Button>
-				</Grid>
+				</Grid> */}
 			</Grid>
 		</Grid>
 	);

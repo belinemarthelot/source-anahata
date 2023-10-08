@@ -1,6 +1,7 @@
 import { Button, Grid, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
 import { InView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom';
 
 const FadingInView = (props: { children: any }) => {
 	const [isFadeIn, setIsFadeIn] = useState(false);
@@ -24,12 +25,15 @@ export default function HeroBanner(props: {
 	title: string;
 	description: string;
 	button: string;
+	buttonLink: string;
 }) {
-	const { side, image, title, description, button } = props;
+	const { side, image, title, description, button, buttonLink } = props;
 
 	const theme = useTheme();
 	const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
 	const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
+	
+	const navigate = useNavigate();
 
 	return (
 		<Grid container justifyContent={'center'} flexDirection={side === 0 ? 'row' : 'row-reverse'}>
@@ -63,7 +67,8 @@ export default function HeroBanner(props: {
 							<Button
 								variant="contained"
 								color="primary"
-								style={{ textTransform: 'unset', width: isSmScreen ? '100%' : '50%' }}
+								style={{ textTransform: 'unset', minWidth: isSmScreen ? '100%' : '50%' }}
+								onClick={() => navigate(buttonLink)}
 							>
 								{button}
 							</Button>

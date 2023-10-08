@@ -14,11 +14,11 @@ function App() {
 			<Routes>
 				<Route element={<CheckRoutes />}>
 					<Route path="/" element={<Home />} />
-					<Route path="/epilation" element={<Prestation jsonFile={"epilation.json"} />} />
+					<Route path="/epilations" element={<Prestation jsonFile={"epilation.json"} />} />
 					<Route path="/beaute-du-regard" element={<Prestation jsonFile={"beaute-du-regard.json"} />} />
 					<Route path="/onglerie" element={<Prestation jsonFile={"onglerie.json"} />} />
-					<Route path="/soin-visage" element={<Prestation jsonFile={"soin-visage.json"} />} />
-					<Route path="/soin-corps" element={<Prestation jsonFile={"soin-corps.json"} />} />
+					<Route path="/soins-visage" element={<Prestation jsonFile={"soin-visage.json"} />} />
+					<Route path="/soins-corps" element={<Prestation jsonFile={"soin-corps.json"} />} />
 				</Route>
 			</Routes>
 		</ThemeProvider>

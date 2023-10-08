@@ -23,16 +23,23 @@ export default function StyledAppBarLogic() {
 			handleButtonClick={handleButtonClick}
 		/>,
 		<StyledAppBarButton
-			key={'Épilation'}
-			title="Épilation"
-			name="epilation"
+			key={'Soins corps'}
+			title="Soins corps"
+			name="soins-corps"
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}
 		/>,
 		<StyledAppBarButton
-			key={'Soin visage'}
+			key={'Soins visage'}
 			title="Soins visage"
-			name="soin-visage"
+			name="soins-visage"
+			activeName={activeName}
+			handleButtonClick={handleButtonClick}
+		/>,
+		<StyledAppBarButton
+			key={'Épilations'}
+			title="Épilations"
+			name="epilations"
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}
 		/>,
@@ -40,13 +47,6 @@ export default function StyledAppBarLogic() {
 			key={'Beauté du regard'}
 			title="Beauté du regard"
 			name="beaute-du-regard"
-			activeName={activeName}
-			handleButtonClick={handleButtonClick}
-		/>,
-		<StyledAppBarButton
-			key={'Soin corps'}
-			title="Soins corps"
-			name="soin-corps"
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}
 		/>,
