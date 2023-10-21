@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.234910c8.js",
+    "main.js": "/static/js/main.9a5ed14b.js",
     "static/media/Espace-detente-portrait.jpg": "/static/media/Espace-detente-portrait.96d5841e9bdbfa8e2e63.jpg",
     "static/media/institut.jpg": "/static/media/institut.36ad8c23662974c99516.jpg",
     "static/media/Institut-paysage.jpg": "/static/media/Institut-paysage.4cef87ec94b5953dc969.jpg",
@@ -18,9 +18,9 @@
     "static/media/logo3.png": "/static/media/logo3.6789b3bf8f7bef0b5365.png",
     "static/media/logo-source.jpg": "/static/media/logo-source.181c5fc23ff16b5068d4.jpg",
     "index.html": "/index.html",
-    "main.234910c8.js.map": "/static/js/main.234910c8.js.map"
+    "main.9a5ed14b.js.map": "/static/js/main.9a5ed14b.js.map"
   },
   "entrypoints": [
-    "static/js/main.234910c8.js"
+    "static/js/main.9a5ed14b.js"
   ]
 }
