@@ -53,6 +53,12 @@ export default function InstitutPresentation() {
 						relaxation et sérénité. Je vous accueille avec toute la bienveillance et l'attention que vous
 						méritez. Vous offrir un moment privilégié pour vous ressourcer est ma priorité. Béline
 					</Typography>
+					{/* <Typography variant="subtitle1" textAlign={'center'} sx={"marginTop: 1em"}>
+					Disponibilités, prestations uniquement sur rendez-vous:
+					Lundi, mardi, mercredi: 9h - 19h / 10h - 21h 
+					Jeudi, vendredi: 10h - 21h / 9h - 19h
+					Samedi: 9h - 16h
+					</Typography> */}
 				</Grid>
 				{/* <Grid item container justifyContent={'center'}>
 					<Button variant="contained" color="primary">

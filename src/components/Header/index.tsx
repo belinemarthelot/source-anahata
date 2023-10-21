@@ -28,7 +28,7 @@ export default function Header() {
 				<Grid container alignItems={'center'}>
 					<LocalPhone />
 					<Typography variant={isMdScreen ? 'subtitle1' : 'body2'}>
-						{isMdScreen ? 'Tel:' : 'Telephone:'}{' '}
+						{isMdScreen ? 'Tel :' : 'Téléphone :'}{' '}
 					</Typography>
 					<Link
 						variant={isMdScreen ? 'subtitle1' : 'body2'}

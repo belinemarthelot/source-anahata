@@ -6,9 +6,9 @@ export default function HeaderLogic() {
 
   const telephoneNumber = "06 42 68 91 01";
 
-  const address = "19 rue du mini golf, 21370, Prenois";
+  const address = "19 rue du Mini-Golf, 21370, Prenois";
 
-  const instagramUrl = "https://www.instagram.com/celie_esthetique/";
+  const instagramUrl = "https://www.instagram.com/sourcedanahata/";
 
   return { localisationUrl, telephoneNumber, address, instagramUrl};
 }
