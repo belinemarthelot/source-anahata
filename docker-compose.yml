@@ -1,0 +1,27 @@
+version: '3.5'
+services:
+    frontend:
+        image: frontend
+        build:
+            dockerfile: ./Dockerfile
+        container_name: frontend
+        volumes:
+            - frontend:/frontend
+        ports:
+            - 3000:3000
+        command: tail -f /dev/null
+        networks:
+            - db_network
+
+networks:
+    db_network:
+        driver: bridge
+
+volumes:
+    frontend:
+        driver: local
+        name: frontend-volume
+        driver_opts:
+            type: none
+            device: ${PWD}
+            o: bind
