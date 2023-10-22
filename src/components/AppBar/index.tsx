@@ -8,6 +8,8 @@ import { Button, Drawer, Grid, Typography, useMediaQuery, useTheme } from '@mui/
 import StyledAppBarLogic from './StyleAppBarLogic';
 import Header from '../Header';
 
+import logo from "../../assets/images/logo-source.jpg";
+
 export default function StyledAppBar() {
 	const theme = useTheme();
 	const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
@@ -48,6 +50,7 @@ export default function StyledAppBar() {
 									<Header />
 								</Grid>
 							</Drawer>
+							<img src={logo} style={{"width": "100px", "marginLeft": '23%'}}/>
 						</>
 					) : (
 						<></>

@@ -60,12 +60,12 @@ export default function InstitutPresentation() {
 				</Grid>
 				<Grid item container justifyContent={'center'}>
 					<Typography variant="subtitle1" textAlign={'justify'}>{data.description2}</Typography>
-					{/* <Typography variant="subtitle1" textAlign={'center'} sx={"marginTop: 1em"}>
-					Disponibilités, prestations uniquement sur rendez-vous:
-					Lundi, mardi, mercredi: 9h - 19h / 10h - 21h 
-					Jeudi, vendredi: 10h - 21h / 9h - 19h
-					Samedi: 9h - 16h
-					</Typography> */}
+					<Typography variant="subtitle1" textAlign={'center'} style={{'marginTop': '1em'}}>
+					{"Disponibilités, prestations uniquement sur rendez-vous:"}<br/>
+					{"Lundi, mardi, mercredi: 9h - 19h"}<br/>
+					{"Jeudi, vendredi: 10h - 21h"}<br/>
+					{"Samedi: 9h - 16h"}
+					</Typography>
 				</Grid>
 			</Grid>
 		</Grid>

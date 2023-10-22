@@ -1,4 +1,4 @@
-import { Grid, Typography, useTheme } from "@mui/material";
+import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 
 import HeroBanner from "../../components/HeroBanner";
@@ -10,19 +10,20 @@ import data from "../../assets/data/prestations.json";
 
 export default function Home() {
   const theme = useTheme();
+	const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Grid container>
-      <Grid
+      {isSmScreen ? <></> : <Grid
         item
         container
         justifyContent={"center"}
         style={{ backgroundColor: "#fff" }}
       >
         <img src={logo} alt="logo" style={{ width: "40vw" }}></img>
-      </Grid>
+      </Grid>}
       <Grid item container justifyContent={"center"}>
-        <Typography variant="h6" color={"primary"}>
+        <Typography variant="h6" color={"primary"} textAlign={'center'}>
           Institut de bien-être Source d'Anāhata - Prenois (21370)
         </Typography>
       </Grid>
@@ -31,6 +32,7 @@ export default function Home() {
         {data.prestations.map((prestation, index) => {
           let image = require(`../../assets/images/${prestation.image}`);
           return <HeroBanner
+            key={index}
             side={(index + 1) % 2}
             title={prestation.title}
             image={image}
