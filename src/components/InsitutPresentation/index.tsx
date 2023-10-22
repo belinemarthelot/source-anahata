@@ -1,11 +1,22 @@
 import { Button, Grid, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 import ImageCarousel from '../ImageCarrousel';
+import data from "../../assets/data/insitut-presentation.json"
+import { useEffect, useState } from 'react';
 
 export default function InstitutPresentation() {
 	const theme = useTheme();
 	const isMdScreen = useMediaQuery(theme.breakpoints.up('md'));
+	const [images, setImages] = useState<string[]>([]);
 
+	useEffect(() => {
+		setImages([]);
+		data.images.forEach(image => {
+			let newImage = require(`../../assets/images/${image}`);
+			setImages(oldImages => [...oldImages, newImage]);
+		})
+	  }, []);
+	  
 	return (
 		<Grid
 			container
@@ -16,7 +27,7 @@ export default function InstitutPresentation() {
 			pb={isMdScreen ? 0 : 3}
 		>
 			<Grid item sm={12} md={5}>
-				<ImageCarousel />
+				<ImageCarousel images={images} />
 			</Grid>
 			<Grid
 				item
@@ -39,20 +50,16 @@ export default function InstitutPresentation() {
 				}}
 			>
 				<Grid item container justifyContent={'center'}>
-					<Typography variant="h4">Source d'Anāhata</Typography>
+					<Typography variant="h4">{data.title}</Typography>
 				</Grid>
 				<Grid item container justifyContent={'center'}>
 					<Grid item style={{ borderBottom: `1px solid ${theme.palette.primary.main}`, width: '30%' }} />
 				</Grid>
 				<Grid item>
-					<Typography variant="body1">Insitut de bien-être à Prenois, 21370</Typography>
+					<Typography variant="body1">{data.description1}</Typography>
 				</Grid>
 				<Grid item container justifyContent={'center'}>
-					<Typography variant="subtitle1" textAlign={'justify'}>
-						Source d'Anāhata, un espace hors du temps dédié au bien-être. Mettant en priorité votre
-						relaxation et sérénité. Je vous accueille avec toute la bienveillance et l'attention que vous
-						méritez. Vous offrir un moment privilégié pour vous ressourcer est ma priorité. Béline
-					</Typography>
+					<Typography variant="subtitle1" textAlign={'justify'}>{data.description2}</Typography>
 					{/* <Typography variant="subtitle1" textAlign={'center'} sx={"marginTop: 1em"}>
 					Disponibilités, prestations uniquement sur rendez-vous:
 					Lundi, mardi, mercredi: 9h - 19h / 10h - 21h 
@@ -60,11 +67,6 @@ export default function InstitutPresentation() {
 					Samedi: 9h - 16h
 					</Typography> */}
 				</Grid>
-				{/* <Grid item container justifyContent={'center'}>
-					<Button variant="contained" color="primary">
-						Info pratiques
-					</Button>
-				</Grid> */}
 			</Grid>
 		</Grid>
 	);

@@ -5,10 +5,8 @@ import HeroBanner from "../../components/HeroBanner";
 
 import logo from "../../assets/images/logo-source.jpg";
 import InstitutPresentation from "../../components/InsitutPresentation";
-import SoinCorpsPaysage from '../../assets/images/Soins-corps-paysage.jpg';
-import SoinVisagePaysage from '../../assets/images/Soins-visage-paysage.jpg';
-import EpilationPaysage from '../../assets/images/epilation-paysage.jpg';
-import OngleriePaysage from '../../assets/images/onglerie-paysage.jpg';
+
+import data from "../../assets/data/prestations.json";
 
 export default function Home() {
   const theme = useTheme();
@@ -30,46 +28,17 @@ export default function Home() {
       </Grid>
       <InstitutPresentation />
       <Grid item container justifyContent={"center"} pt={3} mb={3}>
-        <HeroBanner
-          side={0}
-          title="Soins corps"
-          image={SoinCorpsPaysage}
-          description="Offrez un moment de bien-être à votre esprit et libérez votre corps des tensions du quotidien."
-          button="Découvrez les soins corps"
-		  buttonLink="/soins-corps"
-        />
-        <HeroBanner
-          side={1}
-          title="Soins visage"
-          image={SoinVisagePaysage}
-          description="Grâce à la Mixologie ainsi qu'à la synergie des gestes inspirés de la gym faciale et l'utilisation de 3 accessoires en jade blanc. Votre peau aura un glow unique!"
-          button="Découvrez les soins visages"
-		  buttonLink="/soins-visage"
-        />
-        <HeroBanner
-          side={0}
-          title="Épilations"
-          image={EpilationPaysage}
-          description="L'utilisation de la marque française Perron Rigot permet un soin sur mesure pour une peau douce et un résultat parfait."
-          button="Découvrez les épilations"
-		  buttonLink="/epilations"
-        />
-        <HeroBanner
-          side={1}
-          title="Beauté du regard"
-          image={SoinVisagePaysage}
-          description="La marque Combinal permet d'intensifier votre regard pour une mise en valeur en toute occasion."
-          button="Découvrez la beauté du regard"
-		  buttonLink="/beaute-du-regard"
-        />
-        <HeroBanner
-          side={0}
-          title="Onglerie"
-          image={OngleriePaysage}
-          description="Parce que ce sont des zones du corps souvent oubliées, prenez le temps de les chouchouter."
-          button="Découvrez l'onglerie"
-		  buttonLink="/onglerie"
-        />
+        {data.prestations.map((prestation, index) => {
+          let image = require(`../../assets/images/${prestation.image}`);
+          return <HeroBanner
+            side={(index + 1) % 2}
+            title={prestation.title}
+            image={image}
+            description={prestation.description}
+            button={prestation.button}
+            buttonLink={prestation.buttonLink}
+          />
+        })}
       </Grid>
     </Grid>
   );

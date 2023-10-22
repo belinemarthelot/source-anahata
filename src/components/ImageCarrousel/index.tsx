@@ -2,19 +2,12 @@ import { Box, IconButton, useTheme } from '@mui/material';
 
 import { SkipNext, SkipPrevious } from '@mui/icons-material';
 
-
-import LitPaysage from '../../assets/images/Lit-bougie-paysage.jpg';
-import AcceuilPaysage from '../../assets/images/acceuil-paysage.jpg';
-import TableauPaysage from '../../assets/images/tableau-paysage.jpg';
-
-
 import ImageCarouselLogic from './ImageCarouselLogic';
 import ImageCarouselButton from './ImageCarouselButton';
 import ImageCarouselDots from './ImageCarouselDots';
 
-const images = [AcceuilPaysage, TableauPaysage, LitPaysage];
-
-export default function ImageCarousel() {
+export default function ImageCarousel(props: { images: string[] }) {
+	const {images} = props;
 	const theme = useTheme();
 
 	const { currentImageIndex, activeDotIndex, handlePrevious, handleNext, handleDotClick } = ImageCarouselLogic({

@@ -1,0 +1,39 @@
+{
+    "prestations":[
+        {
+            "title": "Soins corps",
+            "image": "Soins-corps-paysage.jpg",
+            "description": "Offrez un moment de bien-être à votre esprit et libérez votre corps des tensions du quotidien.",
+            "button": "Découvrez les soins corps",
+            "buttonLink": "/soins-corps"
+        },
+        {
+            "title": "Soins visage",
+            "image": "Soins-visage-paysage.jpg",
+            "description": "Grâce à la Mixologie ainsi qu'à la synergie des gestes inspirés de la gym faciale et l'utilisation de 3 accessoires en jade blanc. Votre peau aura un glow unique!",
+            "button": "Découvrez les soins visages",
+		    "buttonLink": "/soins-visage"
+        },
+        {
+            "title": "Épilations",
+            "image": "epilation-paysage.jpg",
+            "description": "L'utilisation de la marque française Perron Rigot permet un soin sur mesure pour une peau douce et un résultat parfait.",
+            "button": "Découvrez les épilations",
+            "buttonLink": "/epilations"
+        },
+        {
+            "title": "Beauté du regard",
+            "image": "Soins-visage-paysage.jpg",
+            "description": "La marque Combinal permet d'intensifier votre regard pour une mise en valeur en toute occasion.",
+            "button": "Découvrez la beauté du regard",
+            "buttonLink": "/beaute-du-regard"
+        },
+        {
+            "title": "Onglerie",
+            "image": "onglerie-paysage.jpg",
+            "description": "Parce que ce sont des zones du corps souvent oubliées, prenez le temps de les chouchouter.",
+            "button": "Découvrez l'onglerie",
+            "buttonLink": "/onglerie"
+        }
+    ]
+}

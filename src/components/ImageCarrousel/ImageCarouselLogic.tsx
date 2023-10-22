@@ -18,8 +18,10 @@ export default function ImageCarouselLogic(props: { images: string[] }) {
 	};
 
 	useEffect(() => {
-		createInterval();
-	}, []);
+		if (images.length > 0){
+			createInterval();
+		}
+	}, [images]);
 
 	const handleNext = () => {
 		createInterval();

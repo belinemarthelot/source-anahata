@@ -4,7 +4,6 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import CheckRoutes from './utils/CheckRoutes';
-import Epilation from './pages/epilation';
 import Prestation from './pages/prestation';
 
 function App() {
