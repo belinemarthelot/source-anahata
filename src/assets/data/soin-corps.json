@@ -3,39 +3,48 @@
   "img": "soins-corps-portrait.jpg",
   "prestations": [
     {
+      "title": "Rituel Singapourien - 60 min",
+      "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit sera propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue",
+      "price": 64
+    },
+    {
       "title": "Gommage - 45 min",
-      "description": "Gommage du corps entier, suivi d'une douche et d'une application d'un lait hydratant.",
+      "description": "Affine le grain de peau et révèle sa douceur.",
       "price": 45
     },
     {
-        "title": "Pour tous les modelages, vous pouvez choisir en option l'utilisation d'une bougie senteur vanille.",
-        "description": "",
-        "price": 3
+      "title":"Modelage personnalisé à l'huile chaude",
+      "description": "Les techniques sont adaptées à vos besoins et la pression à votre ressentis."
     },
     {
-      "title": "Modelage - 30 min",
+      "title": "- 30 min",
       "description": "Effleurage de l'arrière du corps ou  travail du dos",
       "price": 33
     },
     {
-      "title": "Modelage - 45 min",
+      "title": "- 45 min",
       "description": "Travail de l'arrière du corps",
       "price": 45
     },
     {
-      "title": "Modelage - 60 min",
+      "title": "- 60 min",
       "description": "Travail de l'arrière du corps ou effleurage du corps entier",
       "price": 59
     },
     {
-      "title": "Modelage - 75 min",
+      "title": "- 75 min",
       "description": "Corps entier plus massage crânien",
       "price": 72
     },
     {
-      "title": "Modelage - 90 min",
+      "title": "- 90 min",
       "description": "Corps entier plus massage crânien et visage",
       "price": 85
+    },
+    {
+      "title": "Pour tous les modelages personnalisés, vous pouvez choisir en option l'utilisation d'une bougie senteur vanille.",
+      "description": "",
+      "price": 3
     }
   ]
 }

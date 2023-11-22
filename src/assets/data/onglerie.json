@@ -3,22 +3,15 @@
   "img": "onglerie-portrait.jpg",
   "prestations": [
     {
-      "title": "Manucure classique - 60 min",
+      "title": "Soin des mains ou pieds - 45 min",
+      "description": "",
+      "price": 45
+    },
+    {
+      "title": "Manucure classique - 50 min",
       "description": "Mise en beauté des ongles + base brillante",
       "price": 26,
       "options": [
-        {
-          "title": "Pose de vernis semi-permanent +30 min",
-          "description": "Mains ou pieds. Dépose comprise",
-          "price": 10,
-          "options": [
-            {
-              "title": "Reconstruction d'un ongle - 10 min",
-              "description": "",
-              "price": 2
-            }
-          ]
-        },
         {
           "title": "Pose de vernis classique +30 min",
           "description": "Mains ou pieds. Dépose comprise",
@@ -27,20 +20,17 @@
       ]
     },
     {
-      "title": "Manucure combinée + remfort semi-permanant - 120 min",
+      "title": "Manucure combinée + semi-permanant - 90 min",
       "description": "Mains ou pieds. Dépose comprise",
-      "price": 43
+      "price": 36,
+      "options": [
+        {
+          "title": "Renfort semi-permanent +30 min",
+          "description": "Mains ongle cassant ou fragile.",
+          "price": 7
+        }
+      ]
     },
-    {
-      "title": "Yumi feet \"De si jolis pieds\" - 40 min",
-      "description": "",
-      "price": 35
-    },
-    {
-        "title": "Soin des mains ou pieds - 45 min",
-        "description": "",
-        "price": 45
-      },
     {
       "title": "Rape pieds - 10 min",
       "description": "",
@@ -49,7 +39,7 @@
     {
       "title": "Modelage mains ou pieds - 15 min",
       "description": "",
-      "price": 14
+      "price": 12
     }
   ]
 }
