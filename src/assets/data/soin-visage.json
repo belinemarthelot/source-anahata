@@ -4,12 +4,12 @@
   "prestations": [
     {
       "title": "Black forest - 75 min",
-      "description": "",
+      "description": "Ce soin réduit visiblement les rides et ridules avec un résultat raffermissant et lissant, ainsi qu'une profonde détente grâce à son prélude hollistique, son massage manuel associé à la lecture de « pensées voyage ».",
       "price": 85
     },
     {
       "title": "Signature - 60 min",
-      "description": "",
+      "description": "Ce soin apporte hydratation et éclat à la peau, le modelage aux pierres de jade refroidies apporte un effet glaçon qui active la microcirculation. Il repulpe l'épiderme, favorise l'élimintation des toxines et soulage les tensions des muscles faciaux dues au stress.",
       "price": 69
     },
     {
@@ -19,7 +19,7 @@
     },
     {
       "title":"Soin visage sur-mesure",
-      "description": ""
+      "description": "Les produits sont adaptées aux besoins de votre peau"
     },
     {
       "title": "- 60 min",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Soin regard - 40 min",
-      "description": "",
+      "description": "Ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
       "price": 34
     },
     {
