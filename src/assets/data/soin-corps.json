@@ -3,9 +3,9 @@
   "img": "soins-corps-portrait.jpg",
   "prestations": [
     {
-      "title": "Rituel Singapourien - 60 min",
+      "title": "Rituel Singapourien - 75 min",
       "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit sera propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue",
-      "price": 64
+      "price": 74
     },
     {
       "title": "Gommage - 45 min",
@@ -40,11 +40,6 @@
       "title": "- 90 min",
       "description": "Corps entier, massage crânien et visage",
       "price": 85
-    },
-    {
-      "title": "Pour tout les modelages personnalisés, vous pouvez choisir en option l'utilisation d'une bougie senteur vanille.",
-      "description": "",
-      "price": 3
     }
   ]
 }

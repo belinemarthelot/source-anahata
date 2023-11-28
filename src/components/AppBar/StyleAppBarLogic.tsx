@@ -16,8 +16,8 @@ export default function StyledAppBarLogic() {
 
 	const buttonList = [
 		<StyledAppBarButton
-			key={'Acceuil'}
-			title="Acceuil"
+			key={'Accueil'}
+			title="Accueil"
 			name=""
 			activeName={activeName}
 			handleButtonClick={handleButtonClick}

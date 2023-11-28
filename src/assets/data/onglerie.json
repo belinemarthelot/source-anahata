@@ -14,7 +14,7 @@
       "options": [
         {
           "title": "Pose de vernis classique +30 min",
-          "description": "Mains ou pieds. Dépose comprise",
+          "description": "Mains ou pieds.",
           "price": 10
         }
       ]
@@ -39,7 +39,7 @@
     {
       "title": "Modelage mains ou pieds - 15 min",
       "description": "",
-      "price": 12
+      "price": 14
     }
   ]
 }

@@ -3,7 +3,7 @@
   "img": "soins-visage-portrait.jpg",
   "prestations": [
     {
-      "title": "Black forest - 75 min",
+      "title": "Black forest - 90 min",
       "description": "Ce soin réduit visiblement les rides et ridules avec un résultat raffermissant et lissant, ainsi qu'une profonde détente grâce à son prélude hollistique, son massage manuel associé à la lecture de « pensées voyage ».",
       "price": 85
     },
@@ -19,12 +19,12 @@
     },
     {
       "title":"Soin visage sur-mesure",
-      "description": "Les produits sont adaptées aux besoins de votre peau"
+      "description": "Le protocole et les produits sont adaptés aux besoins de votre peau"
     },
     {
       "title": "- 60 min",
       "description": "",
-      "price": 65
+      "price": 63
     },
     {
       "title": "- 90 min",
@@ -34,17 +34,17 @@
     {
       "title": "Soin regard - 40 min",
       "description": "Ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
-      "price": 34
+      "price": 39
     },
     {
       "title": "Soin regard+ - 50 min",
-      "description": "Ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
-      "price": 43
+      "description": "Ce soin spécifique permet d'agrandir et rajeunir votre regard",
+      "price": 48
     },
     {
       "title": "Modelage visage - 30 min",
       "description": "",
-      "price": 29
+      "price": 33
     }
   ]
 }
