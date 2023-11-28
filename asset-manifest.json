@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.6a553f5e.js",
+    "main.js": "/static/js/main.c404da57.js",
     "static/media/acceuil-portrait.jpg": "/static/media/acceuil-portrait.0706dd145ace701ed07c.jpg",
     "static/media/Soins-corps-paysage.jpg": "/static/media/Soins-corps-paysage.9f01502cf9ab90411811.jpg",
     "static/media/acceuil-paysage.jpg": "/static/media/acceuil-paysage.c43da319e7a58df858a6.jpg",
     "static/media/soins-corps-portrait.jpg": "/static/media/soins-corps-portrait.7435bdf708a3301ac21a.jpg",
+    "static/media/soins-visage-portrait.jpg": "/static/media/soins-visage-portrait.43c7893de64835626be0.jpg",
     "static/media/tableau-paysage.jpg": "/static/media/tableau-paysage.70ebaf5316d17a1bcc38.jpg",
+    "static/media/Soins-visage-paysage.jpg": "/static/media/Soins-visage-paysage.324558766eb62b18b5f6.jpg",
     "static/media/Epilation-portrait.jpg": "/static/media/Epilation-portrait.62eb97f7d1a0ffdc249e.jpg",
     "static/media/Lit-bougie-portrait.jpg": "/static/media/Lit-bougie-portrait.2ca5bbf2adc50709256a.jpg",
     "static/media/Lit-bougie-paysage.jpg": "/static/media/Lit-bougie-paysage.04da0c238420e3f42e22.jpg",
-    "static/media/soins-visage-portrait.jpg": "/static/media/soins-visage-portrait.7caf536d42632e8d8ea2.jpg",
     "static/media/epilation-paysage.jpg": "/static/media/epilation-paysage.18521291c1327a43c220.jpg",
-    "static/media/Soins-visage-paysage.jpg": "/static/media/Soins-visage-paysage.93d83d490f77af1c5833.jpg",
     "static/media/onglerie-portrait.jpg": "/static/media/onglerie-portrait.babdcbe9c4ad6369042c.jpg",
     "static/media/onglerie-paysage.jpg": "/static/media/onglerie-paysage.1adaa6a17b785292bda0.jpg",
     "static/media/logo-source.jpg": "/static/media/logo-source.181c5fc23ff16b5068d4.jpg",
     "index.html": "/index.html",
-    "main.6a553f5e.js.map": "/static/js/main.6a553f5e.js.map"
+    "main.c404da57.js.map": "/static/js/main.c404da57.js.map"
   },
   "entrypoints": [
-    "static/js/main.6a553f5e.js"
+    "static/js/main.c404da57.js"
   ]
 }
