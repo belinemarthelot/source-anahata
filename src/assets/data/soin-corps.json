@@ -4,17 +4,21 @@
   "prestations": [
     {
       "title": "Rituel Singapourien - 75 min",
-      "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit sera propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue",
+      "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit sera propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue.",
       "price": 74
     },
+    {
+      "title":"Gommage suivi d'un modelage corps personnalisé 10% de réduction.",
+      "description": ""
+   },
     {
       "title": "Gommage - 45 min",
       "description": "Affine le grain de peau et révèle sa douceur.",
       "price": 45
     },
     {
-      "title":"Modelage personnalisé à l'huile chaude",
-      "description": "Les techniques sont adaptées à vos besoins et la pression à votre ressentis. Les zones travaillées peuvent être modifiées par vos soins."
+      "title":"Modelage personnalisé à l'huile chaude :",
+      "description": "Les techniques sont adaptées à vos besoins et la pression à votre ressentis. Les zones travaillées peuvent être modifiées à la demande."
     },
     {
       "title": "- 30 min",
