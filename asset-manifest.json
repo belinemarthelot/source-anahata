@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.c404da57.js",
+    "main.js": "/static/js/main.a92c74e9.js",
     "static/media/acceuil-portrait.jpg": "/static/media/acceuil-portrait.0706dd145ace701ed07c.jpg",
     "static/media/Soins-corps-paysage.jpg": "/static/media/Soins-corps-paysage.9f01502cf9ab90411811.jpg",
     "static/media/acceuil-paysage.jpg": "/static/media/acceuil-paysage.c43da319e7a58df858a6.jpg",
@@ -16,9 +16,9 @@
     "static/media/onglerie-paysage.jpg": "/static/media/onglerie-paysage.1adaa6a17b785292bda0.jpg",
     "static/media/logo-source.jpg": "/static/media/logo-source.181c5fc23ff16b5068d4.jpg",
     "index.html": "/index.html",
-    "main.c404da57.js.map": "/static/js/main.c404da57.js.map"
+    "main.a92c74e9.js.map": "/static/js/main.a92c74e9.js.map"
   },
   "entrypoints": [
-    "static/js/main.c404da57.js"
+    "static/js/main.a92c74e9.js"
   ]
 }
