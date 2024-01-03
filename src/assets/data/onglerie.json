@@ -8,16 +8,9 @@
       "price": 45
     },
     {
-      "title": "Beauté des mains ou pieds - 50 min",
+      "title": "Beauté des mains ou pieds - 45 min",
       "description": "Mise en beauté des ongles + base brillante",
-      "price": 26,
-      "options": [
-        {
-          "title": "Pose de vernis classique +30 min",
-          "description": "Mains ou pieds.",
-          "price": 10
-        }
-      ]
+      "price": 26
     },
     {
       "title": "Manucure combinée + semi-permanent - 90 min",
@@ -30,9 +23,14 @@
           "price": 7
         }
       ]
+    }, 
+    {
+      "title": "Dépose de semi (Non effectué par mes soins) - 30 min",
+      "description": "",
+      "price": 10
     },
     {
-      "title": "Rape pieds - 10 min",
+      "title": "Râpe pieds - 10 min",
       "description": "",
       "price": 5
     },
