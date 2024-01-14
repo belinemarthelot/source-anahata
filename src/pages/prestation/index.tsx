@@ -8,47 +8,63 @@ import {
 import React, { useEffect, useState } from "react";
 import PrestationElement from "../../components/PrestationElement";
 import { useLocation } from "react-router-dom";
+import ImageCarousel from "../../components/ImageCarrousel";
 
 interface IOption {
-  title: String;
-  description: String;
+  title: string;
+  description: string;
   price: Number;
 }
 
 interface IPrestation {
-  title: String;
-  description: String;
+  title: string;
+  description: string;
   price: Number;
   options: [IOption];
 }
 
 interface IData {
-  title: String;
-  img: String;
+  title: string;
+  images: string[];
   prestations: [IPrestation];
 }
 
-export default function Prestation(props: { jsonFile: String }) {
+export default function Prestation(props: { jsonFile: string }) {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const [data, setData] = useState<null | IData>(null);
   const [img, setImg] = useState("");
+  const [images, setImages] = useState<string[]>([]);
   const location = useLocation();
 
   useEffect(() => {
     let dataImport = require(`../../assets/data/${props.jsonFile}`);
     setData(dataImport);
-    let image = require(`../../assets/images/${dataImport.img}`);
-    setImg(image);
   }, [location]);
+
+  useEffect(() => {
+    if (data != null) {
+      setImages([])
+      data.images.forEach((image) => {
+        let newImage = require(`../../assets/images/${image}`);
+        setImages((oldImages) => [...oldImages, newImage]);
+      });
+    }
+  }, [data]);
 
   return (
     <Grid container alignItems={"center"} flexDirection={"column"} mb={5}>
       <Grid container style={{ width: isMdScreen ? "100%" : "80%" }}>
-        <Grid item sm={5}>
-          <img style={{ width: "100%" }} src={img} alt="Image épilation" />
-        </Grid>
+        {images.length == 1 ? (
+          <Grid item sm={5}>
+            <img style={{ width: "100%" }} src={images[0]} alt="Image épilation" />
+          </Grid>
+        ) : (
+          <Grid item sm={5}>
+            <ImageCarousel images={images} />
+          </Grid>
+        )}
         <Grid
           item
           sm={7}

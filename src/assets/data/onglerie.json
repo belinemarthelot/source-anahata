@@ -1,6 +1,8 @@
 {
   "title": "Onglerie",
-  "img": "onglerie-portrait.jpg",
+  "images": [
+    "onglerie-portrait.jpg"
+  ],
   "prestations": [
     {
       "title": "Soin des mains ou pieds - 45 min",
@@ -23,7 +25,7 @@
           "price": 7
         }
       ]
-    }, 
+    },
     {
       "title": "Dépose de semi (Non effectué par mes soins) - 30 min",
       "description": "",

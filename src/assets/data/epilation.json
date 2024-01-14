@@ -1,85 +1,87 @@
 {
-    "title": "Épilations",
-    "img": "Epilation-portrait.jpg",
-    "prestations": [
-        {
-            "title":"Pour chaque épilation cumulée, bénéficiez de 1€ de réducation",
-            "description": "Ex: 3 épilations = 2 € de réduction, 5 épilations = 4 € de réduction."
-        },
-        {
-            "title": "1 zone visage - 15 min",
-            "description": "Zone au choix: lèvre, menton, joues, nez, cou",
-            "price": 9
-        },
-        {
-            "title": "Sourcils - 20 min",
-            "description": "",
-            "price": 11
-        },
-        {
-            "title": "Aisselles - 15 min",
-            "description": "",
-            "price": 10
-        },
-        {
-            "title": "Maillot classique - 15 min",
-            "description": "",
-            "price": 12
-        },
-        {
-            "title": "Maillot brésilien - 20 min",
-            "description": "",
-            "price": 16
-        },
-        {
-            "title": "Maillot intégral - 30 min",
-            "description": "",
-            "price": 25
-        },
-        {
-            "title": "Fesses - 20 min",
-            "description": "",
-            "price": 12
-        }, 
-        {
-            "title": "1/2 jambes - 20 min",
-            "description": "",
-            "price": 17
-        },
-        {
-            "title": "3/4 jambes - 30 min",
-            "description": "",
-            "price": 23
-        },
-        {
-            "title": "Jambes complètes - 50 min",
-            "description": "",
-            "price": 30
-        },
-        {
-            "title": "Cuisses - 20 min",
-            "description": "",
-            "price": 18
-        }, 
-        {
-            "title": "Arrière cuisses - 15 min",
-            "description": "",
-            "price": 11
-        },
-        {
-            "title": "Dos ou Torse - 30 min",
-            "description": "",
-            "price": 24
-        }, 
-        {
-            "title": "Bras - 30 min",
-            "description": "",
-            "price": 20
-        }, 
-        {
-            "title": "1/2 bras - 20 min",
-            "description": "",
-            "price": 17
-        }
-    ]
+  "title": "Épilations",
+  "images": [
+    "Epilation-portrait.jpg"
+  ],
+  "prestations": [
+    {
+      "title": "Pour chaque épilation cumulée, bénéficiez de 1€ de réducation",
+      "description": "Ex: 3 épilations = 2 € de réduction, 5 épilations = 4 € de réduction."
+    },
+    {
+      "title": "1 zone visage - 15 min",
+      "description": "Zone au choix: lèvre, menton, joues, nez, cou",
+      "price": 9
+    },
+    {
+      "title": "Sourcils - 20 min",
+      "description": "",
+      "price": 11
+    },
+    {
+      "title": "Aisselles - 15 min",
+      "description": "",
+      "price": 10
+    },
+    {
+      "title": "Maillot classique - 15 min",
+      "description": "",
+      "price": 12
+    },
+    {
+      "title": "Maillot brésilien - 20 min",
+      "description": "",
+      "price": 16
+    },
+    {
+      "title": "Maillot intégral - 30 min",
+      "description": "",
+      "price": 25
+    },
+    {
+      "title": "Fesses - 20 min",
+      "description": "",
+      "price": 12
+    },
+    {
+      "title": "1/2 jambes - 20 min",
+      "description": "",
+      "price": 17
+    },
+    {
+      "title": "3/4 jambes - 30 min",
+      "description": "",
+      "price": 23
+    },
+    {
+      "title": "Jambes complètes - 50 min",
+      "description": "",
+      "price": 30
+    },
+    {
+      "title": "Cuisses - 20 min",
+      "description": "",
+      "price": 18
+    },
+    {
+      "title": "Arrière cuisses - 15 min",
+      "description": "",
+      "price": 11
+    },
+    {
+      "title": "Dos ou Torse - 30 min",
+      "description": "",
+      "price": 24
+    },
+    {
+      "title": "Bras - 30 min",
+      "description": "",
+      "price": 20
+    },
+    {
+      "title": "1/2 bras - 20 min",
+      "description": "",
+      "price": 17
+    }
+  ]
 }

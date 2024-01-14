@@ -1,6 +1,8 @@
 {
   "title": "Soins visage",
-  "img": "soinvisage-portrait.jpg",
+  "images": [
+    "soinvisage-portrait.jpg"
+  ],
   "prestations": [
     {
       "title": "Black forest - 90 min",
@@ -18,7 +20,7 @@
       "price": 39
     },
     {
-      "title":"Soin visage sur-mesure",
+      "title": "Soin visage sur-mesure",
       "description": "Le protocole et les produits sont adaptés aux besoins de votre peau."
     },
     {

@@ -1,6 +1,8 @@
 {
   "title": "Soins corps",
-  "img": "soins-corps-portrait.jpg",
+  "images": [
+    "soins-corps-portrait.jpg"
+  ],
   "prestations": [
     {
       "title": "Rituel Singapourien - 75 min",
@@ -8,16 +10,16 @@
       "price": 74
     },
     {
-      "title":"Gommage + un modelage corps personnalisé à l'huile chaude : 10% de réduction.",
+      "title": "Gommage + un modelage corps personnalisé à l'huile chaude : 10% de réduction.",
       "description": ""
-   },
+    },
     {
       "title": "Gommage - 45 min",
       "description": "Affine le grain de peau et révèle sa douceur.",
       "price": 45
     },
     {
-      "title":"Modelages personnalisé à l'huile chaude :",
+      "title": "Modelages personnalisé à l'huile chaude :",
       "description": "Les techniques sont adaptées à vos besoins et la pression à votre ressentis. Les zones travaillées peuvent être modifiées à la demande."
     },
     {

@@ -1,31 +1,33 @@
 {
-    "title": "Beauté du regard",
-    "img": "soins-visage-portrait.jpg",
-    "prestations": [
-        {
-            "title": "Rehaussement de cils - 60 min",
-            "description": "Accentue la courbure de vos cils dès la racine et vous offre un effet maquillé naturel. Tenue 6 semaines.",
-            "price": 59
-        },
-        {
-            "title": "Kératin lash lift - 75 min",
-            "description": "Le soin à la kératine fortifie vos cils tout en les recourbants. Tenue 6 semaines.",
-            "price": 68
-        },
-        {
-            "title": "Teinture cils - 30 min",
-            "description": "",
-            "price": 18
-        },
-        {
-            "title": "Teinture sourcils - 20 min",
-            "description": "",
-            "price": 15
-        },
-        {
-            "title": "Teinture cils et sourcils - 45 min",
-            "description": "",
-            "price": 30
-        }   
-    ]
+  "title": "Beauté du regard",
+  "images": [
+    "soins-visage-portrait.jpg"
+  ],
+  "prestations": [
+    {
+      "title": "Rehaussement de cils - 60 min",
+      "description": "Accentue la courbure de vos cils dès la racine et vous offre un effet maquillé naturel. Tenue 6 semaines.",
+      "price": 59
+    },
+    {
+      "title": "Kératin lash lift - 75 min",
+      "description": "Le soin à la kératine fortifie vos cils tout en les recourbants. Tenue 6 semaines.",
+      "price": 68
+    },
+    {
+      "title": "Teinture cils - 30 min",
+      "description": "",
+      "price": 18
+    },
+    {
+      "title": "Teinture sourcils - 20 min",
+      "description": "",
+      "price": 15
+    },
+    {
+      "title": "Teinture cils et sourcils - 45 min",
+      "description": "",
+      "price": 30
+    }
+  ]
 }
