@@ -39,7 +39,16 @@ const PlanityWidget = () => {
         loadScripts();
     }, []);
     
-    return <Grid id="planity-container" pt={2} style={{width: "100%", height: "100%", backgroundColor: theme.palette.background.paper}}></Grid>;
+    return <Grid 
+        id="planity-container" pt={2} 
+        style={{
+            width: "100%", 
+            height: "100%", 
+            backgroundColor: theme.palette.background.paper,
+            margin: "auto",
+        }}
+        p={3}
+        />
     };
 
     export default PlanityWidget;
