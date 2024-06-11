@@ -56,7 +56,7 @@ export default function Prestation(props: { jsonFile: string }) {
   return (
     <Grid container alignItems={"center"} flexDirection={"column"} mb={5}>
       <Grid container style={{ width: isMdScreen ? "100%" : "80%" }}>
-        {images.length == 1 ? (
+        {images.length === 1 ? (
           <Grid item sm={5}>
             <img style={{ width: "100%" }} src={images[0]} alt="Image épilation" />
           </Grid>
@@ -103,7 +103,3 @@ export default function Prestation(props: { jsonFile: string }) {
     </Grid>
   );
 }
-
-// <Button variant="contained" color="primary" style={{ marginTop: '2em' }}>
-//Prendre un rendez-vous
-//</Button>

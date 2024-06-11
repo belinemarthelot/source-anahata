@@ -1,0 +1,13 @@
+.planity_ui_button_root, .planity_bookappointment-button-choose, .button-module_primary-Careb {
+    background-color: #6BDDB0 !important;
+    color: black !important;
+}
+
+.planity-component-button > span {
+    color: black !important;
+}
+
+* {
+    --primary-200: black;
+  }
+  
