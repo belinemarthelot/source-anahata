@@ -20,6 +20,7 @@ export default function StyledAppBarLogic() {
       title="Accueil"
       name=""
       activeName={activeName}
+      primary={false}
       handleButtonClick={handleButtonClick}
     />,
     <StyledAppBarButton
@@ -27,6 +28,7 @@ export default function StyledAppBarLogic() {
       title="Soins corps"
       name="soins-corps"
       activeName={activeName}
+      primary={false}
       handleButtonClick={handleButtonClick}
     />,
     <StyledAppBarButton
@@ -34,6 +36,7 @@ export default function StyledAppBarLogic() {
       title="Soins visage"
       name="soins-visage"
       activeName={activeName}
+      primary={false}
       handleButtonClick={handleButtonClick}
     />,
     <StyledAppBarButton
@@ -41,6 +44,7 @@ export default function StyledAppBarLogic() {
       title="Épilations"
       name="epilations"
       activeName={activeName}
+      primary={false}
       handleButtonClick={handleButtonClick}
     />,
     <StyledAppBarButton
@@ -48,6 +52,7 @@ export default function StyledAppBarLogic() {
       title="Beauté du regard"
       name="beaute-du-regard"
       activeName={activeName}
+      primary={false}
       handleButtonClick={handleButtonClick}
     />,
     <StyledAppBarButton
@@ -55,7 +60,16 @@ export default function StyledAppBarLogic() {
       title="Onglerie"
       name="onglerie"
       activeName={activeName}
+      primary={false}
       handleButtonClick={handleButtonClick}
+    />,
+    <StyledAppBarButton
+    key={"Prendre rendez-vous"}
+    title="Prendre rendez-vous"
+    name="rendez-vous"
+    activeName={activeName}
+    primary={true}
+    handleButtonClick={handleButtonClick}
     />,
   ];
 

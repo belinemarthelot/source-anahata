@@ -54,9 +54,11 @@ export default function Header() {
 			<IconButton aria-label="Instagram" href={instagramUrl} target="_blank" rel="noopener noreferrer">
 				<Instagram fontSize={isMdScreen ? 'medium' : 'large'} color="primary" />
 			</IconButton>
-			<Button variant="contained" color="primary" style={{ fontSize: isMdScreen ? '.6em' : '.8em' }} onClick={() => navigate("/rendez-vous")}>
+			{isSmScreen ? <></> : 
+			(<Button variant="contained" color="primary" style={{ fontSize: isMdScreen ? '.6em' : '.8em' }} onClick={() => navigate("/rendez-vous")}>
 				Prendre rendez-vous
-			</Button>
+			</Button>)
+			}
 		</Grid>
 	);
 }

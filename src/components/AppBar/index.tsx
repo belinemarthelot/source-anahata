@@ -58,7 +58,7 @@ export default function StyledAppBar() {
 					<Grid container direction={'column'} marginTop={1}>
 						<Grid item flexGrow={1} style={{ display: isSmScreen ? 'none' : '' }}>
 							<Grid item container justifyContent={'center'}>
-								{buttonList.map((button: any) => button)}
+								{buttonList.slice(0, buttonList.length - 1).map((button: any) => button)}
 							</Grid>
 						</Grid>
 						<Grid item flexGrow={1} style={{ display: isSmScreen ? 'none' : '' }}>
