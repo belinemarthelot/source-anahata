@@ -5,46 +5,44 @@
   ],
   "prestations": [
     {
-      "title": "Rituel Singapourien - 75 min",
-      "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit sera propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue.",
-      "price": 74
-    },
-    {
-      "title": "Gommage + un modelage corps personnalisé à l'huile chaude : 10% de réduction.",
-      "description": ""
-    },
-    {
       "title": "Gommage - 45 min",
       "description": "Affine le grain de peau et révèle sa douceur.",
       "price": 45
     },
     {
+      "subtitle": "Les Rituels",
+      "title": "Rituel Singapourien - 75 min",
+      "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit sera propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue.",
+      "price": 74
+    },
+    {
+      "subtitle": "Le Ressourçant",
       "title": "Modelages personnalisé à l'huile chaude :",
       "description": "Les techniques sont adaptées à vos besoins et la pression à votre ressentis. Les zones travaillées peuvent être modifiées à la demande."
     },
     {
       "title": "- 30 min",
-      "description": "Effleurage de l'arrière du corps ou  travail du dos",
+      "description": "Example : effleurage de l'arrière du corps ou  travail du dos",
       "price": 33
     },
     {
       "title": "- 45 min",
-      "description": "Travail de l'arrière du corps",
+      "description": "Example : travail de l'arrière du corps",
       "price": 45
     },
     {
       "title": "- 60 min",
-      "description": "Travail de l'arrière du corps ou effleurage du corps entier",
+      "description": "Example : travail de l'arrière du corps ou effleurage du corps entier",
       "price": 59
     },
     {
       "title": "- 75 min",
-      "description": "Corps entier et massage crânien",
+      "description": "Example : corps entier et massage crânien",
       "price": 72
     },
     {
       "title": "- 90 min",
-      "description": "Corps entier, massage crânien et visage",
+      "description": "Example : corps entier, massage crânien et visage",
       "price": 85
     }
   ]

@@ -5,6 +5,12 @@
   ],
   "prestations": [
     {
+      "title": "Magic face - 60 min",
+      "description": "Ce soin apporte hydratation et éclat à la peau, le modelage aux pierres de jade refroidies apporte un effet glaçon qui active la microcirculation. Il repulpe l'épiderme, favorise l'élimintation des toxines et soulage les tensions des muscles faciaux dues au stress.",
+      "price": 69
+    },
+    {
+      "subtitle": "Biodroga",
       "title": "Black forest - 90 min",
       "description": "Ce soin réduit visiblement les rides et ridules avec un résultat raffermissant et lissant, ainsi qu'une profonde détente grâce à son prélude hollistique, son massage manuel associé à la lecture de « pensées voyage ».",
       "price": 85
@@ -15,6 +21,7 @@
       "price": 69
     },
     {
+      "subtitle": "LCP",
       "title": "Boost sculpt - 30 min",
       "description": "Ce soin court et dynamique vous donnera un effet bonne mine instantané.",
       "price": 39
