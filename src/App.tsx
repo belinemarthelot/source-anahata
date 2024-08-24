@@ -19,6 +19,8 @@ function App() {
 					<Route path="/onglerie" element={<Prestation jsonFile={"onglerie.json"} />} />
 					<Route path="/soins-visage" element={<Prestation jsonFile={"soin-visage.json"} />} />
 					<Route path="/soins-corps" element={<Prestation jsonFile={"soin-corps.json"} />} />
+					<Route path="/soins-duo" element={<Prestation jsonFile={"soin-duo.json"} />} />
+					<Route path="/maderotherapie" element={<Prestation jsonFile={"maderotherapie.json"} />} />
 					<Route path="/rendez-vous" element={<PlanityWidget />}/>
 				</Route>
 			</Routes>

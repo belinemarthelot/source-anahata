@@ -1,0 +1,50 @@
+{
+  "title": "Soins en duo",
+  "images": [
+    "soins-corps-portrait.jpg"
+  ],
+  "prestations": [
+    {
+      "title": "C'est le pied - 1h15",
+      "description": "Chouchoutez vos pieds avec un soin, alliant douceur et confort à travers différentes étapes :",
+      "subdescriptions": [
+        [
+          "- Râpe : Élimination douce des callosités pour des pieds lisses.",
+          "- Gommage : Exfoliation délicate pour une peau nette et soyeuse.",
+          "- Masque : Hydratation intense avec un masque nourrissant.",
+          "- Modelage : Massage relaxant pour stimuler la circulation et apaiser les tensions."
+        ],
+        ["Pourquoi choisir cette prestation ?" ], 
+        [
+          "Bien-être : Un moment de relaxation.",
+          "Douceur et hydratation : Des pieds lisses et parfaitement soignés.",
+          "Détente à deux : Un instant de partage inattendu."
+        ]
+      ],
+      "price": 89
+    },
+    {
+      "title": "Lever le pied - 1h45",
+      "description": "Chouchoutez vos pieds avec un soin complet, conçu pour leur apporter douceur, confort et beauté.",
+      "subdescriptions": [
+        ["L'alliance du soin et de la beauté des pieds : "],
+        [
+          "- Limage : Ongles parfaitement façonnés et raccourcis.",
+          "- Travail des cuticules : Des ongles nets et soignés.",
+          "- Râpe : Élimination douce des callosités pour des pieds lisses.",
+          "- Gommage : Exfoliation délicate pour une peau nette et soyeuse.",
+          "- Masque : Hydratation intense avec un masque nourrissant.",
+          "- Modelage : Massage relaxant pour stimuler la circulation et apaiser les tensions."
+        ],
+        ["Pourquoi choisir cette prestation ?"], 
+        [
+          "Soin complet : Allie bien-être et esthétique pour des pieds impeccables.",
+          "Bien-être : Un moment de relaxation.",
+          "Douceur et hydratation : Des pieds lisses et parfaitement soignés.",
+          "Détente à deux : Un instant de partage inattendu."
+        ]
+      ],
+      "price": 139
+    }
+  ]
+}

@@ -104,7 +104,9 @@ export default function Prestation(props: { jsonFile: string }) {
                   key={key}
                   title={element.title}
                   description={element.description}
-                  price={element.price}
+                  subdescriptions={element.subdescriptions ? element.subdescriptions : []}
+                  price={element.price ? element.price : 0}
+                  prices={element.prices ? element.prices : []}
                   options={element.options ? element.options : []}
                 />
                 </>

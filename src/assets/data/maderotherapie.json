@@ -1,0 +1,55 @@
+{
+  "title": "Madérothérapie",
+  "images": [
+    "soins-corps-portrait.jpg"
+  ],
+  "prestations": [
+    {
+      "title": "Magic Face - 1 h",
+      "description": "Massage du visage qui regroupe différentes techniques : madérothérapie, drainage lymphatique et lifting manuel. Il libère le corps et l'esprit avec une expérience unique qui vous transporte vers une profonde détente.",
+      "subdescriptions": [
+        [
+          "Les objectifs : ",
+          " - Oxygénation cellulaire",
+          " - Réduit les rides et ridules d'expressions",
+          " - Harmonise le contour facial",
+          " - Lutte contre le relâchement cutanée En agissant sur le système circulatoire, musculaire et lymphatique grâce à des techniques manuelles et à l'aide d'accessoires."
+        ],
+        [
+          "Contre-indication : ",
+          "Hyperthyroïdie, Thrombose, Peau très réactive ou sèche, Problème cardiaque et veineux, Hypertension artérielle non médicamenteuse, Diabète, Cancer Psoriasis, Eczéma, Acné inflammatoire (sur la zone traitée)."
+        ],
+        [
+          "Recommandé d’effectuer cette prestation sous forme de cure pour de meilleurs résultats !"
+        ]
+      ],
+      "price": 100
+    },
+    {
+      "title": "Magic Face - 1h Cure de 6 à 10 séances",
+      "description": "Cure de 6 séances à faire à l'intervalle de 3 à 4 jours chacune.",
+      "subdescriptions": [
+        [
+          "Cure de 10 séances à faire à l'intervalle de 3 à 4 jours chacune lors des 3 premières semaines puis espacement de 10 à 15 jours pour les 4 séances restantes."
+        ],
+        [
+          "Espacement des séances modulables selon les besoins et le résultat souhaité !"
+        ]
+      ],
+      "prices": [510, 800]
+    },
+    {
+      "title": "Madérosport - 45 min",
+      "description": "Le madérosport est le mélange de madérothérapie et d'une séance de gainage !",
+      "subdescriptions": [
+        [
+          "Les objectifs sont de modeler et sculpter le corps grâce à des techniques manuelles de drainages lymphatiques et à l’aide d’accessoires / d’outils de madérothérapie, techniques colombienne. En agissant sur le système circulatoire, musculaire et lymphatique."
+        ],
+        [
+          "Zones traitées : Bras, Ventre ou Dos"
+        ]
+      ],
+      "price": 75
+    }
+  ]
+}
