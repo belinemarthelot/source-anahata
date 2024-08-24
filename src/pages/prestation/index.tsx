@@ -86,7 +86,7 @@ export default function Prestation(props: { jsonFile: string }) {
             </Typography>
             {data && data.prestations ? (
               data.prestations.map((element: any, key: number) => (
-                <>
+                <div key={key}>
                 {element.subtitle ? 
                 <>
                   <Typography
@@ -109,7 +109,7 @@ export default function Prestation(props: { jsonFile: string }) {
                   prices={element.prices ? element.prices : []}
                   options={element.options ? element.options : []}
                 />
-                </>
+                </div>
               ))
             ) : (
               <></>
