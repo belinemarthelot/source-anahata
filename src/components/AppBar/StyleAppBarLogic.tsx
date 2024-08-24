@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import StyledAppBarButton from "./StyledAppBarButton";
+import { Button, Menu, MenuItem } from "@mui/material";
+import StyledAppBarButtonMenu from "./StyledAppBarButtonMenu";
 
 export default function StyledAppBarLogic() {
   const navigate = useNavigate();
@@ -23,18 +25,20 @@ export default function StyledAppBarLogic() {
       primary={false}
       handleButtonClick={handleButtonClick}
     />,
-    <StyledAppBarButton
-      key={"Soins corps"}
-      title="Soins corps"
-      name="soins-corps"
+    <StyledAppBarButtonMenu
+      key={"Soins"}
+      title="Soins"
+      name="soins"
       activeName={activeName}
       primary={false}
+      listItemNames={["Soins du corps", "Soins du visage", "Soins en duo"]}
+      listItemUrls={["soins-corps", "soins-visage", "soins-duo"]}
       handleButtonClick={handleButtonClick}
     />,
     <StyledAppBarButton
-      key={"Soins visage"}
-      title="Soins visage"
-      name="soins-visage"
+      key={"Madérothérapie"}
+      title="Madérothérapie"
+      name="maderotherapie"
       activeName={activeName}
       primary={false}
       handleButtonClick={handleButtonClick}
