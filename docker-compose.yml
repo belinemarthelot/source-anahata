@@ -1,0 +1,13 @@
+
+services:
+  web:
+    container_name: source-anahata
+    image: 'node:lts'
+    restart: unless-stopped
+    ports:
+      - '4321:4321'
+    command: tail -f /dev/null
+    environment:
+      - TZ=Europe/Paris
+    volumes:
+      - ~/Documents/source-anahata:/source-anahata

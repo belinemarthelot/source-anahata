@@ -1,0 +1,76 @@
+
+  
+.btn--menu, .nav--social {
+    background-color: transparent;
+    border: none;
+    display: grid;
+}
+
+.btn--menu {
+    position: absolute;
+    top: var(--size-3);
+    left: var(--size-1);
+}
+
+.btn--menu svg {
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+
+.nav--container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background-color: hsl(var(--background-color-alt));
+}
+
+
+.nav--logos {
+    display: grid;
+    place-items: center;
+}
+
+.nav--logo svg {
+    height: 140px;
+    width: 200px;
+}
+
+.nav--socials {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-1);
+}
+.nav--social svg {
+    height: 20px;
+    width: 20px;
+    color: black;
+}
+
+.nav--links li,
+.nav-link {
+  width: 100%;
+  display: block;
+  font-size: var(--font-size-1);
+}
+  
+.nav--links {
+    flex-direction: column;
+    transform: translateX(-200%);
+    position: absolute;
+    background-color: hsl(var(--background-color-alt));
+    top: var(--size-fluid-8);
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: var(--size-3);
+    border-bottom: 2px solid hsl(var(--muted));
+    transition: all 0.5s ease-in;
+}
+
+.nav--links-open {
+transform: translateX(0);
+}

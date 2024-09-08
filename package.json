@@ -1,0 +1,27 @@
+{
+  "name": "source-anahata",
+  "type": "module",
+  "version": "0.0.1",
+  "browsersList": [
+    "defaults"
+  ],
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "astro": "^4.15.4",
+    "astro-icon": "^1.1.1",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "open-props": "^1.7.6",
+    "postcss": "^8.4.45",
+    "postcss-jit-props": "^1.0.14"
+  }
+}

@@ -1,0 +1,63 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: 156.7 47.47% 57.45%;
+    --primary-color-alt: 156.7 47.47% 47.45%;
+    --background-color: 0 0% 100%;
+    --background-color-alt: 0 0% 90%;
+    --white: 0 0% 100%;
+    --black: 0 0% 0%;   
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    max-width: 2000px;
+    margin: auto;
+    background-color: hsl(var(--background-color));
+    color: hsl(var(--balck));
+}
+
+.h1 {
+    font-size: var(--font-size-fluid-3);
+    font-weight: 600;
+    line-height: 1.1;
+  }
+.h2 {
+  font-size: var(--font-size-fluid-2);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h3 {
+  font-size: var(--font-size-fluid-1);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.btn {
+  color: hsl(var(--white));
+  text-decoration: none;
+  padding: var(--size-2) var(--size-fluid-4);
+  border-radius: var(--radius-1);
+  cursor: pointer;
+} 
+
+small {
+font-size: var(--font-size-00);
+}
+
+.global-wrapper {
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    place-items: center;
+    background-color: hsl(var(--background-color));
+}
