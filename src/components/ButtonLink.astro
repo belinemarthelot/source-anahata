@@ -1,0 +1,18 @@
+---
+type Props = {
+    href?: string;
+    isFilled?: boolean
+};
+
+const {href, isFilled = true} = Astro.props;
+---
+<!-- class="bg-primary rounded-md p-2 shadow-md" -->
+<a 
+    href={href}
+    class:list={[
+        "bg-primary rounded font-medium px-4 py-2 shadow-lg",
+        !isFilled && "bg-transparent border-solid border-[1px] border-primary-alt rounded-full text-primary-alt"
+    ]}
+>
+    <slot/>
+</a>

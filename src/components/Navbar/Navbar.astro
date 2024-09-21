@@ -1,41 +1,84 @@
 ---
 import { Icon } from "astro-icon/components";
+import ButtonLink from "../ButtonLink.astro";
+
+const navLinks = [
+    {
+        name: "Accueil",
+        href: "/"
+    },
+    {
+        name: "Soins corps",
+        href: "/soins-corps"
+    },
+    {
+        name: "Madérotherapie",
+        href: "/maderotherapie"
+    },
+    {
+        name: "Soins duo",
+        href: "/soins-duo"
+    },
+    {
+        name: "Soins visage",
+        href: "/soins-visage"
+    },
+    {
+        name: "Épilation",
+        href: "/epilation"
+    },
+    {
+        name: "Onglerie",
+        href: "/onglerie"
+    }
+]
+const tel:string = "06 42 68 91 01"
+const adresse:string = "19 rue du mini-golf, Prenois"
+const adresseUrl:string = "https://www.google.fr/maps/place/Institut+Source+d'An%C3%A3hata/@47.3778623,4.8978046,17z/data=!3m1!4b1!4m6!3m5!1s0x2867b2c5066a620d:0x63b415b999068857!8m2!3d47.3778623!4d4.9003795!16s%2Fg%2F11l2v_z06w?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
 
 ---
-<script>
-    import "./Navbar.css";
-</script>
-<nav class="nav--container">
-    <button class="btn btn--menu" aria-expanded="false" aria-label="Open mobile nav">
-        <Icon name="hamburgerMenu" />
+
+<nav class="fixed top-0 w-screen min-h-[150px] bg-slate-100">
+    <button class="px-5 py-5 cursor-pointer absolute" id="btn-menu" aria-label="Open mobile nav">
+        <Icon class="h-[20px] w-[20px]" name="hamburgerMenu" />
     </button>
-    <div class="nav--logos">
-        <div class="nav--logo">
-            <Icon id="nav--logo" name="logo"/>
-        </div>
-        <div class="nav--socials">
-            <a class="nav--social" href="https://www.instagram.com/sourcedanahata/">
-                <Icon name="instagram"/>
+    <div class="grid w-screen place-items-center">
+        <Icon class="h-[140px] w-[200px]" name="logo"/>
+        <div class="flex gap-2 mt-[-1rem]">
+            <a target="_blank" href="https://www.instagram.com/sourcedanahata/">
+                <Icon class="h-[20px] w-[20px]" name="instagram"/>
             </a>
-            <a class="nav--social" href="https://www.instagram.com/sourcedanahata/">
-                <Icon name="facebook"/>
+            <a target="_blank" href="https://www.instagram.com/sourcedanahata/">
+                <Icon class="h-[20px] w-[20px]" name="facebook"/>
             </a>
         </div>
     </div>
-    <ul class="nav--links" role="navigation">
-        <li><a class="nav--link" href="/">Accueil</a></li>
-        <li><a class="nav--link" href="/soins-corps">Soins corps</a></li>
-        <li><a class="nav--link" href="/maderotherapie">Madérothérapie</a></li>
-        <li><a class="nav--link" href="/soins-duo">Soins duo</a></li>
-        <li><a class="nav--link" href="/soins-visage">Soins visage</a></li>
-        <li><a class="nav--link" href="/epilation">Épilation</a></li>
-        <li><a class="nav--link" href="/onglerie">Onglerie</a></li>
+    <ul id="nav-links" class="w-screen absolute h-screen bg-slate-100 transform translate-x-none transition-transform duration-300  flex flex-col text-center pt-6 gap-3" role="navigation">
+        {navLinks.map(element => <li><a href={element.href}>{element.name}</a></li>)}
+        <li class="mt-4"><ButtonLink href="/">Prendre rendez-vous en ligne</ButtonLink></li>
+        <li class="mt-4 border-solid border-t-[1px] border-t-primary p-2 flex flex-row gap-2 mx-auto">
+            <Icon class="h-[20px] w-[20px]" name="tel"/>
+            Tel: 
+            <a class="underline decoration-solid" href=`tel:${tel}`>{tel}</a>
+        </li>
+        <li class="mx-auto">
+            <a 
+                class="flex flex-row underline decoration-solid"
+                target="_blank"
+                href={adresseUrl}
+            >
+                <Icon class="h-[20px] w-[20px]" name="location"/>
+                {adresse}
+            </a>
+        </li>
     </ul>
 </nav>
+
 <script>
-    const navBtn = document.querySelector('.btn--menu')!;
-    const navLinks = document.querySelector('.nav--links')!;
+    const navBtn = document.querySelector('#btn-menu')!;
+    const navLinks = document.querySelector('#nav-links')!;
     navBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('nav--links-open');
+        navLinks.classList.contains('translate-x-0') ? navLinks.classList.remove('translate-x-0') : navLinks.classList.toggle('translate-x-0');
+        navLinks.classList.contains('translate-x-none') ? navLinks.classList.remove('translate-x-none') : navLinks.classList.toggle('translate-x-none');
     });
 </script>
