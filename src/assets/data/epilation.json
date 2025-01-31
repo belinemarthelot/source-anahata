@@ -5,79 +5,74 @@
   ],
   "prestations": [
     {
-      "title": "1 zone visage - 15 min",
-      "description": "Zone au choix: lèvre, menton, joues, nez, cou",
-      "price": 9
+      "title": "Possibilité de cire sans colophane +1€",
+      "description": "Des forfaits pour les épilations existent et sont visibles sur planity",
+      "price": ""
     },
     {
       "title": "Sourcils - 20 min",
       "description": "",
-      "price": 11
+      "price": 12
+    },
+    {
+      "title": "1 zone visage - 15 min",
+      "description": "Zone au choix: lèvre, menton, joues, nez, cou",
+      "price": 10
     },
     {
       "title": "Aisselles - 15 min",
       "description": "",
-      "price": 10
+      "price": 11
     },
     {
       "title": "Maillot classique - 15 min",
       "description": "",
-      "price": 12
+      "price": 13
     },
     {
       "title": "Maillot brésilien - 20 min",
       "description": "",
-      "price": 16
+      "price": 17
     },
     {
       "title": "Maillot intégral - 30 min",
       "description": "",
-      "price": 25
-    },
-    {
-      "title": "Fesses - 20 min",
-      "description": "",
-      "price": 12
+      "price": 26
     },
     {
       "title": "1/2 jambes - 20 min",
       "description": "",
-      "price": 17
+      "price": 18
     },
     {
       "title": "3/4 jambes - 30 min",
       "description": "",
-      "price": 23
+      "price": 24
     },
     {
       "title": "Jambes complètes - 50 min",
       "description": "",
-      "price": 30
+      "price": 31
     },
     {
       "title": "Cuisses - 20 min",
       "description": "",
-      "price": 18
-    },
-    {
-      "title": "Arrière cuisses - 15 min",
-      "description": "",
-      "price": 11
+      "price": 19
     },
     {
       "title": "Dos ou Torse - 30 min",
       "description": "",
-      "price": 24
-    },
-    {
-      "title": "Bras - 30 min",
-      "description": "",
-      "price": 20
+      "price": 25
     },
     {
       "title": "1/2 bras - 20 min",
       "description": "",
-      "price": 17
+      "price": 18
+    },
+    {
+      "title": "Bras - 30 min",
+      "description": "",
+      "price": 21
     }
   ]
 }

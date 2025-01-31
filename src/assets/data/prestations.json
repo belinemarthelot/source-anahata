@@ -8,11 +8,11 @@
             "buttonLink": "/soins-corps"
         },
         {
-            "title": "Soins visage",
+            "title": "Visage",
             "image": "soinvisage-paysage.jpg",
             "description": "Faites-vous plaisir en découvrant des protocoles authentiques et innovants.",
-            "button": "Découvrez les soins visages",
-		    "buttonLink": "/soins-visage"
+            "button": "Découvrez les prestations visages",
+		    "buttonLink": "/visage"
         },
         {
             "title": "Épilations",

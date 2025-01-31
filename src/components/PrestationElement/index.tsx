@@ -5,7 +5,7 @@ export default function PrestationElement(props: {
   title: string;
   description: string;
   price: number;
-  options: [{ title: string; description: string; price: number }];
+  options: [{ title: string; description: string; price: number, add: boolean}];
 }) {
   const { title, description, price, options } = props;
 
@@ -20,7 +20,14 @@ export default function PrestationElement(props: {
       >
         <Grid item xs={9}>
           <Typography style={{ fontSize: "1.05em" }}>{title}</Typography>
-          <Typography style={{ fontSize: ".85em" }}>{description}</Typography>
+          {description ? description.split("\n").map(function(item, idx, arr) {
+            return (
+              <>
+                <Typography style={{ fontSize: ".85em" }}>{item}</Typography>
+                {arr.length - 1 == idx ? "" : <br style={{display: "block", margin: "5px 0px"}}/>}
+              </>
+            )
+          }) : ""}
         </Grid>
         <Grid item xs={2} container justifyContent={"flex-end"}>
           <Typography>
@@ -31,7 +38,7 @@ export default function PrestationElement(props: {
       </Grid>
       {options.map(
         (
-          option: { title: string; description: string; price: number },
+          option: { title: string; description: string; price: number, add: boolean },
           key: number
         ) => {
           return (
@@ -45,7 +52,7 @@ export default function PrestationElement(props: {
                 </Typography>
               </Grid>
               <Grid item xs={2} container justifyContent={"flex-end"}>
-                <Typography key={key}>+{option.price} €</Typography>
+                <Typography key={key}>{option.add ? "+" : ""}{option.price}{option.price ? " €" : ""}</Typography>
               </Grid>
             </Grid>
           );

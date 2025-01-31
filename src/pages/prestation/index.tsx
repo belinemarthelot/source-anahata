@@ -27,6 +27,7 @@ interface IData {
   title: string;
   images: string[];
   prestations: [IPrestation];
+  add: boolean;
 }
 
 export default function Prestation(props: { jsonFile: string }) {

@@ -1,52 +1,80 @@
 {
-  "title": "Soins visage",
+  "title": "Visage",
   "images": [
     "soinvisage-portrait.jpg"
   ],
   "prestations": [
+    {
+      "title": "Magic face",
+      "description": "Massage du visage qui regroupe différentes techniques : madérothérapie, drainage lymphatique et lifting manuel. Il libère le corps et l'esprit avec une expérience unique qui vous transporte vers une profonde détente. \n\nLes objectifs : \n- Oxygénation cellulaire \n- Harmonise le contour facial \n- Lutte contre le relâchement cutanée \n- Réduit les rides et ridules d'expressions \nEn agissant sur le système circulatoire, musculaire et lymphatique grâce à des techniques manuelles et à l'aide d'accessoires. \n\nContre-indication : Hyperthyroïdie, Thrombose, Peau très réactive ou sèche, Problème cardiaque et veineux, Hypertension artérielle non médicamenteuse, Diabète, Cancer Psoriasis, Eczéma, Acné inflammatoire (sur la zone traitée). \n\nRecommandé d’effectuer cette prestation sous forme de cure pour de meilleurs résultats !",
+      "price": "",
+      "options": [
+        {
+          "title": "Soin de 60 min",
+          "description": "",
+          "price": 100
+        },
+        {
+          "title": "Cure de 6 soins (-15%)",
+          "description": "",
+          "price": 510
+        },
+        {
+          "title": "Cure de 10 soins (-20%)",
+          "description": "",
+          "price": 800
+        }
+      ]
+    },{},{},{},{},
     {
       "title": "Black forest - 90 min",
       "description": "Ce soin réduit visiblement les rides et ridules avec un résultat raffermissant et lissant, ainsi qu'une profonde détente grâce à son prélude hollistique, son massage manuel associé à la lecture de « pensées voyage ».",
       "price": 85
     },
     {
+      "title": "Prestige - 60 min",
+      "description": "Ce soin apporte fraicheur, hydratation et vitalité à votre visage pour un teint rayonnant. Le renouvellement cutané est accélérer grâce aux feuilles d'or et l'extrait de caviar retient l'hydratation de la peau.",
+      "price": 84
+    },
+    {
       "title": "Signature - 60 min",
       "description": "Ce soin apporte hydratation et éclat à la peau, le modelage aux pierres de jade refroidies apporte un effet glaçon qui active la microcirculation. Il repulpe l'épiderme, favorise l'élimintation des toxines et soulage les tensions des muscles faciaux dues au stress.",
-      "price": 69
+      "price": 69,
+      "options": [
+        {
+          "title": "Masque de collagène +15 min",
+          "description": "",
+          "price": 10,
+          "add": true
+        }
+      ]
     },
     {
-      "title": "Boost sculpt - 30 min",
+      "title": " Gentleman- 45 min",
+      "description": "Ce soin visage apporte hydratation et permet de rétablir l'équilibre de la peau de ces messieurs.",
+      "price": 53
+    },{},{},{},{},
+    {
+      "title": "Boost sculpt",
       "description": "Ce soin court et dynamique vous donnera un effet bonne mine instantané.",
-      "price": 39
+      "price": "",
+      "options": [
+        {
+          "title": "Soin de 30 min",
+          "description": "",
+          "price": 39
+        },
+        {
+          "title": "Soin de 45 min",
+          "description": "",
+          "price": 49
+        }
+      ]
     },
     {
-      "title": "Soin visage sur-mesure",
-      "description": "Le protocole et les produits sont adaptés aux besoins de votre peau."
-    },
-    {
-      "title": "- 60 min",
-      "description": "",
+      "title": "Soin visage sur-mesure - 60 min",
+      "description": "Protocole sur-mesure adapté au besoin de votre peau suite à un diagnostic rapide. Anti-Age, Hydratant ou Purifiant",
       "price": 63
-    },
-    {
-      "title": "- 90 min ( utilisation d'appareil )",
-      "description": "",
-      "price": 79
-    },
-    {
-      "title": "Soin regard - 40 min",
-      "description": "Ce soin spécifique permet d'agrandir et rajeunir votre regard.",
-      "price": 39
-    },
-    {
-      "title": "Soin regard+ - 50 min",
-      "description": "Ce soin spécifique permet de réduire les cernes, les poches et les rides du contour de l'oeil.",
-      "price": 48
-    },
-    {
-      "title": "Modelage visage - 30 min",
-      "description": "",
-      "price": 33
     }
   ]
 }

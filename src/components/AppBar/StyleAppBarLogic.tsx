@@ -33,8 +33,8 @@ export default function StyledAppBarLogic() {
     />,
     <StyledAppBarButton
       key={"Soins visage"}
-      title="Soins visage"
-      name="soins-visage"
+      title="Visage"
+      name="visage"
       activeName={activeName}
       primary={false}
       handleButtonClick={handleButtonClick}

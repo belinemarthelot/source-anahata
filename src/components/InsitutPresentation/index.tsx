@@ -77,15 +77,25 @@ export default function InstitutPresentation() {
           <Typography
             variant="subtitle1"
             textAlign={"center"}
-            style={{ marginTop: "1em" }}
+            style={{ marginTop: "3em" }}
           >
             {"Disponibilités, prestations uniquement sur rendez-vous:"}
             <br />
-            {"Lundi, mardi, mercredi: 9h - 19h"}
+            {"Lundi, mercredi, vendredi: 9h - 19h"}
             <br />
-            {"Jeudi, vendredi: 10h - 21h"}
+            {"Mardi, jeudi: 10h - 21h"}
             <br />
-            {"Samedi: 9h - 16h"}
+            {"Samedi: 10h - 16h"}
+          </Typography>
+          <Typography variant="subtitle1" textAlign={"justify"} style={{ marginTop: "3em" }}>
+            {data.description3 ? data.description3.split("\n").map(function(item, idx, arr) {
+            return (
+              <>
+                {item}
+                {arr.length - 1 == idx ? "" : <br style={{display: "block", margin: "3px 0px"}}/>}
+              </>
+            )
+          }) : ""}
           </Typography>
         </Grid>
       </Grid>

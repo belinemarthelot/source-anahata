@@ -5,41 +5,29 @@
   ],
   "prestations": [
     {
-      "title": "Soin des mains ou pieds - 45 min",
-      "description": "",
-      "price": 45
-    },
-    {
-      "title": "Beauté des mains ou pieds - 45 min",
+      "title": "Beauté des mains ou des pieds - 30 min",
       "description": "Mise en beauté des ongles + base brillante",
       "price": 26
     },
     {
-      "title": "Manucure combinée + semi-permanent - 90 min",
-      "description": "Mains ou pieds. Dépose comprise",
-      "price": 36,
-      "options": [
-        {
-          "title": "Renfort semi-permanent +30 min",
-          "description": "Mains ongle cassant ou fragile.",
-          "price": 7
-        }
-      ]
+      "title": "Semi-permanent pieds ou mains - 1h / 1h30",
+      "description": "Dépose comprise (si pose réalisée par mes soins)",
+      "price": 37
+    },
+    {
+      "title": "Forfait semi-permanent mains et pieds - 2h30 à 3h",
+      "description": "Déposes comprises (si pose réalisée par mes soins)",
+      "price": 72
     },
     {
       "title": "Dépose de semi (Non effectué par mes soins) - 30 min",
       "description": "",
-      "price": 10
+      "price":10
     },
     {
-      "title": "Râpe pieds - 10 min",
-      "description": "",
-      "price": 5
-    },
-    {
-      "title": "Modelage mains ou pieds - 15 min",
-      "description": "",
-      "price": 14
+      "title": "Soin complet des pieds - 1h",
+      "description": "Beauté + soin",
+      "price": 60
     }
   ]
 }
