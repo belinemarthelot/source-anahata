@@ -93,6 +93,7 @@ export default function Prestation(props: { jsonFile: string }) {
                   description={element.description}
                   price={element.price}
                   options={element.options ? element.options : []}
+                  price_discount={0}
                 />
               ))
             ) : (

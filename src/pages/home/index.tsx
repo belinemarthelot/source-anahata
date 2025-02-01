@@ -7,6 +7,7 @@ import logo from "../../assets/images/logo-source.jpg";
 import InstitutPresentation from "../../components/InsitutPresentation";
 
 import data from "../../assets/data/prestations.json";
+import Exclusivity from "../../components/Exclusivity";
 
 export default function Home() {
   const theme = useTheme();
@@ -27,6 +28,7 @@ export default function Home() {
           Institut de bien-être Source d'Anāhata - Prenois (21370)
         </Typography>
       </Grid>
+      <Exclusivity />
       <InstitutPresentation />
       <Grid item container justifyContent={"center"} pt={3} mb={3}>
         {data.prestations.map((prestation, index) => {

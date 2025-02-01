@@ -47,10 +47,10 @@ export default function HeroBanner(props: {
       justifyContent={"center"}
       flexDirection={side === 0 ? "row" : "row-reverse"}
     >
-      <Grid item xs={12} sm={5}>
-        <img src={image} alt="logo" style={{ width: "100%" }} />
+      <Grid item xs={12} sm={4}>
+        <img src={image} alt="logo" style={{ width: "100%", borderRadius: "10px", boxShadow: "-3px 4px 15px -1px #000000"}} />
       </Grid>
-      <Grid item container xs={12} md={5} alignItems={"center"}>
+      <Grid item container xs={12} md={4} alignItems={"center"}>
         <FadingInView>
           {(isFadeIn: boolean) => (
             <Grid

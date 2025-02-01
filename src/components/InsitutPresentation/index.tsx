@@ -27,12 +27,13 @@ export default function InstitutPresentation() {
     <Grid
       container
       justifyContent={"center"}
+      alignItems={"center"}
       mb={4}
       style={{ backgroundColor: theme.palette.background.paper }}
       pt={3}
       pb={isMdScreen ? 0 : 3}
     >
-      <Grid item sm={12} md={5}>
+      <Grid item sm={12} md={3} style={{ boxShadow: "-3px 4px 15px -1px rgba(0,0,0,0.80)"}}>
         <ImageCarousel images={images} />
       </Grid>
       <Grid
@@ -45,6 +46,7 @@ export default function InstitutPresentation() {
         p={8}
         gap={3}
         mt={isMdScreen ? 0 : 0}
+        style={{ boxShadow: "5px 4px 15px -1px rgba(0,0,0,0.70)"}}
         sx={{
           transform: "scale(1)",
           transition: "transform 0.2s ease",
