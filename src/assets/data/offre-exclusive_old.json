@@ -1,0 +1,23 @@
+{
+  "title": "Offre exclusive du moment",
+  "offers": [
+    {
+        "title": "Rituel Singapourien - 75 min",
+        "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit sera propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue. Zones massées : dos, ventre et pieds",
+        "price": 85,
+        "price_discount": 75
+      },
+      {
+        "title": "Rituel d'Ô - 75 min",
+        "description": "Ce rituel d'inspiration Hawaïenne (lomi-lomi) est relaxant et énergisant grâce à des techniques fluides imitant le flot des vagues dans l'océan. Associer à un modelage au ballon d'eau chaude, original et inattendu il apporte un bien-être intérieur !",
+        "price": 85,
+        "price_discount": 75
+      },
+      {
+        "title": "Rituel Anérindien - 75 min",
+        "description": "Ce rituel harmonieux et équilibrant issu des traditions Amérindienne d'Arizona active les flux sanguins et énergétiques. Laissez vous guider par une sensation de chaleur qui se diffuse et procure une relaxation profonde des muscles et de l'esprit grâce aux pierres chaudes.",
+        "price": 85,
+        "price_discount": 80
+      }
+  ]
+}
