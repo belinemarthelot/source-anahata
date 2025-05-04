@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.01df955a.css",
-    "main.js": "/static/js/main.f2bc8a0f.js",
+    "main.js": "/static/js/main.4c88e357.js",
     "static/media/tableau-paysage.jpg": "/static/media/tableau-paysage.70ebaf5316d17a1bcc38.jpg",
     "static/media/Soins-visage-paysage.jpg": "/static/media/Soins-visage-paysage.324558766eb62b18b5f6.jpg",
     "static/media/Epilation-portrait.jpg": "/static/media/Epilation-portrait.62eb97f7d1a0ffdc249e.jpg",
@@ -21,10 +21,10 @@
     "static/media/logo-source.jpg": "/static/media/logo-source.181c5fc23ff16b5068d4.jpg",
     "index.html": "/index.html",
     "main.01df955a.css.map": "/static/css/main.01df955a.css.map",
-    "main.f2bc8a0f.js.map": "/static/js/main.f2bc8a0f.js.map"
+    "main.4c88e357.js.map": "/static/js/main.4c88e357.js.map"
   },
   "entrypoints": [
     "static/css/main.01df955a.css",
-    "static/js/main.f2bc8a0f.js"
+    "static/js/main.4c88e357.js"
   ]
 }
