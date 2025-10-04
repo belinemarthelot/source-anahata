@@ -8,7 +8,7 @@
       "price": "",
       "options": [
         {
-          "title": "Soin de 60 min",
+          "title": "Soin de 1 heure",
           "description": "",
           "price": 100
         },
@@ -72,17 +72,17 @@
       "description": "Biodroga est une marque d’origine Allemande, ancrée depuis 1959 à Baden-Baden au cœur des thermes.\nLeurs produits authentiques et protocoles holistiques permettent d'offrir des moments de soins uniques !"
     },
     {
-      "title": "Black forest - 90 min",
+      "title": "Black forest - 1h30",
       "description": "Ce soin réduit visiblement les rides et ridules avec un résultat raffermissant et lissant, ainsi qu'une profonde détente grâce à son prélude hollistique, son massage manuel associé à la lecture de « pensées voyage ».",
       "price": 85
     },
     {
-      "title": "Prestige - 60 min",
+      "title": "Prestige - 1h",
       "description": "Ce soin apporte fraicheur, hydratation et vitalité à votre visage pour un teint rayonnant. Le renouvellement cutané est accéléré grâce aux feuilles d'or et l'extrait de caviar retient l'hydratation de la peau.",
       "price": 84
     },
     {
-      "title": "Signature - 60 min",
+      "title": "Signature - 1h",
       "description": "Ce soin apporte hydratation et éclat à la peau, le modelage aux pierres de jade refroidies apporte un effet glaçon qui active la microcirculation. Il repulpe l'épiderme, favorise l'élimintation des toxines et soulage les tensions des muscles faciaux dues au stress.",
       "price": 69,
       "options": [
