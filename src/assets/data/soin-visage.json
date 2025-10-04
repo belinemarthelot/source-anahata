@@ -1,8 +1,6 @@
 {
   "title": "Visage",
-  "images": [
-    "soinvisage-portrait.jpg"
-  ],
+  "images": ["soinvisage-portrait.jpg"],
   "prestations": [
     {
       "title": "Magic face",
@@ -25,7 +23,54 @@
           "price": 800
         }
       ]
-    },{},{},{},{},
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "title": "Soins visage - Phyt's",
+      "description": "Depuis plus de 50 ans, Phyt’s propose des soins 100 % d’origine naturelle, certifiés bio, fabriqués en France. Pionnière de la cosmétique naturelle, la marque allie efficacité, sensorialité et respect profond de la peau et de l’environnement.\nFormulés sans conservateurs chimiques, les soins Phyt’s sont utilisés en cabine et disponibles à la revente, pour prolonger les bienfaits à la maison. Une beauté engagée, éthique, et profondément vivante."
+    },
+    {
+      "title": "Sublim eyes - 50 min",
+      "description": "Atténue les cernes et les poches, décongestionne, hydrate.\nConstitué de manœuvres décongestionnantes et drainantes, il conjugue parfaitement soin et détente. L'utilisation d'appareil favorise le renouvellement et la réparation cellulaires, améliore la circulation sanguine, stimule le drainage lymphatique et réduit les gonflements et les poches. Sérum concentré d’actifs, baume fondant stimulant, masque peel-off défroissant et émulsion légère défatigante. Immédiatement, le contour des yeux est détendu, décongestionné et dynamisé !",
+      "price": 55,
+      "options": [
+        {
+          "title": "Option soin contour yeux - 20 min",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "title": "Multi vita - 1h15",
+      "description": "Redynamise, lutte contre le vieillissement de la peau\nUn soin multivitaminé redynamisant luttant contre les signes du vieillissement cutané de tous les types de peaux matures grâce aux actifs. Ambiance feutrée, senteurs subtiles pour ce soin, huiles bio précieuses anti-âge pour le modelage. Véritable soin tenseur anti-âge, les tissus sont stimulés, remodelés, les échanges relancés.",
+      "price": 81
+    },
+    {
+      "title": "Aqua phyt's - 1h15",
+      "description": "Hydrate, désaltère et rafraîchit la peau\nQuelques gouttes de fraîcheur pour désaltérer la peau. Véritable ballet de mains et de doigts dans une grande fluidité le temps s’arrête… La peau se ressource.",
+      "price": 79
+    },
+    {
+      "title": "Reviderme anti-pollution - 1h",
+      "description": "Oxygène, revitalise, illumine et protège la peau de la pollution\nIl recharge les batteries des peaux soumises à la pollution, ternes, stressées et fatiguées, tout en leur offrant un voile protecteur contre les agressions urbaines. Formulation Vegan",
+      "price": 65
+    },
+    {
+      "title": "Sensi - 45 min",
+      "description": "Apaise, réconforte et renforce la barrière cutanée\nCe soin offre apaisement et douceur aux peaux sensibles, tout en leur procurant une protection contre les agressions extérieures, en renforçant la fonction barrière cutanée et en les hydratant afin qu’elles retrouvent confort et souplesse. Formulation Vegan",
+      "price": 49
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "title": "Soins visage - Biodroga",
+      "description": "Biodroga est une marque d’origine Allemande, ancrée depuis 1959 à Baden-Baden au cœur des thermes.\nLeurs produits authentiques et protocoles holistiques permettent d'offrir des moments de soins uniques !"
+    },
     {
       "title": "Black forest - 90 min",
       "description": "Ce soin réduit visiblement les rides et ridules avec un résultat raffermissant et lissant, ainsi qu'une profonde détente grâce à son prélude hollistique, son massage manuel associé à la lecture de « pensées voyage ».",
@@ -33,7 +78,7 @@
     },
     {
       "title": "Prestige - 60 min",
-      "description": "Ce soin apporte fraicheur, hydratation et vitalité à votre visage pour un teint rayonnant. Le renouvellement cutané est accélérer grâce aux feuilles d'or et l'extrait de caviar retient l'hydratation de la peau.",
+      "description": "Ce soin apporte fraicheur, hydratation et vitalité à votre visage pour un teint rayonnant. Le renouvellement cutané est accéléré grâce aux feuilles d'or et l'extrait de caviar retient l'hydratation de la peau.",
       "price": 84
     },
     {
@@ -53,28 +98,6 @@
       "title": " Gentleman- 45 min",
       "description": "Ce soin visage apporte hydratation et permet de rétablir l'équilibre de la peau de ces messieurs.",
       "price": 53
-    },{},{},{},{},
-    {
-      "title": "Boost sculpt",
-      "description": "Ce soin court et dynamique vous donnera un effet bonne mine instantané.",
-      "price": "",
-      "options": [
-        {
-          "title": "Soin de 30 min",
-          "description": "",
-          "price": 39
-        },
-        {
-          "title": "Soin de 45 min",
-          "description": "",
-          "price": 49
-        }
-      ]
-    },
-    {
-      "title": "Soin visage sur-mesure - 60 min",
-      "description": "Protocole sur-mesure adapté au besoin de votre peau suite à un diagnostic rapide. Anti-Age, Hydratant ou Purifiant",
-      "price": 63
     }
   ]
 }

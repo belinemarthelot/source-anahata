@@ -1,10 +1,4 @@
-import {
-  Button,
-  Grid,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import PrestationElement from "../../components/PrestationElement";
 import { useLocation } from "react-router-dom";
@@ -35,20 +29,21 @@ export default function Prestation(props: { jsonFile: string }) {
   const isMdScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const [data, setData] = useState<null | IData>(null);
-  const [img, setImg] = useState("");
   const [images, setImages] = useState<string[]>([]);
   const location = useLocation();
 
+  // Load data JSON
   useEffect(() => {
-    let dataImport = require(`../../assets/data/${props.jsonFile}`);
+    const dataImport = require(`../../assets/data/${props.jsonFile}`);
     setData(dataImport);
   }, [location]);
 
+  // Load images
   useEffect(() => {
     if (data != null) {
-      setImages([])
+      setImages([]);
       data.images.forEach((image) => {
-        let newImage = require(`../../assets/images/${image}`);
+        const newImage = require(`../../assets/images/${image}`);
         setImages((oldImages) => [...oldImages, newImage]);
       });
     }
@@ -56,16 +51,32 @@ export default function Prestation(props: { jsonFile: string }) {
 
   return (
     <Grid container alignItems={"center"} flexDirection={"column"} mb={5}>
-      <Grid container style={{ width: isMdScreen ? "100%" : "80%" }}>
-        {images.length === 1 ? (
-          <Grid item sm={5}>
-            <img style={{ width: "100%" }} src={images[0]} alt="Image épilation" />
-          </Grid>
-        ) : (
-          <Grid item sm={5}>
+      <Grid
+        container
+        style={{ width: isMdScreen ? "100%" : "80%" }}
+        spacing={2}
+      >
+        <Grid
+          item
+          sm={5}
+          style={{
+            position: "sticky",
+            top: 100,
+            alignSelf: "start",
+          }}
+        >
+          {images.length === 1 ? (
+            <img
+              style={{ width: "100%" }}
+              src={images[0]}
+              alt="Image épilation"
+            />
+          ) : (
             <ImageCarousel images={images} />
-          </Grid>
-        )}
+          )}
+        </Grid>
+
+        {/* RIGHT CONTENT */}
         <Grid
           item
           sm={7}
@@ -85,20 +96,18 @@ export default function Prestation(props: { jsonFile: string }) {
             >
               {data ? data.title : ""}
             </Typography>
-            {data && data.prestations ? (
-              data.prestations.map((element: any, key: number) => (
-                <PrestationElement
-                  key={key}
-                  title={element.title}
-                  description={element.description}
-                  price={element.price}
-                  options={element.options ? element.options : []}
-                  price_discount={0}
-                />
-              ))
-            ) : (
-              <></>
-            )}
+            {data && data.prestations
+              ? data.prestations.map((element: any, key: number) => (
+                  <PrestationElement
+                    key={key}
+                    title={element.title}
+                    description={element.description}
+                    price={element.price}
+                    options={element.options ? element.options : []}
+                    price_discount={0}
+                  />
+                ))
+              : null}
           </Grid>
         </Grid>
       </Grid>
