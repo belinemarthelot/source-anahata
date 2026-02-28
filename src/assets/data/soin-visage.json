@@ -49,6 +49,11 @@
       "price": 81
     },
     {
+      "title": "Soin illuminateur - 1h15",
+      "description": "Cibles les tâches pigmentaires et illumine le teint.\nCe soin éclat redonne à la peau un teint lumineux. Grâce à des actifs éclaircissants et à un massage relaxant qui détend les traits, la peau retrouve éclat, douceur et vitalité. Un véritable moment de bien-être qui sublime la beauté naturelle du visage.",
+      "price": 79
+    },
+    {
       "title": "Aqua phyt's - 1h15",
       "description": "Hydrate, désaltère et rafraîchit la peau\nQuelques gouttes de fraîcheur pour désaltérer la peau. Véritable ballet de mains et de doigts dans une grande fluidité le temps s’arrête… La peau se ressource.",
       "price": 79
@@ -59,7 +64,12 @@
       "price": 65
     },
     {
-      "title": "Sensi - 45 min",
+      "title": "Equilibre - 1h",
+      "description": "Protège selon les besoin de votre peau.\nPeaux normales tendance sèche / mixte / tendance grasse.\nCe soin est destiné à protéger, rééquilibrer et optimiser le confort cutané grâce à une sélection d’actifs nutritifs ou purifiants choisis après diagnostic. Selon les besoins réels de votre peau, il nourrit et préserve le film hydrolipidique, ou purifie et harmonise le teint grâce à des actifs astringents spécifiques. Ce protocole offre à votre peau exactement ce dont elle a besoin pour retrouver douceur, équilibre, clarté et protection.",
+      "price": 65
+    },
+    {
+      "title": "Sensi - 30 min",
       "description": "Apaise, réconforte et renforce la barrière cutanée\nCe soin offre apaisement et douceur aux peaux sensibles, tout en leur procurant une protection contre les agressions extérieures, en renforçant la fonction barrière cutanée et en les hydratant afin qu’elles retrouvent confort et souplesse. Formulation Vegan",
       "price": 49
     },
@@ -95,7 +105,7 @@
       ]
     },
     {
-      "title": " Gentleman- 45 min",
+      "title": " Gentleman- 30 min",
       "description": "Ce soin visage apporte hydratation et permet de rétablir l'équilibre de la peau de ces messieurs.",
       "price": 53
     }
