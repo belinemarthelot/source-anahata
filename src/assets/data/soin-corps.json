@@ -1,8 +1,6 @@
 {
   "title": "Soins corps",
-  "images": [
-    "soins-corps-portrait.jpg"
-  ],
+  "images": ["soins-corps-portrait.jpg"],
   "prestations": [
     {
       "title": "Le Ressourçant",
@@ -23,7 +21,7 @@
           "title": "Soin de 1h",
           "description": "Zone conseillées: arrière du corps ou effleurage corps entier",
           "price": 66
-        }, 
+        },
         {
           "title": "Soin de 1h15",
           "description": "Zone conseillées: corps entier et cuir chevelu",
@@ -39,28 +37,67 @@
           "description": "Zone conseillées: corps entier, cuir chevelu et visage",
           "price": 129
         }
-        
       ]
-    },{},{},
+    },
+    {},
+    {},
+    {
+      "title": "Escapade",
+      "description": "Une saison, un parfum.\n~ L’éveil d’Agnisia ~\nEclat, énergie et renaissance, \nInspiré du feu et des volcans, cette escapade augmente l’énergie, la vitalité et soulage les tensions. Il réchauffe tel un brasier sacré qui ravive la flamme profonde. Une escapade incandescente qui favorise une sensation de chaleur et de confort, réduisant le stress et l’anxiété. Tout en apportant une stimulation de la circulation sanguine et lymphatique.\nPour les personnes qui se sentent fatiguées, qui ont besoin d’un moment sensorielle intense et chaleureux.",
+      "price": ""
+    },
+    {},
+    {
+      "title": "Découverte sensorielle  - 1h",
+      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 30 min de massage",
+      "price": 98
+    },
+    {},
+    {
+      "title": "Immersion profonde  - 1h30",
+      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 1h de massage",
+      "price": 125
+    },
+    {},
+    {
+      "title": "Voyage prolongé - 2h",
+      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 1h30 de massage",
+      "price": 154
+    },
+    {},
+    {
+      "title": "Etreinte minérale - 30 min (pour prolongé votre escapade)",
+      "description": "Enveloppement corps qui offre une véritable pause relaxante, un mélange riche en argile minérale, apportant à la fois purification et douceur pour reconnecter le corps et l’esprit.\nSa texture enveloppe le corps comme un cocon protecteur réconfortant et apaisant. Il aide à purifier et revitaliser la peau tout en apportant une sensation d’ancrage et de stabilité\nArgile minérale blanche, retrait de celui-ci sous la douche.",
+      "price": 39
+    },
+    {},
+    {},
     {
       "title": "Les Rituels",
       "description": "Chaque rituel a son identié"
     },
+    {},
     {
       "title": "Rituel Singapourien - 1h15",
       "description": "Ce rituel bien-être pour le corps est un voyage sensoriel autour de l’Asie. Grâce à différentes techniques de modelage et des parfums envoûtants, l’esprit est propice au voyage. Les tensions se libèrent et le corps est envahi d’une incroyable sensation de bien-être pour un effet anti-fatigue. Zones massées : dos, ventre et pieds",
       "price": 89
     },
+    {},
     {
       "title": "Rituel d'Ô - 1h15",
       "description": "Ce rituel d'inspiration Hawaïenne (lomi-lomi) est relaxant et énergisant grâce à des techniques fluides imitant le flot des vagues dans l'océan. Associer à un modelage au ballon d'eau chaude, original et inattendu il apporte un bien-être intérieur !",
       "price": 89
     },
+    {},
     {
       "title": "Rituel Amérindien - 1h15",
       "description": "Ce rituel harmonieux et équilibrant issu des traditions Amérindienne d'Arizona active les flux sanguins et énergétiques. Laissez vous guider par une sensation de chaleur qui se diffuse et procure une relaxation profonde des muscles et de l'esprit grâce aux pierres chaudes.",
       "price": 89
-    },{},{},{},{},
+    },
+    {},
+    {},
+    {},
+    {},
     {
       "title": "Madérosport",
       "description": "Le madérosport est le mélange de madérothérapie et d'une séance de gainage !\nLes objectifs sont de modeler et sculpter le corps grâce à des techniques manuelles de drainages lymphatiques et à l’aide d’accessoires / d’outils de madérothérapie, technique colombienne.\nEn agissant sur le système circulatoire, musculaire et lymphatique.\nZones traitées : Bras, Ventre ou Dos",
@@ -85,7 +122,11 @@
           "title": "Cure de 6 séances à -15% ou cure de 10 séances à -20%"
         }
       ]
-    },{},{},{},{},
+    },
+    {},
+    {},
+    {},
+    {},
     {
       "title": "Gommage corps - 50 min",
       "description": "Affine le grain de peau et révèle sa douceur.",

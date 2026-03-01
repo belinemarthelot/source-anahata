@@ -32,6 +32,7 @@
       "title": "Soins visage - Phyt's",
       "description": "Depuis plus de 50 ans, Phyt’s propose des soins 100 % d’origine naturelle, certifiés bio, fabriqués en France. Pionnière de la cosmétique naturelle, la marque allie efficacité, sensorialité et respect profond de la peau et de l’environnement.\nFormulés sans conservateurs chimiques, les soins Phyt’s sont utilisés en cabine et disponibles à la revente, pour prolonger les bienfaits à la maison. Une beauté engagée, éthique, et profondément vivante."
     },
+    {},
     {
       "title": "Sublim eyes - 50 min",
       "description": "Atténue les cernes et les poches, décongestionne, hydrate.\nConstitué de manœuvres décongestionnantes et drainantes, il conjugue parfaitement soin et détente. L'utilisation d'appareil favorise le renouvellement et la réparation cellulaires, améliore la circulation sanguine, stimule le drainage lymphatique et réduit les gonflements et les poches. Sérum concentré d’actifs, baume fondant stimulant, masque peel-off défroissant et émulsion légère défatigante. Immédiatement, le contour des yeux est détendu, décongestionné et dynamisé !",
@@ -43,31 +44,43 @@
         }
       ]
     },
+    {},
+    {},
     {
       "title": "Multi vita - 1h15",
       "description": "Redynamise, lutte contre le vieillissement de la peau\nUn soin multivitaminé redynamisant luttant contre les signes du vieillissement cutané de tous les types de peaux matures grâce aux actifs. Ambiance feutrée, senteurs subtiles pour ce soin, huiles bio précieuses anti-âge pour le modelage. Véritable soin tenseur anti-âge, les tissus sont stimulés, remodelés, les échanges relancés.",
       "price": 81
     },
+    {},
+    {},
     {
       "title": "Soin illuminateur - 1h15",
       "description": "Cibles les tâches pigmentaires et illumine le teint.\nCe soin éclat redonne à la peau un teint lumineux. Grâce à des actifs éclaircissants et à un massage relaxant qui détend les traits, la peau retrouve éclat, douceur et vitalité. Un véritable moment de bien-être qui sublime la beauté naturelle du visage.",
       "price": 79
     },
+    {},
+    {},
     {
       "title": "Aqua phyt's - 1h15",
       "description": "Hydrate, désaltère et rafraîchit la peau\nQuelques gouttes de fraîcheur pour désaltérer la peau. Véritable ballet de mains et de doigts dans une grande fluidité le temps s’arrête… La peau se ressource.",
       "price": 79
     },
+    {},
+    {},
     {
       "title": "Reviderme anti-pollution - 1h",
       "description": "Oxygène, revitalise, illumine et protège la peau de la pollution\nIl recharge les batteries des peaux soumises à la pollution, ternes, stressées et fatiguées, tout en leur offrant un voile protecteur contre les agressions urbaines. Formulation Vegan",
       "price": 65
     },
+    {},
+    {},
     {
       "title": "Equilibre - 1h",
       "description": "Protège selon les besoin de votre peau.\nPeaux normales tendance sèche / mixte / tendance grasse.\nCe soin est destiné à protéger, rééquilibrer et optimiser le confort cutané grâce à une sélection d’actifs nutritifs ou purifiants choisis après diagnostic. Selon les besoins réels de votre peau, il nourrit et préserve le film hydrolipidique, ou purifie et harmonise le teint grâce à des actifs astringents spécifiques. Ce protocole offre à votre peau exactement ce dont elle a besoin pour retrouver douceur, équilibre, clarté et protection.",
       "price": 65
     },
+    {},
+    {},
     {
       "title": "Sensi - 30 min",
       "description": "Apaise, réconforte et renforce la barrière cutanée\nCe soin offre apaisement et douceur aux peaux sensibles, tout en leur procurant une protection contre les agressions extérieures, en renforçant la fonction barrière cutanée et en les hydratant afin qu’elles retrouvent confort et souplesse. Formulation Vegan",

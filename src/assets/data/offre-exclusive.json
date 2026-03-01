@@ -1,4 +1,35 @@
 {
-  "title": "",
-  "offers": []
+  "title": "Nouveauté",
+  "offers": [
+    {
+      "title": "Escapade",
+      "description": "Une saison, un parfum.\n~ L’éveil d’Agnisia ~\nEclat, énergie et renaissance, \nInspiré du feu et des volcans, cette escapade augmente l’énergie, la vitalité et soulage les tensions. Il réchauffe tel un brasier sacré qui ravive la flamme profonde. Une escapade incandescente qui favorise une sensation de chaleur et de confort, réduisant le stress et l’anxiété. Tout en apportant une stimulation de la circulation sanguine et lymphatique.\nPour les personnes qui se sentent fatiguées, qui ont besoin d’un moment sensorielle intense et chaleureux.",
+      "price": "",
+      "price_discount": 0
+    },
+    {
+      "title": "Découverte sensorielle  - 1h",
+      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 30 min de massage",
+      "price": 98,
+      "price_discount": 0
+    },
+    {
+      "title": "Immersion profonde  - 1h30",
+      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 1h de massage",
+      "price": 125,
+      "price_discount": 0
+    },
+    {
+      "title": "Voyage prolongé - 2h",
+      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 1h30 de massage",
+      "price": 154,
+      "price_discount": 0
+    },
+    {
+      "title": "Etreinte minérale - 30 min (pour prolongé votre escapade)",
+      "description": "Enveloppement corps qui offre une véritable pause relaxante, un mélange riche en argile minérale, apportant à la fois purification et douceur pour reconnecter le corps et l’esprit.\nSa texture enveloppe le corps comme un cocon protecteur réconfortant et apaisant. Il aide à purifier et revitaliser la peau tout en apportant une sensation d’ancrage et de stabilité\nArgile minérale blanche, retrait de celui-ci sous la douche.",
+      "price": 39,
+      "price_discount": 0
+    }
+  ]
 }
