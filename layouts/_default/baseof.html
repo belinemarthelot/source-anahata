@@ -26,23 +26,21 @@
           extend: {
             colors: {
               primary: {
-                DEFAULT: '{{ .Site.Params.theme.primary | default "#6BDDB0" }}',
-                light:
-                  '{{ .Site.Params.theme.primary_light | default "#DDF7EC" }}',
-                dark: '{{ .Site.Params.theme.primary_dark | default "#00C27B" }}',
-              },
-              secondary: {
-                DEFAULT:
-                  '{{ .Site.Params.theme.secondary | default "#AD6C3F" }}',
-                light:
-                  '{{ .Site.Params.theme.secondary_light | default "#FEC59F" }}',
-                dark: '{{ .Site.Params.theme.secondary_dark | default "#8A4B1D" }}',
+                DEFAULT: "{{ .Site.Params.theme.primary }}",
+                light: "{{ .Site.Params.theme.primary_light }}",
+                dark: "{{ .Site.Params.theme.primary_dark }}",
               },
               background: {
-                paper:
-                  '{{ .Site.Params.theme.background_paper | default "#f3f4f6" }}',
-                default:
-                  '{{ .Site.Params.theme.background_default | default "#FFFFFF" }}',
+                default: "{{ .Site.Params.theme.background_default }}",
+                paper: "{{ .Site.Params.theme.background_paper }}",
+              },
+              text: {
+                main: "{{ .Site.Params.theme.text_main }}",
+                muted: "{{ .Site.Params.theme.text_muted }}",
+              },
+              btn: {
+                bg: "{{ .Site.Params.theme.button_bg }}",
+                text: "{{ .Site.Params.theme.button_text }}",
               },
             },
             fontFamily: {
@@ -57,8 +55,51 @@
     <style type="text/tailwindcss">
       @layer base {
         body {
-          @apply bg-background-default text-gray-900 font-sans;
+          @apply bg-background-default text-text-main font-sans;
         }
+      }
+
+      /* On définit nos animations personnalisées */
+      @keyframes revealUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .animate-reveal {
+        animation: revealUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      }
+
+      .animate-fade {
+        animation: fadeIn 1.5s ease-out forwards;
+      }
+
+      /* Délais pour l'effet d'apparition successive (stagger) */
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-800 {
+        animation-delay: 0.8s;
+      }
+      .delay-1400 {
+        animation-delay: 1.4s;
+      }
+      .delay-2000 {
+        animation-delay: 2s;
       }
     </style>
   </head>

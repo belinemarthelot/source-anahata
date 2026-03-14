@@ -1,59 +1,10 @@
 {{ define "main" }}
 
-<!-- 1. SECTION HERO (Logo + Titre) -->
-<section class="py-12 bg-white text-center">
-  <div class="container mx-auto px-4">
-    <div class="flex justify-center mb-8">
-      <!-- Correction Logo via assets -->
-      {{ $logo := resources.Get "images/logo-source.jpg" }} {{ if $logo }}
-      <img
-        src="{{ $logo.RelPermalink }}"
-        alt="Logo Source d'Anahata"
-        class="w-full max-w-sm md:max-w-md h-auto"
-      />
-      {{ end }}
-    </div>
-    <h1
-      class="text-2xl md:text-3xl font-bold text-primary tracking-wide uppercase"
-    >
-      {{ .Params.subtitle }}
-    </h1>
-  </div>
-</section>
+<!-- HERO COMPONENT -->
+{{ partial "components/hero-banner.html" . }}
 
-<!-- 2. SECTION OFFRES EXCLUSIVES -->
-{{ partial "home/exclusivity.html" . }}
+<!-- SECTION OFFRES EXCLUSIVES -->
+<div class="bg-background-default">{{ partial "home/exclusivity.html" . }}</div>
 
-<!-- 3. SECTION PRÉSENTATION (Texte + Carousel) -->
-<section class="py-16 bg-background-paper overflow-hidden">
-  <div class="container mx-auto px-4 max-w-6xl">
-    <div
-      class="flex flex-col md:flex-row items-center gap-12 bg-white shadow-sm rounded-lg overflow-hidden border-t-4 border-primary"
-    >
-      <!-- Bloc Carousel -->
-      <div class="w-full md:w-1/2 h-[500px]">
-        {{ $data := index .Site.Data "insitut-presentation" }} {{ partial
-        "components/carousel.html" (dict "images" $data.images) }}
-      </div>
-
-      <!-- Bloc Texte -->
-      <div class="w-full md:w-1/2 p-8 md:p-12">
-        <h2 class="text-3xl font-bold mb-6">L'Institut</h2>
-        <div class="prose prose-lg text-gray-700 italic leading-relaxed">
-          {{ .Content }}
-        </div>
-        <div
-          class="mt-8 p-4 bg-background-paper rounded border-l-4 border-primary text-sm space-y-2"
-        >
-          <p class="font-bold">Horaires d'ouverture :</p>
-          <p>Lun, Mer, Ven : 9h - 19h</p>
-          <p>Mar, Jeu : 10h - 21h</p>
-          <p>Sam : 10h - 16h</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 4. SECTION PRESTATIONS -->
+<!-- SECTION PRESTATIONS -->
 {{ partial "home/services.html" . }} {{ end }}

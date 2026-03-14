@@ -2,9 +2,12 @@
   primary = "#6BDDB0"
   primary_light = "#DDF7EC"
   primary_dark = "#00C27B"
-  secondary = "#AD6C3F"
-  secondary_light = "#FEC59F"
-  secondary_dark = "#8A4B1D"
-  background_paper = "#f3f4f6"
-  background_default = "#FFFFFF"
-  text_main = "#1a1a1a"
+  
+  background_default = "#FDFBF7" # Fond crème
+  background_paper = "#F4F0E6"   # Fond sable
+  
+  text_main = "#3D3D3D"          # Texte principal
+  text_muted = "#71717A"         # Texte secondaire / grisé
+  
+  button_bg = "#3D3D3D"          # Couleur du bouton principal
+  button_text = "#FFFFFF"        # Texte du bouton principal
