@@ -1,53 +1,72 @@
 {{ $data := .Site.Data.prestations }}
-<section class="py-16 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="space-y-24">
+<section class="py-16 bg-background-default">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <!-- En-tête de section -->
+    <div class="mb-12 flex items-baseline gap-4 reveal-view">
+      <h2
+        class="text-2xl md:text-3xl font-bold text-text-main uppercase tracking-widest"
+      >
+        Nos Prestations
+      </h2>
+      <span class="h-[1px] flex-grow bg-primary/20"></span>
+    </div>
+
+    <!-- Grille : 1 colonne mobile / 2 colonnes PC -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
       {{ range $index, $element := $data.prestations }}
-      <!-- On vérifie si l'index est pair ou impair pour alterner le sens -->
-      {{ $isEven := (modBool $index 2) }}
 
       <div
-        class="flex flex-col {{ if $isEven }}md:flex-row{{ else }}md:flex-row-reverse{{ end }} items-center gap-12"
+        class="group relative reveal-view"
+        style="animation-delay: {{ mul $index 150 }}ms;"
       >
-        <!-- Bloc Image -->
+        <!-- IMAGE (Format paysage doux) -->
         <div
-          class="relative bg-white ring-1 ring-gray-900/5 rounded-xl overflow-hidden shadow-xl"
+          class="relative aspect-[16/10] overflow-hidden rounded-2xl shadow-lg"
         >
           {{ $img := resources.Get (printf "images/%s" .image) }} {{ if $img }}
-          <!-- Hugo traite l'image et génère l'URL correcte -->
+          {{ $scaled := $img.Fill "800x500 Center" }}
           <img
-            src="{{ $img.RelPermalink }}"
+            src="{{ $scaled.RelPermalink }}"
             alt="{{ .title }}"
-            class="w-full h-[400px] object-cover transition duration-500 group-hover:scale-105"
+            class="w-full h-full object-cover transition duration-1000 group-hover:scale-110"
           />
-          {{ else }}
-          <!-- Fallback si l'image est introuvable -->
-          <div
-            class="w-full h-[400px] bg-gray-200 flex items-center justify-center text-gray-400 italic"
-          >
-            Image non trouvée : {{ .image }}
-          </div>
           {{ end }}
+          <!-- Overlay léger au survol -->
+          <div
+            class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"
+          ></div>
         </div>
 
-        <!-- Bloc Texte -->
-        <div
-          class="w-full md:w-1/2 space-y-6 {{ if not $isEven }}md:text-right{{ end }}"
-        >
-          <h3 class="text-3xl md:text-4xl font-bold text-gray-900">
-            {{ .title }}
-          </h3>
+        <!-- BLOC TEXTE (Posé en bas, légèrement décalé) -->
+        <div class="relative mt-[-40px] mx-6 z-10">
           <div
-            class="w-20 h-1 bg-primary {{ if not $isEven }}ml-auto{{ end }}"
-          ></div>
-          <p class="text-lg text-gray-600 leading-relaxed">
-            {{ .description }}
-          </p>
-          <div>
+            class="bg-background-paper p-6 md:p-8 rounded-2xl shadow-xl border-b-4 border-primary"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <h3
+                class="text-xl md:text-2xl font-bold text-text-main tracking-tight leading-none"
+              >
+                {{ .title }}
+              </h3>
+              <span
+                class="text-[10px] text-primary-dark font-bold uppercase tracking-widest"
+                >Institut</span
+              >
+            </div>
+
+            <p
+              class="text-text-main leading-relaxed font-light text-sm mb-6 italic opacity-90"
+            >
+              {{ .description }}
+            </p>
+
             <a
               href="{{ .buttonLink }}"
-              class="inline-block border-2 border-primary text-gray-900 hover:bg-primary px-8 py-3 rounded-md transition-all duration-300 font-bold uppercase tracking-widest text-sm"
+              class="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] font-bold text-text-main group/link"
             >
+              <span
+                class="w-6 h-[1px] bg-primary group-hover/link:w-10 transition-all"
+              ></span>
               {{ .button }}
             </a>
           </div>
