@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-<!-- HERO COMPONENT -->
+<!-- 1. EXCLUSIVITÉS (Maintenant en premier) -->
+{{ partial "home/exclusivity.html" . }}
+
+<!-- 2. HERO COMPONENT -->
 {{ partial "components/hero-banner.html" . }}
 
-<!-- SECTION OFFRES EXCLUSIVES -->
-<div class="bg-background-default">{{ partial "home/exclusivity.html" . }}</div>
-
-<!-- SECTION PRESTATIONS -->
+<!-- 3. SECTION PRESTATIONS -->
 {{ partial "home/services.html" . }} {{ end }}
