@@ -1,77 +1,71 @@
 {{ $data := index .Site.Data "insitut-presentation" }}
 
 <section
-  class="relative min-h-screen flex items-center pt-10 md:pt-20 pb-10 md:pb-20 bg-background-default overflow-hidden"
+  class="relative min-h-screen flex items-center pt-20 pb-20 bg-background-default overflow-hidden"
 >
   <!-- Fond décoratif (Plein écran sur petit, Courbe sur grand) -->
   <div
-    class="absolute inset-y-0 left-0 z-0 opacity-0 animate-fade w-full rounded-none xl:w-[90%] xl:rounded-r-[350px] bg-background-paper/50"
+    class="absolute inset-y-0 left-0 z-0 fade-view w-full rounded-none xl:w-[90%] xl:rounded-r-[350px] bg-background-paper/50"
   ></div>
 
   <div class="container mx-auto px-4 relative z-10">
-    <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-      <!-- GAUCHE : Carousel (Taille adaptée) -->
+    <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
+      <!-- GAUCHE : Carousel agrandi -->
       <div
-        class="w-full lg:w-5/12 flex justify-center opacity-0 animate-fade delay-200"
+        class="w-full lg:w-6/12 flex justify-center fade-view"
+        style="animation-delay: 0.2s"
       >
-        <div
-          class="relative w-full max-w-[350px] md:max-w-[450px] lg:max-w-[550px]"
-        >
+        <div class="relative w-full max-w-[550px]">
           <div
-            class="aspect-[3/4] rounded-t-full overflow-hidden border-[8px] md:border-[12px] border-background-default shadow-2xl bg-background-default"
+            class="aspect-[3/4] rounded-t-full overflow-hidden border-[12px] border-background-default shadow-2xl bg-background-default"
           >
             {{ partial "components/carousel.html" (dict "images" $data.images)
             }}
           </div>
+          <!-- Ombre décorative -->
           <div
-            class="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10"
+            class="absolute -bottom-12 -left-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl -z-10"
           ></div>
         </div>
       </div>
 
       <!-- DROITE : Texte & Horaires -->
-      <div
-        class="w-full lg:w-7/12 flex flex-col justify-center space-y-6 md:space-y-10"
-      >
-        <!-- Titre (Taille fluide pour iPad/13 pouces) -->
-        <div class="space-y-2 md:space-y-4 opacity-0 animate-reveal delay-200">
+      <div class="w-full lg:w-6/12 flex flex-col justify-center space-y-10">
+        <!-- Titre -->
+        <div class="space-y-4 reveal-view" style="animation-delay: 0.4s">
           <span
-            class="text-primary-dark text-[10px] md:text-xs uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold italic"
+            class="text-primary-dark text-xs uppercase tracking-[0.6em] font-bold italic"
             >L'expérience Source d'Anāhata</span
           >
           <h1
-            class="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-text-main leading-[1.1] lg:leading-[0.9]"
+            class="text-6xl md:text-8xl font-bold text-text-main leading-[0.9]"
           >
-            Source d'<br /><span
-              class="text-primary font-serif italic font-light font-style:italic"
-              >Anāhata</span
-            >
+            Source d'Anāhata
           </h1>
         </div>
 
         <!-- Description -->
-        <div class="max-w-xl opacity-0 animate-reveal delay-800">
+        <div class="max-w-xl reveal-view" style="animation-delay: 0.4s">
           <p
-            class="text-lg md:text-xl text-text-main font-medium mb-4 italic border-l-2 border-primary pl-4 md:pl-6 leading-relaxed"
+            class="text-xl text-text-main font-medium mb-6 italic border-l-2 border-primary pl-6 leading-relaxed"
           >
             {{ .Params.subtitle }}
           </p>
-          <div
-            class="text-text-muted leading-relaxed font-light italic text-sm md:text-base"
-          >
+          <div class="text-text-muted leading-relaxed font-light italic">
             {{ .Content }}
           </div>
         </div>
 
-        <!-- Grille d'Horaires & Actions (Adaptative) -->
+        <!-- Horaires et Bouton -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 items-center opacity-0 animate-reveal delay-1400"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center reveal-view"
+          style="animation-delay: 0.4s"
         >
-          <!-- Horaires (Plus compact sur petit écran) -->
+          <!-- Horaires -->
           <div
-            class="bg-background-default/60 backdrop-blur-md p-5 md:p-6 rounded-[25px] md:rounded-[30px] border border-background-default shadow-sm text-[12px] md:text-[13px] text-text-main"
+            class="bg-background-default/60 backdrop-blur-md p-6 rounded-[30px] border border-background-default shadow-sm text-[13px] text-text-main"
           >
-            <div class="space-y-1 font-light">
+            <div class="space-y-1.5 font-light">
               <div
                 class="flex justify-between border-b border-background-paper pb-1"
               >
@@ -107,12 +101,12 @@
           <div class="flex flex-col space-y-4">
             <a
               href="/rendez-vous"
-              class="bg-btn-bg text-btn-text text-center px-6 py-4 md:py-5 rounded-full hover:bg-primary hover:text-btn-bg transition-all duration-500 uppercase text-[10px] tracking-[0.2em] md:tracking-[0.3em] font-bold shadow-xl"
+              class="bg-btn-bg text-btn-text text-center px-6 py-5 rounded-full hover:bg-primary hover:text-btn-bg transition-all duration-500 uppercase text-[10px] tracking-[0.3em] font-bold shadow-xl"
             >
               Réserver en ligne
             </a>
             <p
-              class="text-[8px] md:text-[9px] uppercase tracking-widest italic text-center text-text-muted"
+              class="text-[9px] uppercase tracking-widest italic text-center text-text-muted"
             >
               Sur rendez-vous uniquement
             </p>

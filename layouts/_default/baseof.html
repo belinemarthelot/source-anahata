@@ -53,13 +53,7 @@
     </script>
 
     <style type="text/tailwindcss">
-      @layer base {
-        body {
-          @apply bg-background-default text-text-main font-sans;
-        }
-      }
-
-      /* On définit nos animations personnalisées */
+      /* Tes animations originales */
       @keyframes revealUp {
         from {
           opacity: 0;
@@ -70,7 +64,6 @@
           transform: translateY(0);
         }
       }
-
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -80,28 +73,41 @@
         }
       }
 
-      .animate-reveal {
+      /* Classes "dormantes" (sans animation au début) */
+      .reveal-view {
+        opacity: 0;
+      }
+      .fade-view {
+        opacity: 0;
+      }
+
+      /* Classes qui activent l'animation (ajoutées par le JS) */
+      .is-visible.reveal-view {
         animation: revealUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
       }
-
-      .animate-fade {
+      .is-visible.fade-view {
         animation: fadeIn 1.5s ease-out forwards;
       }
-
-      /* Délais pour l'effet d'apparition successive (stagger) */
-      .delay-200 {
-        animation-delay: 0.2s;
-      }
-      .delay-800 {
-        animation-delay: 0.8s;
-      }
-      .delay-1400 {
-        animation-delay: 1.4s;
-      }
-      .delay-2000 {
-        animation-delay: 2s;
-      }
     </style>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .querySelectorAll(".reveal-view, .fade-view")
+          .forEach((el) => observer.observe(el));
+      });
+    </script>
   </head>
   <body class="flex flex-col min-h-screen">
     <!-- Composant Navigation -->
