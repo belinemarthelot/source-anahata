@@ -1,0 +1,59 @@
+{{ $data := .Site.Data.prestations }}
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="space-y-24">
+      {{ range $index, $element := $data.prestations }}
+      <!-- On vérifie si l'index est pair ou impair pour alterner le sens -->
+      {{ $isEven := (modBool $index 2) }}
+
+      <div
+        class="flex flex-col {{ if $isEven }}md:flex-row{{ else }}md:flex-row-reverse{{ end }} items-center gap-12"
+      >
+        <!-- Bloc Image -->
+        <div
+          class="relative bg-white ring-1 ring-gray-900/5 rounded-xl overflow-hidden shadow-xl"
+        >
+          {{ $img := resources.Get (printf "images/%s" .image) }} {{ if $img }}
+          <!-- Hugo traite l'image et génère l'URL correcte -->
+          <img
+            src="{{ $img.RelPermalink }}"
+            alt="{{ .title }}"
+            class="w-full h-[400px] object-cover transition duration-500 group-hover:scale-105"
+          />
+          {{ else }}
+          <!-- Fallback si l'image est introuvable -->
+          <div
+            class="w-full h-[400px] bg-gray-200 flex items-center justify-center text-gray-400 italic"
+          >
+            Image non trouvée : {{ .image }}
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Bloc Texte -->
+        <div
+          class="w-full md:w-1/2 space-y-6 {{ if not $isEven }}md:text-right{{ end }}"
+        >
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-900">
+            {{ .title }}
+          </h3>
+          <div
+            class="w-20 h-1 bg-primary {{ if not $isEven }}ml-auto{{ end }}"
+          ></div>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            {{ .description }}
+          </p>
+          <div>
+            <a
+              href="{{ .buttonLink }}"
+              class="inline-block border-2 border-primary text-gray-900 hover:bg-primary px-8 py-3 rounded-md transition-all duration-300 font-bold uppercase tracking-widest text-sm"
+            >
+              {{ .button }}
+            </a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

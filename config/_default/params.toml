@@ -1,10 +1,4 @@
-baseURL = 'https://institut-source-anahata.fr'
-languageCode = 'fr-fr'
-title = "Source d'Anahata"
-
-disableKinds = ["taxonomy", "term"]
-
-[params.theme]
+[theme]
   primary = "#6BDDB0"
   primary_light = "#DDF7EC"
   primary_dark = "#00C27B"

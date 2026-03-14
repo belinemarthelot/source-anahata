@@ -1,0 +1,99 @@
+{{ $images := .images }} {{/* On force l'ID à commencer par une lettre 'id_'
+*/}} {{ $uniqueID := printf "id_%s" (substr (md5 (delimit $images "")) 0 8) }}
+
+<div
+  class="relative group w-full h-full bg-gray-100 overflow-hidden rounded-lg shadow-sm"
+  id="{{ $uniqueID }}"
+>
+  {{ if gt (len $images) 1 }}
+  <!-- PLUSIEURS IMAGES -->
+  <div class="relative w-full h-full">
+    {{ range $index, $imgName := $images }} {{ $img := resources.Get (printf
+    "images/%s" $imgName) }} {{ if $img }}
+    <div
+      class="carousel-item absolute inset-0 transition-opacity duration-1000 ease-in-out {{ if ne $index 0 }}opacity-0{{ end }}"
+    >
+      <img
+        src="{{ $img.RelPermalink }}"
+        alt="Image {{ $index }}"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    {{ end }} {{ end }}
+  </div>
+
+  <!-- Dots -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+    {{ range $index, $imgName := $images }}
+    <button
+      onclick="window['goto_{{ $uniqueID }}']({{ $index }})"
+      class="carousel-dot h-3 rounded-full transition-all duration-300 {{ if eq $index 0 }}bg-primary w-6{{ else }}bg-primary/30 w-3{{ end }}"
+    ></button>
+    {{ end }}
+  </div>
+
+  <!-- Flèches -->
+  <button
+    onclick="window['move_{{ $uniqueID }}'](-1)"
+    class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 text-primary p-2 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-all z-10 font-bold"
+  >
+    ❮
+  </button>
+  <button
+    onclick="window['move_{{ $uniqueID }}'](1)"
+    class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 text-primary p-2 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-all z-10 font-bold"
+  >
+    ❯
+  </button>
+
+  <script>
+    (function () {
+      const container = document.getElementById("{{ $uniqueID }}");
+      const items = container.querySelectorAll(".carousel-item");
+      const dots = container.querySelectorAll(".carousel-dot");
+      let currentIndex = 0;
+      let timer;
+
+      function update() {
+        items.forEach((item, i) =>
+          item.classList.toggle("opacity-0", i !== currentIndex),
+        );
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("bg-primary", i === currentIndex);
+          dot.classList.toggle("w-6", i === currentIndex);
+          dot.classList.toggle("bg-primary/30", i !== currentIndex);
+          dot.classList.toggle("w-3", i !== currentIndex);
+        });
+      }
+
+      window["move_{{ $uniqueID }}"] = function (step, manual = true) {
+        currentIndex = (currentIndex + step + items.length) % items.length;
+        update();
+        if (manual) resetTimer();
+      };
+
+      window["goto_{{ $uniqueID }}"] = function (index) {
+        currentIndex = index;
+        update();
+        resetTimer();
+      };
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(
+          () => window["move_{{ $uniqueID }}"](1, false),
+          3000,
+        );
+      }
+
+      resetTimer();
+    })();
+  </script>
+
+  {{ else if eq (len $images) 1 }}
+  <!-- UNE SEULE IMAGE -->
+  {{ $img := resources.Get (printf "images/%s" (index $images 0)) }} {{ if $img
+  }}
+  <img src="{{ $img.RelPermalink }}" class="w-full h-full object-cover" />
+  {{ end }} {{ end }}
+</div>

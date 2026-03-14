@@ -1,0 +1,28 @@
+[[main]]
+  name = "Accueil"
+  url = "/"
+  weight = 10
+[[main]]
+  name = "Soins corps"
+  url = "/soins-corps"
+  weight = 20
+[[main]]
+  name = "Visage"
+  url = "/visage"
+  weight = 30
+[[main]]
+  name = "Épilations"
+  url = "/epilations"
+  weight = 40
+[[main]]
+  name = "Beauté du regard"
+  url = "/beaute-du-regard"
+  weight = 50
+[[main]]
+  name = "Onglerie"
+  url = "/onglerie"
+  weight = 60
+[[main]]
+  name = "Prendre rendez-vous"
+  url = "/rendez-vous"
+  weight = 70

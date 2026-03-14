@@ -1,9 +1,46 @@
-<nav class="bg-white border-b border-[#6BDDB0] p-4">
-  <div class="container mx-auto flex justify-between items-center">
-    <span class="font-bold text-lg">Source d'Anahata</span>
-    <div class="space-x-4">
-      <a href="/" class="hover:text-[#6BDDB0]">Accueil</a>
-      <!-- On ajoutera les autres liens après -->
+<nav class="bg-background-default border-b border-primary/20 sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        {{ $logo := resources.Get "images/logo-source.jpg" }}
+        {{ if $logo }}
+          <img src="{{ $logo.RelPermalink }}" alt="Logo Source d'Anahata" class="h-16 w-auto">
+        {{ else }}
+          <span class="text-xl font-bold tracking-widest uppercase text-gray-800">Source d'Anahata</span>
+        {{ end }}
+      </a>
+
+      <!-- Liens (Desktop) -->
+      <div class="hidden md:flex items-center space-x-8">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          {{ if eq .Name "Prendre rendez-vous" }}
+            <!-- Bouton spécial pour le RDV -->
+            <a href="{{ .URL }}" 
+               class="bg-primary hover:bg-primary-dark text-black px-5 py-2 rounded-md transition-colors duration-300 font-bold text-sm uppercase">
+              {{ .Name }}
+            </a>
+          {{ else }}
+            <!-- Liens classiques -->
+            <a href="{{ .URL }}" 
+               class="text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 {{ if $currentPage.IsMenuCurrent "main" . }} text-primary font-bold {{ else }} text-gray-600 {{ end }}">
+              {{ .Name }}
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <!-- Menu Mobile (Icone simple pour l'instant) -->
+      <div class="md:hidden">
+        <button class="text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
     </div>
   </div>
 </nav>
