@@ -1,0 +1,41 @@
+{
+  "title": "Onglerie",
+  "images": ["onglerie-portrait.jpg"],
+  "prestations": [
+    {
+      "title": "Beauté des mains ou des pieds - 30 min",
+      "description": "Mise en beauté des ongles + base brillante",
+      "price": 26
+    },
+    {
+      "title": "Soin complet des pieds - 1h",
+      "description": "Yumi feet + beauté + soin anti-callosité et pieds léger",
+      "price": 69
+    },
+    {
+      "title": "Semi-permanent pieds - 1h / 1h15",
+      "description": "Beauté et dépose comprise (si pose réalisée par mes soins)",
+      "price": 37
+    },
+    {
+      "title": "Semi-permanent mains - 1h15 / 1h30",
+      "description": "Beauté et dépose comprise (si pose réalisée par mes soins)",
+      "price": 38
+    },
+    {
+      "title": "Renfort / gainage et semi permanant mains - 1h30 / 2h",
+      "description": "Beauté et dépose comprise (si pose réalisée par mes soins)",
+      "price": 43
+    },
+    {
+      "title": "Forfait semi-permanent mains et pieds - 2h30 à 3h",
+      "description": "Déposes comprises (si pose réalisée par mes soins)",
+      "price": 72
+    },
+    {
+      "title": "Dépose de semi (Non effectué par mes soins) - 30 min",
+      "description": "",
+      "price": 10
+    }
+  ]
+}

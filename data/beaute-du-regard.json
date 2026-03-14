@@ -1,0 +1,31 @@
+{
+  "title": "Beauté du regard",
+  "images": ["soins-visage-portrait.jpg"],
+  "prestations": [
+    {
+      "title": "Yumi Lashes - 1h",
+      "description": "Concept sur-mesure visant à réhausser les cils vers le haut et de les teindre afin de donner au regard tout son éclat. La façon idéal pour une mise en beauté avec effet naturelle des cils d'une manière sans douleur, sans extensions de cils et de faux cils.",
+      "price": 69
+    },
+    {
+      "title": "Yumi Brows - 45 min",
+      "description": "Ce concept sur- mesure consiste à discipliner les poils des sourcils et ainsi à faciliter la mise en place de la ligne du sourcil pour un regard intense et souligné. Épilation sourcils compris.",
+      "price": 49
+    },
+    {
+      "title": "Teinture cils - 30 min",
+      "description": "",
+      "price": 18
+    },
+    {
+      "title": "Teinture sourcils - 20 min",
+      "description": "",
+      "price": 15
+    },
+    {
+      "title": "Teinture cils et sourcils - 45 min",
+      "description": "",
+      "price": 30
+    }
+  ]
+}
