@@ -1,111 +1,98 @@
 {{ $data := index .Site.Data "offre-exclusive" }} {{ if $data.offers }}
-<section
-  class="bg-background-paper py-8 border-b border-primary/10 overflow-hidden"
->
-  <div class="container mx-auto px-4 max-w-4xl">
-    <!-- En-tête -->
-    <div class="flex items-center gap-4 mb-2 reveal-view">
-      <h2
-        class="text-2xl md:text-3xl font-bold text-text-main uppercase tracking-[0.2em]"
-      >
+<section class="bg-background-paper border-b border-primary/10 min-h-screen flex items-center py-12 md:py-16">
+  <div class="container mx-auto px-4 max-w-6xl w-full">
+    
+    <!-- Initialisation du compteur global -->
+    {{ $.Scratch.Set "anim_count" 0 }}
+
+    <!-- En-tête Principal -->
+    <div class="flex items-center gap-4 mb-12 reveal-view">
+      <h2 class="text-2xl md:text-3xl font-bold text-text-main uppercase tracking-[0.2em]">
         {{ $data.title }}
       </h2>
       <span class="h-[1px] flex-grow bg-primary/30"></span>
     </div>
 
-    <!-- Liste des Offres -->
-    <div>
-      {{ range $index, $offer := $data.offers }} {{ $price := .price | default 0
-      }} {{ $discount := .price_discount | default 0 }}
+    <!-- Conteneur global -->
+    <div class="space-y-12">
+      {{ $offers := $data.offers }}
 
-      <div
-        class="group relative flex flex-col md:flex-row md:items-start justify-between gap-4 pb-3 border-b border-primary/10 reveal-view"
-        style="animation-delay: {{ mul $index 150 }}ms;"
-      >
-        <div class="flex-grow max-w-xl">
-          <div class="mb-2">
-            {{ if and (eq $price 0) (eq $discount 0) }}
-            <span
-              class="text-[9px] uppercase tracking-[0.3em] text-primary-dark font-bold"
-              >Note de l'institut</span
-            >
-            {{ else }}
-            <span
-              class="text-[9px] uppercase tracking-[0.3em] text-primary-dark font-bold"
-              >Soin</span
-            >
+      {{ range $index, $offer := $offers }}
+        {{ $price := .price | default 0 }}
+        {{ $discount := .price_discount | default 0 }}
+        {{ $isNote := and (eq $price 0) (eq $discount 0) }}
+
+        {{ if $isNote }}
+          <!-- On incrémente le compteur global -->
+          {{ $.Scratch.Add "anim_count" 1 }}
+          
+          <!-- AFFICHAGE TITRE (NOTE) - CENTRÉ -->
+          <div class="max-w-3xl mx-auto text-center reveal-view mt-16 first:mt-0" 
+               style="animation-delay: {{ mul ($.Scratch.Get "anim_count") 150 }}ms;">
+            <h3 class="text-1xl font-bold text-text-main mb-4 italic">
+              {{ .title }}
+            </h3>
+            <p class="text-text-main leading-relaxed font-light text-sm md:text-lg italic opacity-90">
+              {{ .description }}
+            </p>
+          </div>
+
+          <!-- Grille d'offres associée -->
+          <div class="columns-1 md:columns-2 gap-12 space-y-6 md:space-y-0 mt-10">
+            {{/* On boucle sur les éléments suivants pour trouver les offres */}}
+            {{ range $subIndex, $subOffer := (after (add $index 1) $offers) }}
+              {{ $subPrice := .price | default 0 }}
+              {{ $subDiscount := .price_discount | default 0 }}
+              
+              {{ if or (ne $subPrice 0) (ne $subDiscount 0) }}
+                <!-- C'est une offre : on incrémente le compteur -->
+                {{ $.Scratch.Add "anim_count" 1 }}
+                
+                <div class="break-inside-avoid mb-8 group relative flex flex-col justify-between gap-2 pb-3 border-b border-primary/10 reveal-view"
+                     style="animation-delay: {{ mul ($.Scratch.Get "anim_count") 150 }}ms;">
+                  
+                  <div class="flex justify-between items-start gap-4">
+                    <div class="flex-grow">
+                      <span class="text-[8px] uppercase tracking-[0.2em] text-primary-dark font-bold mb-1 block">Soin</span>
+                      <h4 class="text-base md:text-lg font-bold text-text-main group-hover:text-primary transition-colors leading-tight mb-1">{{ .title }}</h4>
+                      <p class="text-text-main leading-snug font-normal text-xs italic opacity-80">{{ .description }}</p>
+                    </div>
+
+                    <div class="text-right pt-4">
+                      {{ if and (gt .price 0) (eq $subDiscount 0) }}
+                        <span class="text-lg font-medium text-text-main">{{ .price }}<small class="text-[10px] ml-0.5 uppercase">€</small></span>
+                      {{ else if and (gt .price 0) (gt $subDiscount 0) }}
+                        <div class="flex flex-col items-end">
+                          <span class="text-lg md:text-xl font-bold text-primary-dark">{{ $subDiscount }}<small class="text-[10px] ml-0.5 uppercase">€</small></span>
+                          <span class="text-[9px] text-text-main/60 font-light line-through italic">au lieu de {{ .price }}€</span>
+                        </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              {{ else }}
+                {{ break }} {{/* On s'arrête si on croise une autre Note */}}
+              {{ end }}
             {{ end }}
           </div>
-
-          <h3
-            class="text-lg md:text-xl font-bold text-text-main mb-2 group-hover:text-primary transition-colors"
-          >
-            {{ .title }}
-          </h3>
-
-          <p class="text-text-muted leading-relaxed font-light italic text-sm">
-            {{ .description }}
-          </p>
-        </div>
-
-        <div class="flex-shrink-0 md:text-right pt-2">
-          {{ if and (gt $price 0) (eq $discount 0) }}
-          <span class="text-xl font-medium text-text-main"
-            >{{ $price }}<small class="text-[10px] ml-0.5 uppercase"
-              >€</small
-            ></span
-          >
-
-          {{ else if and (gt $price 0) (gt $discount 0) }}
-          <div class="flex flex-col md:items-end">
-            <span class="text-xl font-bold text-primary-dark"
-              >{{ $discount }}<small class="text-[10px] ml-0.5 uppercase"
-                >€</small
-              ></span
-            >
-            <span
-              class="text-[10px] text-text-muted font-light line-through opacity-60"
-              >au lieu de {{ $price }}€</span
-            >
-          </div>
-          {{ end }}
-        </div>
-      </div>
+        {{ end }}
       {{ end }}
     </div>
 
-    <!-- CTA -->
-    <div
-      class="mt-12 flex justify-center reveal-view"
-      style="animation-delay: 0.5s"
-    >
-      <a
-        href="/rendez-vous"
-        class="group flex items-center gap-3 text-text-main"
-      >
-        <span
-          class="bg-btn-bg text-btn-text w-10 h-10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-btn-bg transition-all duration-300 shadow-md"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            />
+    <!-- CTA Final -->
+    {{ $.Scratch.Add "anim_count" 1 }}
+    <div class="mt-16 flex justify-center reveal-view" 
+         style="animation-delay: 0.4s;">
+      <a href="/rendez-vous" class="group flex items-center gap-3 text-text-main">
+        <span class="bg-btn-bg text-btn-text w-10 h-10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-btn-bg transition-all duration-300 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </span>
-        <span class="uppercase text-[10px] tracking-[0.3em] font-bold"
-          >Réserver</span
-        >
+        <span class="uppercase text-[10px] tracking-[0.3em] font-bold">Réserver</span>
       </a>
     </div>
+
   </div>
 </section>
 {{ end }}
