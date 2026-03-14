@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title
+      }}{{ end }}
+    </title>
+
+    <!-- Google Fonts: Cardo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bridge Hugo -> Tailwind (Injection des variables du theme) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '{{ .Site.Params.theme.primary | default "#6BDDB0" }}',
+                light:
+                  '{{ .Site.Params.theme.primary_light | default "#DDF7EC" }}',
+                dark: '{{ .Site.Params.theme.primary_dark | default "#00C27B" }}',
+              },
+              secondary: {
+                DEFAULT:
+                  '{{ .Site.Params.theme.secondary | default "#AD6C3F" }}',
+                light:
+                  '{{ .Site.Params.theme.secondary_light | default "#FEC59F" }}',
+                dark: '{{ .Site.Params.theme.secondary_dark | default "#8A4B1D" }}',
+              },
+              background: {
+                paper:
+                  '{{ .Site.Params.theme.background_paper | default "#f3f4f6" }}',
+                default:
+                  '{{ .Site.Params.theme.background_default | default "#FFFFFF" }}',
+              },
+            },
+            fontFamily: {
+              sans: ["Cardo", "serif"],
+              serif: ["Cardo", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply bg-background-default text-gray-900 font-sans;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Composant Navigation -->
+    {{ partial "navbar.html" . }}
+
+    <!-- Contenu Principal -->
+    <main class="flex-grow">{{ block "main" . }}{{ end }}</main>
+
+    <!-- Composant Pied de page -->
+    {{ partial "footer.html" . }}
+  </body>
+</html>

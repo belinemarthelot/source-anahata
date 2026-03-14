@@ -1,4 +1,16 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
-theme = "congo"
+baseURL = 'https://institut-source-anahata.fr'
+languageCode = 'fr-fr'
+title = "Source d'Anahata"
+
+disableKinds = ["taxonomy", "term"]
+
+[params.theme]
+  primary = "#6BDDB0"
+  primary_light = "#DDF7EC"
+  primary_dark = "#00C27B"
+  secondary = "#AD6C3F"
+  secondary_light = "#FEC59F"
+  secondary_dark = "#8A4B1D"
+  background_paper = "#f3f4f6"
+  background_default = "#FFFFFF"
+  text_main = "#1a1a1a"
