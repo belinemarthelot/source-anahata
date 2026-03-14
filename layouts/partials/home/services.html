@@ -1,74 +1,76 @@
 {{ $data := .Site.Data.prestations }}
-<section class="py-16 bg-background-default">
-  <div class="container mx-auto px-4 max-w-6xl">
-    <!-- En-tête de section -->
-    <div class="mb-12 flex items-baseline gap-4 reveal-view">
+<section class="py-20 bg-background-default overflow-hidden">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <!-- En-tête -->
+    <div class="mb-20 text-center reveal-view">
       <h2
-        class="text-2xl md:text-3xl font-bold text-text-main uppercase tracking-widest"
+        class="text-3xl md:text-5xl font-bold text-text-main tracking-tighter mb-4"
       >
-        Nos Prestations
+        L'Excellence du Soin
       </h2>
-      <span class="h-[1px] flex-grow bg-primary/20"></span>
+      <div class="w-12 h-[2px] bg-primary mx-auto"></div>
     </div>
 
-    <!-- Grille : 1 colonne mobile / 2 colonnes PC -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+    <!-- Grille 3 colonnes -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20"
+    >
       {{ range $index, $element := $data.prestations }}
 
+      <!-- On utilise l'index LOCAL ($index) pour que l'animation soit rapide -->
       <div
         class="group relative reveal-view"
         style="animation-delay: {{ mul $index 150 }}ms;"
       >
-        <!-- IMAGE (Format paysage doux) -->
+        <!-- IMAGE -->
         <div
-          class="relative aspect-[16/10] overflow-hidden rounded-2xl shadow-lg"
+          class="relative aspect-[4/4.5] overflow-hidden mb-10 rounded-2xl shadow-sm bg-background-paper/30"
         >
           {{ $img := resources.Get (printf "images/%s" .image) }} {{ if $img }}
-          {{ $scaled := $img.Fill "800x500 Center" }}
+          {{ $scaled := $img.Fill "800x900 Center" }}
           <img
             src="{{ $scaled.RelPermalink }}"
             alt="{{ .title }}"
             class="w-full h-full object-cover transition duration-1000 group-hover:scale-110"
           />
           {{ end }}
-          <!-- Overlay léger au survol -->
           <div
-            class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"
+            class="absolute inset-0 bg-background-paper/0 group-hover:bg-background-paper/5 transition-colors duration-700"
           ></div>
         </div>
 
-        <!-- BLOC TEXTE (Posé en bas, légèrement décalé) -->
-        <div class="relative mt-[-40px] mx-6 z-10">
+        <!-- TEXTE -->
+        <div class="relative pl-10">
+          <!-- Ligne verticale épaisse -->
           <div
-            class="bg-background-paper p-6 md:p-8 rounded-2xl shadow-xl border-b-4 border-primary"
-          >
-            <div class="flex justify-between items-start mb-4">
-              <h3
-                class="text-xl md:text-2xl font-bold text-text-main tracking-tight leading-none"
-              >
-                {{ .title }}
-              </h3>
-              <span
-                class="text-[10px] text-primary-dark font-bold uppercase tracking-widest"
-                >Institut</span
-              >
-            </div>
+            class="absolute left-0 top-0 bottom-0 w-[2px] bg-primary/40 origin-top scale-y-50 group-hover:scale-y-100 transition-transform duration-700"
+          ></div>
+
+          <div class="space-y-4">
+            <h3
+              class="text-2xl font-bold text-text-main uppercase tracking-tight leading-none"
+            >
+              {{ .title }}
+            </h3>
 
             <p
-              class="text-text-main leading-relaxed font-light text-sm mb-6 italic opacity-90"
+              class="text-text-main leading-relaxed italic opacity-90"
             >
               {{ .description }}
             </p>
 
-            <a
-              href="{{ .buttonLink }}"
-              class="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] font-bold text-text-main group/link"
-            >
-              <span
-                class="w-6 h-[1px] bg-primary group-hover/link:w-10 transition-all"
-              ></span>
-              {{ .button }}
-            </a>
+            <!-- BOUTON : Ligne minimaliste -->
+            <div class="pt-4">
+              <a
+                href="{{ .buttonLink }}"
+                class="group/link inline-flex items-center gap-4 text-[10px] uppercase tracking-[0.4em] font-bold text-text-main"
+              >
+                <span
+                  class="w-10 h-[1px] bg-primary group-hover/link:w-16 transition-all duration-700"
+                ></span>
+                {{ .button }}
+              </a>
+            </div>
           </div>
         </div>
       </div>
