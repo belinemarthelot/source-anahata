@@ -1,0 +1,60 @@
+{{ define "main" }}
+<section class="pt-32 pb-20 bg-background-default min-h-screen">
+  <div class="container mx-auto px-4 max-w-4xl text-center">
+    <div class="mb-12 reveal-view">
+      <h1 class="text-4xl md:text-6xl font-bold text-text-main mb-4 italic font-serif">Réservation</h1>
+      <div class="w-16 h-[2px] bg-primary mx-auto mb-8"></div>
+      <p class="text-text-main font-light italic">
+        Sélectionnez vos prestations ci-dessous pour réserver votre moment de bien-être.
+      </p>
+    </div>
+
+    <!-- Conteneur du Widget Planity -->
+    <div class="bg-white rounded-[40px] shadow-2xl p-4 md:p-8 min-h-[600px] reveal-view" style="animation-delay: 300ms">
+      <div id="planity-container" class="w-full h-full"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Scripts Planity (uniquement sur cette page) -->
+<script>
+  (function () {
+    const apiKey = "-NkoE5l-d0wOfKbop84P";
+    const containerId = "planity-container";
+
+    const polyfillsScript = document.createElement("script");
+    polyfillsScript.src = "https://d2skjte8udjqxw.cloudfront.net/widget/production/2/polyfills.latest.js";
+    polyfillsScript.async = true;
+
+    const appScript = document.createElement("script");
+    appScript.src = "https://d2skjte8udjqxw.cloudfront.net/widget/production/2/app.latest.js";
+    appScript.async = true;
+
+    polyfillsScript.onload = () => {
+      const container = document.getElementById(containerId);
+      window.planity = {
+        key: apiKey,
+        primaryFontFamily: "Cardo, serif",
+        container: container,
+        options: {
+          onServiceAdd: function () {
+            container?.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      };
+    };
+
+    document.body.appendChild(polyfillsScript);
+    document.body.appendChild(appScript);
+  })();
+</script>
+
+<!-- Customisation du style Planity pour matcher ton thème -->
+<style>
+  #planity-container .planity_ui_button_root,
+  #planity-container .planity_bookappointment-button-choose {
+    background-color: {{ .Site.Params.theme.primary }} !important;
+    color: {{ .Site.Params.theme.button_text }} !important;
+  }
+</style>
+{{ end }}
