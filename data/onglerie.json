@@ -1,5 +1,6 @@
 {
   "title": "Onglerie",
+  "layout": "simple",
   "images": ["onglerie-portrait.jpg"],
   "prestations": [
     {
