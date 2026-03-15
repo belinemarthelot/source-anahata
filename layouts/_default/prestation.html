@@ -1,0 +1,45 @@
+{{ define "main" }} {{ $data := index .Site.Data .Params.data_file }}
+
+<section class="pt-4 pb-20 bg-background-default min-h-screen">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="mb-12 md:mb-16 reveal-view">
+      <h1 class="text-4xl md:text-6xl font-bold text-text-main mb-4 italic font-serif leading-none tracking-tight">
+        {{ $data.title }}
+      </h1>
+      <div class="w-16 h-[2px] bg-primary"></div>
+    </div>
+
+    {{ if eq $data.layout "complex" }} {{ partial "prestations/layout-complex.html" . }} {{ else }} {{ partial
+    "prestations/layout-simple.html" . }} {{ end }}
+  </div>
+</section>
+
+<!-- Overlay et Scripts restent ici car ils sont communs -->
+<div
+  id="drawer-overlay"
+  onclick="closeAllDrawers()"
+  class="fixed inset-0 bg-black/20 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-all duration-500"></div>
+
+<script>
+  function openDrawer(id) {
+    const drawer = document.getElementById("drawer-" + id);
+    if (drawer) {
+      drawer.classList.remove("translate-x-full");
+      const overlay = document.getElementById("drawer-overlay");
+      overlay.classList.remove("opacity-0", "pointer-events-none");
+      overlay.classList.add("opacity-100", "pointer-events-auto");
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function closeAllDrawers() {
+    document.querySelectorAll(".js-drawer").forEach((drawer) => {
+      drawer.classList.add("translate-x-full");
+    });
+    const overlay = document.getElementById("drawer-overlay");
+    overlay.classList.add("opacity-0", "pointer-events-none");
+    overlay.classList.remove("opacity-100", "pointer-events-auto");
+    document.body.style.overflow = "";
+  }
+</script>
+{{ end }}

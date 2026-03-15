@@ -1,0 +1,44 @@
+{{ $data := index .Site.Data .Params.data_file }}
+<div class="flex flex-col lg:flex-row gap-12 md:gap-20 items-start">
+  <!-- GAUCHE : Image Arche Sticky -->
+  <div class="w-full lg:w-5/12 lg:sticky lg:top-32">
+    <div
+      class="aspect-[3/4] rounded-t-full overflow-hidden border-[10px] border-background-paper shadow-2xl reveal-view">
+      {{ $imgName := index $data.images 0 }} {{ $img := resources.Get (printf "images/%s" $imgName) }} {{ if $img }} {{
+      $scaled := $img.Fill "800x1066 Center" }}
+      <img src="{{ $scaled.RelPermalink }}" alt="{{ $data.title }}" class="w-full h-full object-cover" />
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- DROITE : Liste des tarifs -->
+  <div class="w-full lg:w-7/12">
+    {{ range $index, $item := $data.prestations }} {{ if .title }}
+    <div
+      class="reveal-view flex justify-between items-baseline gap-1 border-b border-primary/10 pb-3"
+      style="animation-delay: {{ mul $index 50 }}ms;">
+      <div class="max-w-[70%] md:max-w-[80%]">
+        <h3 class="text-base md:text-md font-bold text-text-main uppercase tracking-tight leading-tight">
+          {{ .title }}
+        </h3>
+        {{ if .description }}
+        <p class="text-[11px] md:text-sm text-text-main italic font-light mt-1">{{ .description }}</p>
+        {{ end }}
+      </div>
+
+      <div class="text-right">
+        <span class="text-lg md:text-xl font-medium text-primary-dark"> {{ .price }}{{ if .price }}€{{ end }} </span>
+      </div>
+    </div>
+    {{ end }} {{ end }}
+
+    <!-- Bouton de rappel RDV -->
+    <div class="pt-10 reveal-view" style="animation-delay: 0.5s">
+      <a
+        href="/rendez-vous"
+        class="inline-block bg-btn-bg text-btn-text px-8 py-4 rounded-full text-[10px] uppercase font-bold tracking-[0.2em] shadow-lg hover:bg-primary hover:text-btn-bg transition-all">
+        Réserver ma séance
+      </a>
+    </div>
+  </div>
+</div>

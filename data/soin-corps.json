@@ -11,39 +11,38 @@
         {
           "title": "Soin Personnalisé",
           "description": "Choisissez la durée de votre parenthèse de détente.",
-          "price": "À partir de 39",
-          "options": [
-            {
-              "title": "Soin de 30 min",
-              "description": "Zone conseillées: Efleurrage arrière du corps ou dos",
-              "price": 39
-            },
-            {
-              "title": "Soin de 45 min",
-              "description": "Zone conseillées: arrière du corps",
-              "price": 52
-            },
-            {
-              "title": "Soin de 1h",
-              "description": "Zone conseillées: arrière du corps ou effleurage corps entier",
-              "price": 66
-            },
-            {
-              "title": "Soin de 1h15",
-              "description": "Zone conseillées: corps entier et cuir chevelu",
-              "price": 79
-            },
-            {
-              "title": "Soin de 1h30",
-              "description": "Zone conseillées: corps entier, cuir chevelu et visage",
-              "price": 95
-            },
-            {
-              "title": "Soin de 2h",
-              "description": "Zone conseillées: corps entier, cuir chevelu et visage",
-              "price": 129
-            }
-          ]
+          "price": 0
+        },
+
+        {
+          "title": "Soin de 30 min",
+          "description": "Zone conseillées: Efleurrage arrière du corps ou dos",
+          "price": 39
+        },
+        {
+          "title": "Soin de 45 min",
+          "description": "Zone conseillées: arrière du corps",
+          "price": 52
+        },
+        {
+          "title": "Soin de 1h",
+          "description": "Zone conseillées: arrière du corps ou effleurage corps entier",
+          "price": 66
+        },
+        {
+          "title": "Soin de 1h15",
+          "description": "Zone conseillées: corps entier et cuir chevelu",
+          "price": 79
+        },
+        {
+          "title": "Soin de 1h30",
+          "description": "Zone conseillées: corps entier, cuir chevelu et visage",
+          "price": 95
+        },
+        {
+          "title": "Soin de 2h",
+          "description": "Zone conseillées: corps entier, cuir chevelu et visage",
+          "price": 129
         }
       ]
     },
