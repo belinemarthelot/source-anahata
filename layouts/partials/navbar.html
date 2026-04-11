@@ -1,7 +1,7 @@
 <nav class="bg-background-default border-b border-primary/20 sticky top-0 z-50">
   <div class="container mx-auto px-4">
     <div class="flex justify-between items-center h-20">
-      
+
       <!-- Logo -->
       <a href="/" class="flex items-center">
         {{ $logo := resources.Get "images/logo-source.jpg" }}
@@ -17,14 +17,12 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           {{ if eq .Name "Prendre rendez-vous" }}
-            <!-- Bouton spécial pour le RDV -->
-            <a href="{{ .URL }}" 
+            <a href="{{ .URL }}"
                class="bg-primary hover:bg-primary-dark text-black px-5 py-2 rounded-md transition-colors duration-300 font-bold text-sm uppercase">
               {{ .Name }}
             </a>
           {{ else }}
-            <!-- Liens classiques -->
-            <a href="{{ .URL }}" 
+            <a href="{{ .URL }}"
                class="text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 {{ if $currentPage.IsMenuCurrent "main" . }} text-primary font-bold {{ else }} text-gray-600 {{ end }}">
               {{ .Name }}
             </a>
@@ -32,11 +30,16 @@
         {{ end }}
       </div>
 
-      <!-- Menu Mobile (Icone simple pour l'instant) -->
+      <!-- Bouton hamburger (Mobile) -->
       <div class="md:hidden">
-        <button class="text-gray-600">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="mobile-menu-btn" type="button" class="text-gray-600 focus:outline-none" aria-label="Ouvrir le menu">
+          <!-- Icone hamburger -->
+          <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Icone X (masquee par defaut) -->
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
@@ -44,3 +47,91 @@
     </div>
   </div>
 </nav>
+
+<!-- Backdrop overlay -->
+<div id="mobile-overlay"
+     class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+
+<!-- Drawer mobile -->
+<div id="mobile-drawer"
+     class="fixed top-0 right-0 z-50 h-full w-full bg-background-default shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out">
+  <div class="flex flex-col h-full">
+
+    <!-- En-tete du drawer -->
+    <div class="flex items-center justify-between h-20 px-6 border-b border-primary/20">
+      <span class="text-lg font-bold tracking-widest uppercase text-gray-800">Menu</span>
+      <button id="drawer-close-btn" type="button" class="text-gray-600 focus:outline-none" aria-label="Fermer le menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Liens de navigation -->
+    <nav class="flex flex-col flex-1 px-6 py-8 space-y-2 overflow-y-auto">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ if eq .Name "Prendre rendez-vous" }}
+          <a href="{{ .URL }}"
+             class="mobile-nav-link mt-4 bg-primary hover:bg-primary-dark text-black px-5 py-3 rounded-md transition-colors duration-300 font-bold text-sm uppercase text-center">
+            {{ .Name }}
+          </a>
+        {{ else }}
+          <a href="{{ .URL }}"
+             class="mobile-nav-link text-base uppercase tracking-wide py-3 px-2 rounded-md transition-colors duration-300 {{ if $currentPage.IsMenuCurrent "main" . }} text-primary font-bold {{ else }} text-gray-600 hover:text-primary hover:bg-primary/5 {{ end }}">
+            {{ .Name }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </nav>
+
+  </div>
+</div>
+
+<script>
+  (function () {
+    var menuBtn = document.getElementById("mobile-menu-btn");
+    var overlay = document.getElementById("mobile-overlay");
+    var drawer = document.getElementById("mobile-drawer");
+    var closeBtn = document.getElementById("drawer-close-btn");
+    var iconHamburger = document.getElementById("icon-hamburger");
+    var iconClose = document.getElementById("icon-close");
+    var navLinks = document.querySelectorAll(".mobile-nav-link");
+
+    function openDrawer() {
+      drawer.classList.remove("translate-x-full");
+      drawer.classList.add("translate-x-0");
+      overlay.classList.remove("opacity-0", "pointer-events-none");
+      overlay.classList.add("opacity-100", "pointer-events-auto");
+      iconHamburger.classList.add("hidden");
+      iconClose.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeDrawer() {
+      drawer.classList.add("translate-x-full");
+      drawer.classList.remove("translate-x-0");
+      overlay.classList.add("opacity-0", "pointer-events-none");
+      overlay.classList.remove("opacity-100", "pointer-events-auto");
+      iconHamburger.classList.remove("hidden");
+      iconClose.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    menuBtn.addEventListener("click", function () {
+      var isOpen = !drawer.classList.contains("translate-x-full");
+      if (isOpen) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    });
+
+    closeBtn.addEventListener("click", closeDrawer);
+    overlay.addEventListener("click", closeDrawer);
+
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener("click", closeDrawer);
+    }
+  })();
+</script>

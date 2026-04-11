@@ -25,6 +25,7 @@
     const drawer = document.getElementById("drawer-" + id);
     if (drawer) {
       drawer.classList.remove("translate-x-full");
+      drawer.classList.add("shadow-2xl");
       const overlay = document.getElementById("drawer-overlay");
       overlay.classList.remove("opacity-0", "pointer-events-none");
       overlay.classList.add("opacity-100", "pointer-events-auto");
@@ -35,6 +36,7 @@
   function closeAllDrawers() {
     document.querySelectorAll(".js-drawer").forEach((drawer) => {
       drawer.classList.add("translate-x-full");
+      drawer.classList.remove("shadow-2xl");
     });
     const overlay = document.getElementById("drawer-overlay");
     overlay.classList.add("opacity-0", "pointer-events-none");
