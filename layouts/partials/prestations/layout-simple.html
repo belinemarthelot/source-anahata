@@ -6,7 +6,7 @@
       class="aspect-[3/4] rounded-t-full overflow-hidden border-[10px] border-background-paper shadow-2xl reveal-view">
       {{ $imgName := index $data.images 0 }} {{ $img := resources.Get (printf "images/%s" $imgName) }} {{ if $img }} {{
       $scaled := $img.Fill "800x1066 Center" }}
-      <img src="{{ $scaled.RelPermalink }}" alt="{{ $data.title }}" class="w-full h-full object-cover" />
+      <img src="{{ $scaled.RelPermalink }}" alt="{{ $data.title }}" loading="lazy" width="{{ $scaled.Width }}" height="{{ $scaled.Height }}" class="w-full h-full object-cover" />
       {{ end }}
     </div>
   </div>

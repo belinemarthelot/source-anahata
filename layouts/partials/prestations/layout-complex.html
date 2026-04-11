@@ -12,6 +12,9 @@
       <img
         src="{{ $scaled.RelPermalink }}"
         alt="{{ .name }}"
+        loading="lazy"
+        width="{{ $scaled.Width }}"
+        height="{{ $scaled.Height }}"
         class="w-full h-full object-cover transition duration-1000 group-hover:scale-110" />
       {{ end }}
       <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -32,7 +35,7 @@
   <!-- TIROIR -->
   <div
     id="drawer-{{ $uID }}"
-    class="js-drawer fixed inset-y-0 right-0 w-full md:w-[450px] bg-background-paper z-[100] translate-x-full transition-transform duration-500 shadow-2xl overflow-y-auto flex flex-col">
+    class="js-drawer fixed inset-y-0 right-0 w-full md:w-[450px] lg:w-[550px] xl:w-[650px] bg-background-paper z-[100] translate-x-full transition-transform duration-500 overflow-y-auto flex flex-col">
     <div class="p-8 md:p-10 flex-grow">
       <button
         onclick="

@@ -31,6 +31,9 @@
           <img
             src="{{ $scaled.RelPermalink }}"
             alt="{{ .title }}"
+            loading="lazy"
+            width="{{ $scaled.Width }}"
+            height="{{ $scaled.Height }}"
             class="w-full h-full object-cover transition duration-1000 group-hover:scale-110"
           />
           {{ end }}

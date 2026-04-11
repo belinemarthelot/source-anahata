@@ -2,3 +2,8 @@ baseURL = 'https://institut-source-anahata.fr'
 languageCode = 'fr-fr'
 title = "Source d'Anahata"
 disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5

@@ -15,7 +15,8 @@
     >
       <img
         src="{{ $img.RelPermalink }}"
-        alt="Image {{ $index }}"
+        alt="Source d'Anahata - Photo {{ add $index 1 }}"
+        {{ if ne $index 0 }}loading="lazy"{{ end }}
         class="w-full h-full object-cover"
       />
     </div>
@@ -94,6 +95,6 @@
   <!-- UNE SEULE IMAGE -->
   {{ $img := resources.Get (printf "images/%s" (index $images 0)) }} {{ if $img
   }}
-  <img src="{{ $img.RelPermalink }}" class="w-full h-full object-cover" />
+  <img src="{{ $img.RelPermalink }}" alt="Source d'Anahata" class="w-full h-full object-cover" />
   {{ end }} {{ end }}
 </div>

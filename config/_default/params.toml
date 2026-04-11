@@ -11,3 +11,8 @@
   
   button_bg = "#3D3D3D"          # Couleur du bouton principal
   button_text = "#FFFFFF"        # Texte du bouton principal
+
+[seo]
+  description = "Institut de bien-etre a Prenois (21370). Massages, soins visage, epilations, onglerie et beaute du regard dans un espace chaleureux dedie a votre relaxation."
+  author = "Source d'Anahata"
+  image = "images/accueil-portrait.jpg"
