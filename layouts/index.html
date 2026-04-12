@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-<!-- 1. EXCLUSIVITÉS (Maintenant en premier) -->
-{{ partial "home/exclusivity.html" . }}
-
-<!-- 2. HERO COMPONENT -->
+<!-- 1. HERO COMPONENT (H1 en premier dans le DOM) -->
 {{ partial "components/hero-banner.html" . }}
+
+<!-- 2. EXCLUSIVITÉS -->
+{{ partial "home/exclusivity.html" . }}
 
 <!-- 3. SECTION PRESTATIONS -->
 {{ partial "home/services.html" . }} {{ end }}

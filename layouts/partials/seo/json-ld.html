@@ -18,7 +18,8 @@
   "name": "Source d'Anahata",
   "description": "{{ .Site.Params.seo.description }}",
   "url": "{{ .Site.BaseURL }}",
-  "image": "{{ (resources.Get .Site.Params.seo.image).Permalink }}",
+  {{ with resources.Get .Site.Params.seo.image }}"image": "{{ .Permalink }}",{{ end }}
+  "telephone": "+33 6 42 68 91 01",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Prenois",

@@ -9,6 +9,14 @@
       <div class="w-16 h-[2px] bg-primary"></div>
     </div>
 
+    {{ with .Content }}
+    <div class="mb-10 text-text-main italic font-light leading-relaxed max-w-2xl reveal-view">
+      {{ . }}
+    </div>
+    {{ end }}
+
+    <h2 class="sr-only">Nos prestations</h2>
+
     {{ if eq $data.layout "complex" }} {{ partial "prestations/layout-complex.html" . }} {{ else }} {{ partial
     "prestations/layout-simple.html" . }} {{ end }}
   </div>

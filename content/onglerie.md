@@ -1,8 +1,8 @@
 ---
-title: "Onglerie"
+title: "Onglerie à Prenois - Semi-permanent et Soins"
 data_file: "onglerie"
 layout: "prestation"
-description: "Onglerie a Prenois : semi-permanent mains et pieds, soin complet Yumi Feet et mise en beaute. Des prestations precises pour des ongles soignes."
+description: "Onglerie à Prenois : semi-permanent mains et pieds, soin complet Yumi Feet et mise en beauté. Des prestations précises pour des ongles soignés."
 ---
 
 Parce que vos mains et vos pieds sont sollicités au quotidien, prenez le temps de les chouchouter. De la simple mise en beauté au soin complet Yumi Feet, nous prenons soin de vos ongles avec précision.

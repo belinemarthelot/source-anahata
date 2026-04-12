@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      {{ if .IsHome }}{{ .Site.Title }} - Institut de bien-etre a Prenois{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+      {{ if .IsHome }}{{ .Site.Title }} - Institut de bien-être à Prenois{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
     </title>
 
     <!-- SEO Meta -->
@@ -16,7 +16,7 @@
     <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.seo.description }}{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+    <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     {{ with resources.Get .Site.Params.seo.image }}
