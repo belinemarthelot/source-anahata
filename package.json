@@ -1,0 +1,11 @@
+{
+  "name": "source-anahata",
+  "private": true,
+  "scripts": {
+    "dev:css": "npx tailwindcss -i assets/css/input.css -o assets/css/tailwind.css --watch",
+    "build:css": "npx tailwindcss -i assets/css/input.css -o assets/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
