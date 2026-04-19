@@ -7,7 +7,7 @@
     style="animation-delay: {{ mul $index 100 }}ms;"
     onclick="openDrawer('{{ $uID }}')">
     <div
-      class="relative aspect-square overflow-hidden rounded-[40px] shadow-lg mb-5 border-[6px] border-white max-w-[320px] mx-auto"
+      class="relative aspect-[4/5] overflow-hidden rounded-[40px] shadow-lg mb-5 border-[6px] border-white max-w-[320px] mx-auto"
       onclick="event.stopPropagation()">
       {{ partial "components/carousel.html" (dict "images" .images) }}
       <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>

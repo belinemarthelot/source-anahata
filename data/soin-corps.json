@@ -101,7 +101,7 @@
     {
       "name": "Madérosport",
       "description": "Le madérosport est le mélange de madérothérapie et d'une séance de gainage !\nLes objectifs sont de modeler et sculpter le corps grâce à des techniques manuelles de drainages lymphatiques et à l’aide d’accessoires / d’outils de madérothérapie, technique colombienne. En agissant sur le système circulatoire, musculaire et lymphatique.\nZones traitées : Bras, Ventre ou Dos",
-      "images": ["accueil/cabine-vue-ensemble-paysage.jpg"],
+      "images": ["soins-corps/plan-travail-madero.jpg"],
       "gallery": ["accueil/cabine-vue-ensemble-paysage.jpg"],
       "prestations": [
         { "title": "Séance de 45 min", "description": "", "price": 75 },

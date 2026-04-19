@@ -6,7 +6,7 @@
     {
       "name": "Magic Face",
       "description": "Massage du visage qui regroupe différentes techniques : madérothérapie, drainage lymphatique et lifting manuel.\nIl libère le corps et l'esprit avec une expérience unique qui vous transporte vers une profonde détente.\nLes objectifs : Oxygénation cellulaire, Harmonise le contour facial, Lutte contre le relâchement cutanée, Réduit les rides et ridules d'expressions.\n\nRecommandé d’effectuer cette prestation sous forme de cure pour de meilleurs résultats !",
-      "images": ["soins-visage/soinvisage-portrait.jpg"],
+      "images": ["soins-visage/avant-apres-magic-face.jpg"],
       "gallery": ["soins-visage/soinvisage-paysage.jpg"],
       "prestations": [
         {
@@ -16,12 +16,12 @@
           "options": [
             { "title": "Soin de 1 heure", "description": "", "price": 100 },
             {
-              "title": "Cure de 6 soins (-15%)",
+              "title": "Cure de 6 soins",
               "description": "",
               "price": 510
             },
             {
-              "title": "Cure de 10 soins (-20%)",
+              "title": "Cure de 10 soins",
               "description": "",
               "price": 800
             }
@@ -75,7 +75,7 @@
         {
           "title": "Sensi - 30 min",
           "description": "Apaise, réconforte et renforce la barrière cutanée des peaux sensibles. Vegan.",
-          "price": 49
+          "price": 39
         }
       ]
     },
@@ -108,7 +108,7 @@
           ]
         },
         {
-          "title": "Gentleman - 30 min",
+          "title": "Gentleman - 45 min",
           "description": "Soin visage spécifique pour rétablir l'équilibre de la peau masculine.",
           "price": 53
         }
