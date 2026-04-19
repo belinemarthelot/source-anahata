@@ -1,9 +1,7 @@
 {
   "title": "Épilations",
   "layout": "simple",
-  "images": [
-    "Epilation-portrait.jpg"
-  ],
+  "images": ["epilation/Epilation-portrait.jpg", "epilation/cabine-epilation-paysage.jpg"],
   "prestations": [
     {
       "title": "Possibilité de cire sans colophane +1€",

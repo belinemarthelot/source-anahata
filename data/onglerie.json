@@ -1,7 +1,7 @@
 {
   "title": "Onglerie",
   "layout": "simple",
-  "images": ["onglerie-portrait.jpg"],
+  "images": ["onglerie/poste-onglerie-paysage.jpg", "onglerie/nail-art-mimosa-paysage.jpg", "onglerie/nail-art-marbre-vert-paysage.jpg", "onglerie/nail-art-bleu-nuit-paysage.jpg"],
   "prestations": [
     {
       "title": "Beauté des mains ou des pieds - 30 min",

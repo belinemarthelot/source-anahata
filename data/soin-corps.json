@@ -1,12 +1,13 @@
 {
-  "title": "Soins Corps",
+  "title": "Corps",
   "layout": "complex",
-  "images": ["soins-corps-portrait.jpg"],
+  "images": ["soins-corps/soins-corps-portrait.jpg"],
   "univers": [
     {
       "name": "Le Ressourçant",
       "description": "Modelage Corps Personnalisé à l'Huile Chaude. Les techniques sont adaptées à vos besoins et la pression à votre ressentis. Les zones travaillées peuvent être modifiées à la demande.",
-      "image": "soins-corps-portrait.jpg",
+      "images": ["soins-corps/soins-corps-portrait.jpg"],
+      "gallery": ["soins-corps/cabine-ambiance-tamisee-paysage.jpg", "soins-corps/huiles-massage-phyts-paysage.jpg", "soins-corps/cabine-bougies-ambiance-paysage.jpg", "soins-corps/Soins-corps-paysage.jpg"],
       "prestations": [
         {
           "title": "Soin Personnalisé",
@@ -47,9 +48,10 @@
       ]
     },
     {
-      "name": "L'Éveil d'Agnisia",
-      "description": "Une saison, un parfum. ~ L’éveil d’Agnisia ~ Eclat, énergie et renaissance, Inspiré du feu et des volcans, cette escapade augmente l’énergie, la vitalité et soulage les tensions. Il réchauffe tel un brasier sacré qui ravive la flamme profonde. Une escapade incandescente qui favorise une sensation de chaleur et de confort, réduisant le stress et l’anxiété. Tout en apportant une stimulation de la circulation sanguine et lymphatique. Pour les personnes qui se sentent fatiguées, qui ont besoin d’un moment sensoriel intense et chaleureux.",
-      "image": "Lit-bougie-portrait.jpg",
+      "name": "Escapade",
+      "description": "Une saison, un parfum.\n~ L’éveil d’Agnisia ~ Eclat, énergie et renaissance, \nInspiré du feu et des volcans, cette escapade augmente l’énergie, la vitalité et soulage les tensions. Il réchauffe tel un brasier sacré qui ravive la flamme profonde. Une escapade incandescente qui favorise une sensation de chaleur et de confort, réduisant le stress et l’anxiété. Tout en apportant une stimulation de la circulation sanguine et lymphatique. Pour les personnes qui se sentent fatiguées, qui ont besoin d’un moment sensoriel intense et chaleureux.",
+      "images": ["soins-corps/escapade-eveil-agnisia.jpg"],
+      "gallery": ["soins-corps/escapade-eveil-agnisia.jpg"],
       "prestations": [
         {
           "title": "Découverte sensorielle - 1h",
@@ -74,9 +76,10 @@
       ]
     },
     {
-      "name": "Les Rituels du Monde",
+      "name": "Les Rituels",
       "description": "Chaque rituel a son identité. Des voyages sensoriels inspirés des traditions ancestrales pour une évasion totale.",
-      "image": "tableau-paysage.jpg",
+      "images": ["soins-corps/rituel-amerindien-plaid-paysage.jpg", "soins-corps/rituel-bols-tibetains-paysage.jpg", "soins-corps/rituel-ocean-bougie-sable-paysage.jpg"],
+      "gallery": ["soins-corps/rituel-bols-tibetains-paysage.jpg", "soins-corps/rituel-gong-bouddha-paysage.jpg", "soins-corps/rituel-ocean-detail-paysage.jpg", "soins-corps/rituel-ocean-coquillages-paysage.jpg", "soins-corps/rituel-amerindien-plaid-paysage.jpg", "soins-corps/rituel-amerindien-table-paysage.jpg"],
       "prestations": [
         {
           "title": "Rituel Singapourien - 1h15",
@@ -97,8 +100,9 @@
     },
     {
       "name": "Madérosport",
-      "description": "Le madérosport est le mélange de madérothérapie et d'une séance de gainage ! Les objectifs sont de modeler et sculpter le corps grâce à des techniques manuelles de drainages lymphatiques et à l’aide d’accessoires / d’outils de madérothérapie, technique colombienne. En agissant sur le système circulatoire, musculaire et lymphatique. Zones traitées : Bras, Ventre ou Dos",
-      "image": "soinvisage-portrait.jpg",
+      "description": "Le madérosport est le mélange de madérothérapie et d'une séance de gainage !\nLes objectifs sont de modeler et sculpter le corps grâce à des techniques manuelles de drainages lymphatiques et à l’aide d’accessoires / d’outils de madérothérapie, technique colombienne. En agissant sur le système circulatoire, musculaire et lymphatique.\nZones traitées : Bras, Ventre ou Dos",
+      "images": ["accueil/cabine-vue-ensemble-paysage.jpg"],
+      "gallery": ["accueil/cabine-vue-ensemble-paysage.jpg"],
       "prestations": [
         { "title": "Séance de 45 min", "description": "", "price": 75 },
         { "title": "Séance de 1h", "description": "", "price": 100 },
@@ -111,9 +115,10 @@
       ]
     },
     {
-      "name": "Les Essentiels",
+      "name": "Gommage",
       "description": "Affine le grain de peau et révèle sa douceur.",
-      "image": "Lit-bougie-paysage.jpg",
+      "images": ["beaute-du-regard/Soins-visage-paysage.jpg"],
+      "gallery": ["beaute-du-regard/Soins-visage-paysage.jpg"],
       "prestations": [
         {
           "title": "Gommage corps - 50 min",

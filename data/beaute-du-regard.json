@@ -1,7 +1,7 @@
 {
   "title": "Beauté du Regard",
   "layout": "simple",
-  "images": ["soins-visage-portrait.jpg"],
+  "images": ["beaute-du-regard/avant-apres-sourcils-cils-portrait.jpg", "beaute-du-regard/yumi-kit-fond-turquoise-paysage.jpg", "beaute-du-regard/yumi-produits-eventail-paysage.jpg"],
   "prestations": [
     {
       "title": "Yumi Lashes - 1h",

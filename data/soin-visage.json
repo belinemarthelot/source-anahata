@@ -1,12 +1,13 @@
 {
   "title": "Soins Visage",
   "layout": "complex",
-  "images": ["soinvisage-portrait.jpg"],
+  "images": ["soins-visage/biodroga-holistique-detail-portrait.jpg"],
   "univers": [
     {
       "name": "Magic Face",
-      "description": "Massage du visage qui regroupe différentes techniques : madérothérapie, drainage lymphatique et lifting manuel. Il libère le corps et l'esprit avec une expérience unique qui vous transporte vers une profonde détente. Les objectifs : Oxygénation cellulaire, Harmonise le contour facial, Lutte contre le relâchement cutanée, Réduit les rides et ridules d'expressions. Recommandé d’effectuer cette prestation sous forme de cure pour de meilleurs résultats !",
-      "image": "soinvisage-portrait.jpg",
+      "description": "Massage du visage qui regroupe différentes techniques : madérothérapie, drainage lymphatique et lifting manuel.\nIl libère le corps et l'esprit avec une expérience unique qui vous transporte vers une profonde détente.\nLes objectifs : Oxygénation cellulaire, Harmonise le contour facial, Lutte contre le relâchement cutanée, Réduit les rides et ridules d'expressions.\n\nRecommandé d’effectuer cette prestation sous forme de cure pour de meilleurs résultats !",
+      "images": ["soins-visage/soinvisage-portrait.jpg"],
+      "gallery": ["soins-visage/soinvisage-paysage.jpg"],
       "prestations": [
         {
           "title": "Magic Face - Cure & Unité",
@@ -29,9 +30,10 @@
       ]
     },
     {
-      "name": "Phyt's Bio",
-      "description": "Depuis plus de 50 ans, Phyt’s propose des soins 100 % d’origine naturelle, certifiés bio, fabriqués en France. Pionnière de la cosmétique naturelle, la marque allie efficacité, sensorialité et respect profond de la peau et de l’environnement. Formulés sans conservateurs chimiques, les soins Phyt’s sont utilisés en cabine et disponibles à la revente.",
-      "image": "soinvisage-paysage.jpg",
+      "name": "Phyt's",
+      "description": "Depuis plus de 50 ans, Phyt’s propose des soins 100 % d’origine naturelle, certifiés bio, fabriqués en France.\nPionnière de la cosmétique naturelle, la marque allie efficacité, sensorialité et respect profond de la peau et de l’environnement. Formulés sans conservateurs chimiques, les soins Phyt’s sont utilisés en cabine et disponibles à la revente.",
+      "images": ["soins-visage/phyts-ampoules-anti-age-paysage.jpg"],
+      "gallery": ["soins-visage/phyts-ampoules-anti-age-paysage.jpg", "soins-visage/phyts-table-soin-paysage.jpg"],
       "prestations": [
         {
           "title": "Sublim eyes - 50 min",
@@ -80,7 +82,8 @@
     {
       "name": "Biodroga",
       "description": "Biodroga est une marque d’origine Allemande, ancrée depuis 1959 à Baden-Baden au cœur des thermes. Leurs produits authentiques et protocoles holistiques permettent d'offrir des moments de soins uniques !",
-      "image": "Soins-visage-paysage.jpg",
+      "images": ["soins-visage/biodroga-holistique-herbes-paysage.jpg"],
+      "gallery": ["soins-visage/biodroga-holistique-herbes-paysage.jpg", "soins-visage/biodroga-produits-ampoules-paysage.jpg"],
       "prestations": [
         {
           "title": "Black forest - 1h30",
