@@ -3,7 +3,7 @@
   url = "/"
   weight = 10
 [[main]]
-  name = "Soins corps"
+  name = "Corps"
   url = "/soins-corps"
   weight = 20
 [[main]]

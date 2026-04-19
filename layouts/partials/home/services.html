@@ -1,25 +1,25 @@
 {{ $data := .Site.Data.prestations }}
-<section class="py-20 bg-background-default overflow-hidden">
+<section class="py-20 2xl:py-14 bg-background-default overflow-hidden">
   <div class="container mx-auto px-4 max-w-7xl">
     <!-- En-tête -->
-    <div class="mb-20 text-center reveal-view">
+    <div class="mb-20 2xl:mb-14 text-center reveal-view">
       <h2
         class="text-3xl md:text-5xl font-bold text-text-main tracking-tighter mb-4"
       >
-        L'Excellence du Soin
+        La carte des soins
       </h2>
       <div class="w-12 h-[2px] bg-primary mx-auto"></div>
     </div>
 
     <!-- Grille 3 colonnes -->
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20 2xl:gap-y-14"
     >
       {{ range $index, $element := $data.prestations }}
 
       <!-- On utilise l'index LOCAL ($index) pour que l'animation soit rapide -->
       <div
-        class="group relative reveal-view"
+        class="group relative reveal-view cursor-pointer"
         style="animation-delay: {{ mul $index 150 }}ms;"
       >
         <!-- IMAGE -->
@@ -37,8 +37,9 @@
             class="w-full h-full object-cover transition duration-1000 group-hover:scale-110"
           />
           {{ end }}
+          <a href="{{ .buttonLink }}" class="absolute inset-0 z-10" aria-hidden="true"></a>
           <div
-            class="absolute inset-0 bg-background-paper/0 group-hover:bg-background-paper/5 transition-colors duration-700"
+            class="absolute inset-0 bg-background-paper/0 group-hover:bg-background-paper/5 transition-colors duration-700 pointer-events-none"
           ></div>
         </div>
 
@@ -66,7 +67,7 @@
             <div class="pt-4">
               <a
                 href="{{ .buttonLink }}"
-                class="group/link inline-flex items-center gap-4 text-[10px] uppercase tracking-[0.4em] font-bold text-text-main"
+                class="group/link inline-flex items-center gap-4 text-[10px] uppercase tracking-[0.4em] font-bold text-text-main after:absolute after:inset-0"
               >
                 <span
                   class="w-10 h-[1px] bg-primary group-hover/link:w-16 transition-all duration-700"
