@@ -28,14 +28,18 @@
         >
           {{ $img := resources.Get (printf "images/%s" .image) }} {{ if $img }}
           {{ $scaled := $img.Fill "800x900 Center" }}
-          <img
-            src="{{ $scaled.RelPermalink }}"
-            alt="{{ .title }}"
-            loading="lazy"
-            width="{{ $scaled.Width }}"
-            height="{{ $scaled.Height }}"
-            class="w-full h-full object-cover transition duration-1000 group-hover:scale-110"
-          />
+          {{ $webp := $scaled.Process "webp q85" }}
+          <picture>
+            <source srcset="{{ $webp.RelPermalink }}" type="image/webp" />
+            <img
+              src="{{ $scaled.RelPermalink }}"
+              alt="{{ .title }}"
+              loading="lazy"
+              width="{{ $scaled.Width }}"
+              height="{{ $scaled.Height }}"
+              class="w-full h-full object-cover transition duration-1000 group-hover:scale-110"
+            />
+          </picture>
           {{ end }}
           <a href="{{ .buttonLink }}" class="absolute inset-0 z-10" aria-hidden="true"></a>
           <div

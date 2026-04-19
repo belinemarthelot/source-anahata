@@ -32,95 +32,38 @@
     {{ end }}
 
     <!-- Favicon -->
-    {{ with resources.Get "images/identite/logo-source.jpg" }}
-    <link rel="icon" type="image/jpeg" href="{{ .RelPermalink }}" />
-    <link rel="apple-touch-icon" href="{{ .RelPermalink }}" />
+    {{ with resources.Get "images/identite/logo-source.png" }}
+    <link rel="icon" type="image/png" href="{{ .RelPermalink }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}" />
     {{ end }}
 
     <!-- Donnees structurees -->
     {{ partial "seo/json-ld.html" . }}
 
-    <!-- Google Fonts: Cardo -->
+    <!-- Meta robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Google Fonts: Cardo (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Bridge Hugo -> Tailwind (Injection des variables du theme) -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                DEFAULT: "{{ .Site.Params.theme.primary }}",
-                light: "{{ .Site.Params.theme.primary_light }}",
-                dark: "{{ .Site.Params.theme.primary_dark }}",
-              },
-              background: {
-                default: "{{ .Site.Params.theme.background_default }}",
-                paper: "{{ .Site.Params.theme.background_paper }}",
-              },
-              text: {
-                main: "{{ .Site.Params.theme.text_main }}",
-                muted: "{{ .Site.Params.theme.text_muted }}",
-              },
-              btn: {
-                bg: "{{ .Site.Params.theme.button_bg }}",
-                text: "{{ .Site.Params.theme.button_text }}",
-              },
-            },
-            fontFamily: {
-              sans: ["Cardo", "serif"],
-              serif: ["Cardo", "serif"],
-            },
-          },
-        },
-      };
-    </script>
-
-    <style type="text/tailwindcss">
-      /* Tes animations originales */
-      @keyframes revealUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      /* Classes "dormantes" (sans animation au début) */
-      .reveal-view {
-        opacity: 0;
-      }
-      .fade-view {
-        opacity: 0;
-      }
-
-      /* Classes qui activent l'animation (ajoutées par le JS) */
-      .is-visible.reveal-view {
-        animation: revealUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-      }
-      .is-visible.fade-view {
-        animation: fadeIn 1.5s ease-out forwards;
-      }
-    </style>
+    <!-- Tailwind CSS (pre-compile) -->
+    {{ $css := resources.Get "css/tailwind.css" }}
+    {{ if $css }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    {{ end }}
 
     <script>
       const observer = new IntersectionObserver(
