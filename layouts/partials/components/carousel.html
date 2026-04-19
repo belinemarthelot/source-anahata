@@ -11,15 +11,22 @@
   <div class="relative w-full h-full">
     {{ range $index, $imgName := $images }} {{ $img := resources.Get (printf
     "images/%s" $imgName) }} {{ if $img }}
+    {{ $resized := $img.Fit "1600x1600 q90" }}
+    {{ $webp := $resized.Process "webp q85" }}
     <div
       class="carousel-item absolute inset-0 transition-opacity duration-1000 ease-in-out {{ if ne $index 0 }}opacity-0{{ end }}"
     >
-      <img
-        src="{{ $img.RelPermalink }}"
-        alt="Source d'Anahata - Photo {{ add $index 1 }}"
-        {{ if ne $index 0 }}loading="lazy"{{ end }}
-        class="w-full h-full object-cover"
-      />
+      <picture>
+        <source srcset="{{ $webp.RelPermalink }}" type="image/webp" />
+        <img
+          src="{{ $resized.RelPermalink }}"
+          alt="Source d'Anahata - Photo {{ add $index 1 }}"
+          {{ if ne $index 0 }}loading="lazy"{{ end }}
+          width="{{ $resized.Width }}"
+          height="{{ $resized.Height }}"
+          class="w-full h-full object-cover"
+        />
+      </picture>
     </div>
     {{ end }} {{ end }}
   </div>
@@ -104,6 +111,11 @@
   <!-- UNE SEULE IMAGE -->
   {{ $img := resources.Get (printf "images/%s" (index $images 0)) }} {{ if $img
   }}
-  <img src="{{ $img.RelPermalink }}" alt="Source d'Anahata" class="w-full h-full object-cover" />
+  {{ $resized := $img.Fit "1600x1600 q90" }}
+  {{ $webp := $resized.Process "webp q85" }}
+  <picture>
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp" />
+    <img src="{{ $resized.RelPermalink }}" alt="Source d'Anahata" width="{{ $resized.Width }}" height="{{ $resized.Height }}" class="w-full h-full object-cover" />
+  </picture>
   {{ end }} {{ end }}
 </div>
