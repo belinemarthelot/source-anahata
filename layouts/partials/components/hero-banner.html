@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data "insitut-presentation" }}
 
 <section
-  class="relative min-h-screen flex items-center pt-20 pb-20 bg-background-default overflow-hidden"
+  class="relative min-h-screen 2xl:min-h-0 flex items-center pt-20 pb-20 2xl:pt-12 2xl:pb-12 bg-background-default overflow-hidden"
 >
   <!-- Fond décoratif (Plein écran sur petit, Courbe sur grand) -->
   <div
@@ -9,7 +9,7 @@
   ></div>
 
   <div class="container mx-auto px-4 relative z-10">
-    <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
+    <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16 2xl:gap-10">
       <!-- GAUCHE : Carousel agrandi -->
       <div
         class="w-full lg:w-6/12 flex justify-center fade-view"
