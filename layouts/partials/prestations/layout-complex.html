@@ -7,22 +7,15 @@
     style="animation-delay: {{ mul $index 100 }}ms;"
     onclick="openDrawer('{{ $uID }}')">
     <div
-      class="relative aspect-square overflow-hidden rounded-[40px] shadow-lg mb-5 border-[6px] border-white max-w-[320px] mx-auto">
-      {{ $img := resources.Get (printf "images/%s" .image) }} {{ if $img }} {{ $scaled := $img.Fill "600x600 Center" }}
-      <img
-        src="{{ $scaled.RelPermalink }}"
-        alt="{{ .name }}"
-        loading="lazy"
-        width="{{ $scaled.Width }}"
-        height="{{ $scaled.Height }}"
-        class="w-full h-full object-cover transition duration-1000 group-hover:scale-110" />
-      {{ end }}
-      <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      class="relative aspect-square overflow-hidden rounded-[40px] shadow-lg mb-5 border-[6px] border-white max-w-[320px] mx-auto"
+      onclick="event.stopPropagation()">
+      {{ partial "components/carousel.html" (dict "images" .images) }}
+      <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
     </div>
 
     <div class="text-center space-y-2 max-w-[300px] mx-auto">
       <h3 class="text-lg md:text-xl font-bold text-text-main uppercase tracking-tight">{{ .name }}</h3>
-      <p class="text-text-main text-sm line-clamp-2 italic font-light">{{ .description }}</p>
+      <p class="text-text-main text-sm line-clamp-2 italic font-light">{{ .description | replaceRE "\\n" "<br>" | safeHTML }}</p>
       <div class="pt-2">
         <span
           class="text-[9px] uppercase tracking-[0.3em] font-bold text-primary-dark border-b border-primary/30 group-hover:border-primary transition-all"
@@ -32,57 +25,64 @@
     </div>
   </div>
 
-  <!-- TIROIR -->
+  <!-- MODALE CENTREE -->
   <div
     id="drawer-{{ $uID }}"
-    class="js-drawer fixed inset-y-0 right-0 w-full md:w-[450px] lg:w-[550px] xl:w-[650px] bg-background-paper z-[100] translate-x-full transition-transform duration-500 overflow-y-auto flex flex-col">
-    <div class="p-8 md:p-10 flex-grow">
-      <button
-        onclick="
-          event.stopPropagation();
-          closeAllDrawers();
-        "
-        class="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-text-main hover:text-primary transition-colors">
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M6 18L18 6M6 6l12 12" stroke-width="2" />
-        </svg>
-        Retour
-      </button>
+    class="js-drawer fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
+    <!-- Overlay fond sombre -->
+    <div class="absolute inset-0 bg-black/50" onclick="event.stopPropagation(); closeAllDrawers();"></div>
+    <!-- Contenu modale -->
+    <div class="relative bg-background-paper rounded-3xl w-[95%] max-w-[800px] max-h-[90vh] overflow-y-auto shadow-2xl transition-all duration-500 translate-y-8 scale-95 opacity-0 modal-content" onclick="event.stopPropagation()">
+      <!-- Carousel images en haut -->
+      {{ $galleryImages := .gallery | default .images }}
+      <div class="aspect-[16/9] rounded-t-3xl overflow-hidden">
+        {{ partial "components/carousel.html" (dict "images" $galleryImages "prefix" "modal_") }}
+      </div>
+      <!-- Contenu -->
+      <div class="p-8 md:p-10">
+        <button
+          onclick="event.stopPropagation(); closeAllDrawers();"
+          class="absolute top-4 right-4 z-10 bg-white/90 rounded-full p-2 shadow-md hover:bg-white transition-colors">
+          <svg class="w-5 h-5 text-text-main" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M6 18L18 6M6 6l12 12" stroke-width="2" />
+          </svg>
+        </button>
 
-      <h2 class="text-3xl font-bold text-text-main mb-3 italic font-serif">{{ .name }}</h2>
-      <div class="w-10 h-[1px] bg-primary mb-6"></div>
-      <p class="text-text-main font-light italic text-sm mb-10 leading-relaxed opacity-80">{{ .description }}</p>
+        <h2 class="text-3xl font-bold text-text-main mb-3 italic font-serif">{{ .name }}</h2>
+        <div class="w-10 h-[1px] bg-primary mb-6"></div>
+        <p class="text-text-main font-light italic text-sm mb-10 leading-relaxed opacity-80">{{ .description | replaceRE "\\n" "<br>" | safeHTML }}</p>
 
-      <div class="">
-        {{ range .prestations }}
-        <div class="border-b border-primary/10 pb-5">
-          <div class="flex justify-between items-baseline gap-4 mb-1">
-            <h4 class="text-base font-bold text-text-main uppercase tracking-tight">{{ .title }}</h4>
-            {{ if .price }}<span class="font-bold text-primary-dark whitespace-nowrap">{{ .price }}€</span>{{ end }}
-          </div>
-          {{ if .description }}
-          <p class="text-[11px] md:text-sm text-text-main italic leading-relaxed">{{ .description }}</p>
-          {{ end }} {{ if .options }}
-          <div class="mt-3 space-y-1.5 pl-3 border-l-2 border-primary/20">
-            {{ range .options }}
-            <div class="flex justify-between text-sm">
-              <span class="text-text-main"
-                >{{ .title }} <span class="text-[10px] text-text-main ml-1 italic">{{ .description }}</span></span
-              >
-              <span class="font-bold text-text-main">{{ .price }}€</span>
+        <div class="">
+          {{ range .prestations }}
+          <div class="border-b border-primary/10 pb-5">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h4 class="text-base font-bold text-text-main uppercase tracking-tight">{{ .title }}</h4>
+              {{ if .price }}<span class="font-bold text-primary-dark whitespace-nowrap">{{ .price }}€</span>{{ end }}
+            </div>
+            {{ if .description }}
+            <p class="text-[11px] md:text-sm text-text-main italic leading-relaxed">{{ .description }}</p>
+            {{ end }} {{ if .options }}
+            <div class="mt-3 space-y-1.5 pl-3 border-l-2 border-primary/20">
+              {{ range .options }}
+              <div class="flex justify-between text-sm">
+                <span class="text-text-main"
+                  >{{ .title }} <span class="text-[10px] text-text-main ml-1 italic">{{ .description }}</span></span
+                >
+                <span class="font-bold text-text-main">{{ .price }}€</span>
+              </div>
+              {{ end }}
             </div>
             {{ end }}
           </div>
           {{ end }}
         </div>
-        {{ end }}
-      </div>
-      <div class="mt-12 text-center pb-10">
-        <a
-          href="/rendez-vous"
-          class="inline-block bg-btn-bg text-btn-text px-8 py-4 rounded-full text-[10px] uppercase font-bold tracking-[0.2em] shadow-lg hover:bg-primary hover:text-btn-bg transition-all"
-          >Réserver ce soin</a
-        >
+        <div class="mt-12 text-center pb-4">
+          <a
+            href="/rendez-vous"
+            class="inline-block bg-btn-bg text-btn-text px-8 py-4 rounded-full text-[10px] uppercase font-bold tracking-[0.2em] shadow-lg hover:bg-primary hover:text-btn-bg transition-all"
+            >Réserver ce soin</a
+          >
+        </div>
       </div>
     </div>
   </div>

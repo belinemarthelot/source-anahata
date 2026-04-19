@@ -1,5 +1,6 @@
-{{ $images := .images }} {{/* On force l'ID à commencer par une lettre 'id_'
-*/}} {{ $uniqueID := printf "id_%s" (substr (md5 (delimit $images "")) 0 8) }}
+{{ $images := .images }} {{ $prefix := .prefix | default "" }}
+{{/* On force l'ID à commencer par une lettre 'id_' */}}
+{{ $uniqueID := printf "id_%s%s" $prefix (substr (md5 (delimit $images "")) 0 8) }}
 
 <div
   class="relative group w-full h-full bg-gray-100 overflow-hidden rounded-lg shadow-sm"
@@ -86,6 +87,14 @@
           3000,
         );
       }
+
+      window["pause_{{ $uniqueID }}"] = function () {
+        clearInterval(timer);
+      };
+
+      window["resume_{{ $uniqueID }}"] = function () {
+        resetTimer();
+      };
 
       resetTimer();
     })();

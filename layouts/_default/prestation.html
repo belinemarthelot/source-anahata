@@ -29,27 +29,63 @@
   class="fixed inset-0 bg-black/20 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-all duration-500"></div>
 
 <script>
+  function pauseAllCarousels() {
+    Object.keys(window).forEach(function (key) {
+      if (key.startsWith("pause_id_")) window[key]();
+    });
+  }
+
+  function resumeAllCarousels() {
+    Object.keys(window).forEach(function (key) {
+      if (key.startsWith("resume_id_")) window[key]();
+    });
+  }
+
   function openDrawer(id) {
     const drawer = document.getElementById("drawer-" + id);
     if (drawer) {
-      drawer.classList.remove("translate-x-full");
-      drawer.classList.add("shadow-2xl");
+      drawer.classList.remove("opacity-0", "pointer-events-none");
+      drawer.classList.add("opacity-100", "pointer-events-auto");
+      // Animate modal content
+      var content = drawer.querySelector(".modal-content");
+      if (content) {
+        setTimeout(function () {
+          content.classList.remove("translate-y-8", "scale-95", "opacity-0");
+          content.classList.add("translate-y-0", "scale-100", "opacity-100");
+        }, 50);
+      }
       const overlay = document.getElementById("drawer-overlay");
       overlay.classList.remove("opacity-0", "pointer-events-none");
       overlay.classList.add("opacity-100", "pointer-events-auto");
       document.body.style.overflow = "hidden";
+      pauseAllCarousels();
+      // Resume only the modal carousel (prefix modal_)
+      var modalCarousels = drawer.querySelectorAll("[id^='id_modal_']");
+      modalCarousels.forEach(function (el) {
+        var resumeFn = window["resume_" + el.id];
+        if (resumeFn) resumeFn();
+      });
     }
   }
 
   function closeAllDrawers() {
-    document.querySelectorAll(".js-drawer").forEach((drawer) => {
-      drawer.classList.add("translate-x-full");
-      drawer.classList.remove("shadow-2xl");
+    document.querySelectorAll(".js-drawer").forEach(function (drawer) {
+      // Animate content out first
+      var content = drawer.querySelector(".modal-content");
+      if (content) {
+        content.classList.add("translate-y-8", "scale-95", "opacity-0");
+        content.classList.remove("translate-y-0", "scale-100", "opacity-100");
+      }
+      setTimeout(function () {
+        drawer.classList.add("opacity-0", "pointer-events-none");
+        drawer.classList.remove("opacity-100", "pointer-events-auto");
+      }, 200);
     });
     const overlay = document.getElementById("drawer-overlay");
     overlay.classList.add("opacity-0", "pointer-events-none");
     overlay.classList.remove("opacity-100", "pointer-events-auto");
     document.body.style.overflow = "";
+    resumeAllCarousels();
   }
 </script>
 {{ end }}
