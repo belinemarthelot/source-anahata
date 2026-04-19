@@ -1,3 +1,5 @@
 project_context.txt
 public
 resources
+.DS_Store
+.backlog/
