@@ -20,7 +20,7 @@
         <source srcset="{{ $webp.RelPermalink }}" type="image/webp" />
         <img
           src="{{ $resized.RelPermalink }}"
-          alt="Source d'Anahata - Photo {{ add $index 1 }}"
+          alt="Source d'Anāhata - Photo {{ add $index 1 }}"
           {{ if ne $index 0 }}loading="lazy"{{ end }}
           width="{{ $resized.Width }}"
           height="{{ $resized.Height }}"
@@ -115,7 +115,7 @@
   {{ $webp := $resized.Process "webp q85" }}
   <picture>
     <source srcset="{{ $webp.RelPermalink }}" type="image/webp" />
-    <img src="{{ $resized.RelPermalink }}" alt="Source d'Anahata" width="{{ $resized.Width }}" height="{{ $resized.Height }}" class="w-full h-full object-cover" />
+    <img src="{{ $resized.RelPermalink }}" alt="Source d'Anāhata" width="{{ $resized.Width }}" height="{{ $resized.Height }}" class="w-full h-full object-cover" />
   </picture>
   {{ end }} {{ end }}
 </div>

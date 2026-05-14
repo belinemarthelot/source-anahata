@@ -1,4 +1,4 @@
-# Contenu du site Source d'Anahata
+# Contenu du site Source d'Anāhata
 
 ## Pages et correspondances data
 

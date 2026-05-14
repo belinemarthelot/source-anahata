@@ -1,4 +1,4 @@
-# Guide de contribution — Source d'Anahata
+# Guide de contribution — Source d'Anāhata
 
 Ce guide décrit comment modifier le site pas à pas. Chaque section est autonome et suffisamment détaillée pour être suivie sans connaissance préalable du projet.
 

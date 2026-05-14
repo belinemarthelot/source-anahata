@@ -1,17 +1,17 @@
 {{ define "main" }}
-<section class="pt-32 pb-20 bg-background-default min-h-screen">
-  <div class="container mx-auto px-4 max-w-4xl text-center">
-    <div class="mb-12 reveal-view">
-      <h1 class="text-4xl md:text-6xl font-bold text-text-main mb-4 italic font-serif">Réservation</h1>
-      <div class="w-16 h-[2px] bg-primary mx-auto mb-8"></div>
-      <p class="text-text-main font-light italic">
-        Sélectionnez vos prestations ci-dessous pour réserver votre moment de bien-être.
-      </p>
-    </div>
+<section class="pt-2 pb-2 bg-background-default min-h-screen">
+  <div class="container mx-auto px-1 max-w-4xl text-center">
 
     <!-- Conteneur du Widget Planity -->
-    <div class="bg-white rounded-[40px] shadow-2xl p-4 md:p-8 min-h-[600px] reveal-view" style="animation-delay: 300ms">
-      <div id="planity-container" class="w-full h-full"></div>
+    <div class="bg-white rounded-[40px] shadow-2xl p-4 md:p-8">
+      <div class="mb-2">
+        <h1 class="text-4xl md:text-6xl font-bold text-text-main mb-1 italic font-serif">Réservation</h1>
+        <div class="w-16 h-[2px] bg-primary mx-auto mb-1"></div>
+        <p class="text-text-main font-light italic">
+          Sélectionnez vos prestations ci-dessous pour réserver votre moment de bien-être.
+        </p>
+      </div>
+      <div id="planity-container" class="w-full" style="min-height: 100vh"></div>
     </div>
   </div>
 </section>
@@ -38,7 +38,7 @@
         container: container,
         options: {
           onServiceAdd: function () {
-            container?.scrollIntoView({ behavior: "smooth" });
+            container?.scrollIntoView({ behavior: "smooth", block: "center" });
           }
         }
       };

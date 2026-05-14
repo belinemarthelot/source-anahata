@@ -1,4 +1,4 @@
-# Architecture - Source d'Anahata
+# Architecture - Source d'Anāhata
 
 ## Arborescence des dossiers
 

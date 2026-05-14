@@ -1,6 +1,6 @@
-# Source d'Anahata
+# Source d'anāhata
 
-Site vitrine pour l'institut de bien-etre Source d'Anahata (https://institut-source-anahata.fr).
+Site vitrine pour l'institut de bien-etre Source d'Anāhata (https://institut-source-anahata.fr).
 
 ## Stack technique
 

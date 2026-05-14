@@ -1,4 +1,4 @@
-# Audit Performance et SEO - Source d'Anahata
+# Audit Performance et SEO - Source d'Anāhata
 
 **Date** : 2026-04-11
 **URL** : https://institut-source-anahata.fr
@@ -135,7 +135,7 @@ Pas de `fetchpriority="high"` sur la premiere image.
 | **Skip-to-content** | Absent |
 | **Navigation en `<ul>/<li>`** | Les liens sont dans des `<div>`, pas des listes |
 | **Carousel ARIA** | Pas de `aria-label` sur les fleches et les dots |
-| **H2 avant H1** | Homepage : "Nouveautes" (H2) apparait avant "Source d'Anahata" (H1) |
+| **H2 avant H1** | Homepage : "Nouveautes" (H2) apparait avant "Source d'Anāhata" (H1) |
 | **H2 manquant** | 4 pages (epilations, beaute-du-regard, onglerie, rendez-vous) sautent de H1 a H3 |
 | **Contraste primary_dark** | #00C27B sur #FDFBF7 = 3.0:1 (FAIL pour petit texte) |
 

@@ -1,8 +1,8 @@
-# Documentation - Source d'Anahata
+# Documentation - Source d'Anāhata
 
 ## Presentation du projet
 
-Source d'Anahata est un institut de bien-etre situe a Prenois (21370), fonde par Beline.
+Source d'Anāhata est un institut de bien-etre situe a Prenois (21370), fonde par Béline.
 Ce depot contient le site vitrine de l'institut, accessible a l'adresse :
 
 **https://institut-source-anahata.fr**

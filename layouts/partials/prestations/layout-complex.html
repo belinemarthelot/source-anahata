@@ -60,13 +60,13 @@
               {{ if .price }}<span class="font-bold text-primary-dark whitespace-nowrap">{{ .price }}€</span>{{ end }}
             </div>
             {{ if .description }}
-            <p class="text-[11px] md:text-sm text-text-main italic leading-relaxed">{{ .description }}</p>
+            <p class="text-[11px] md:text-sm text-text-main italic leading-relaxed">{{ .description | replaceRE "\\n" "<br>" | safeHTML }}</p>
             {{ end }} {{ if .options }}
             <div class="mt-3 space-y-1.5 pl-3 border-l-2 border-primary/20">
               {{ range .options }}
               <div class="flex justify-between text-sm">
                 <span class="text-text-main"
-                  >{{ .title }} <span class="text-[10px] text-text-main ml-1 italic">{{ .description }}</span></span
+                  >{{ .title }} <span class="text-[10px] text-text-main ml-1 italic">{{ .description | replaceRE "\\n" "<br>" | safeHTML }}</span></span
                 >
                 <span class="font-bold text-text-main">{{ .price }}€</span>
               </div>

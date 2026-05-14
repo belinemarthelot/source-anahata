@@ -1,6 +1,6 @@
 baseURL = 'https://institut-source-anahata.fr'
 languageCode = 'fr-fr'
-title = "Source d'Anahata"
+title = "Source d'Anāhata"
 disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
 

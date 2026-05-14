@@ -5,13 +5,13 @@
   "univers": [
     {
       "name": "Magic Face",
-      "description": "Massage du visage qui regroupe différentes techniques : madérothérapie, drainage lymphatique et lifting manuel.\nIl libère le corps et l'esprit avec une expérience unique qui vous transporte vers une profonde détente.\nLes objectifs : Oxygénation cellulaire, Harmonise le contour facial, Lutte contre le relâchement cutanée, Réduit les rides et ridules d'expressions.\n\nRecommandé d’effectuer cette prestation sous forme de cure pour de meilleurs résultats !",
-      "images": ["soins-visage/avant-apres-magic-face.jpg"],
-      "gallery": ["soins-visage/soinvisage-paysage.jpg"],
+      "description": "Massage du visage qui regroupe différentes techniques : madérothérapie, drainage lymphatique et lifting manuel.\nIl libère le corps et l'esprit avec une expérience unique qui vous transporte vers une profonde détente.\nLes objectifs : Oxygénation cellulaire, Harmonise le contour facial, Lutte contre le relâchement cutanée, Réduit les rides et ridules d'expressions.\n\nRecommandé d’effectuer cette prestation sous forme de cure pour de meilleurs résultats !\nContre-indications : Hyperthyroïdie, Thrombose, Peau très réactive, Problème cardiaque, Diabète, Cancer.",
+      "images": ["soins-visage/avant-apres-magic-face.jpg", "soins-visage/magic-face-ustensil.jpg"],
+      "gallery": ["soins-visage/soinvisage-paysage.jpg", "soins-visage/magic-face-ustensil-galerie.jpg"],
       "prestations": [
         {
           "title": "Magic Face - Cure & Unité",
-          "description": "Massage visage haute performance. Contre-indications : Hyperthyroïdie, Thrombose, Peau très réactive, Problème cardiaque, Diabète, Cancer.",
+          "description": "Massage visage haute performance.",
           "price": "À partir de 100",
           "options": [
             { "title": "Soin de 1 heure", "description": "", "price": 100 },

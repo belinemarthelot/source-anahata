@@ -1,4 +1,4 @@
-# Audit Performance et SEO v2 - Source d'Anahata
+# Audit Performance et SEO v2 - Source d'Anāhata
 
 **Date** : 2026-04-11 (post-corrections)
 **Comparaison avec** : .audit/2026-04-11-audit-perf-seo.md
@@ -36,7 +36,7 @@
 | Titre `/beaute-du-regard/` trop long | HAUTE | 68 chars → sera tronque. Raccourcir. |
 | Description `/beaute-du-regard/` trop courte | HAUTE | 129 chars (ideal 150+) |
 | Description `/epilations/` courte | MOYENNE | 139 chars (ideal 150+) |
-| og:title homepage ≠ title | BASSE | og:title = "Source d'Anahata" seulement |
+| og:title homepage ≠ title | BASSE | og:title = "Source d'Anāhata" seulement |
 | Meme og:image sur toutes les pages | BASSE | accueil-portrait.jpg partout |
 | Sitemap : pas de lastmod, homepage priority 0.5 | BASSE | Hugo ne genere pas lastmod sans dates Git |
 | Alt images pages simples generiques | BASSE | "Epilations", "Onglerie" → phrases descriptives |

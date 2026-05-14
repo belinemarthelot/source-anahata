@@ -50,8 +50,8 @@
     {
       "name": "Escapade",
       "description": "Une saison, un parfum.\n~ L’éveil d’Agnisia ~ Eclat, énergie et renaissance, \nInspiré du feu et des volcans, cette escapade augmente l’énergie, la vitalité et soulage les tensions. Il réchauffe tel un brasier sacré qui ravive la flamme profonde. Une escapade incandescente qui favorise une sensation de chaleur et de confort, réduisant le stress et l’anxiété. Tout en apportant une stimulation de la circulation sanguine et lymphatique. Pour les personnes qui se sentent fatiguées, qui ont besoin d’un moment sensoriel intense et chaleureux.",
-      "images": ["soins-corps/escapade-eveil-agnisia.jpg"],
-      "gallery": ["soins-corps/escapade-eveil-agnisia.jpg"],
+      "images": ["soins-corps/escapade-phyts.jpg"],
+      "gallery": ["soins-corps/escapade-phyts-galerie.jpg"],
       "prestations": [
         {
           "title": "Découverte sensorielle - 1h",
@@ -100,7 +100,7 @@
     },
     {
       "name": "Madérosport",
-      "description": "Le madérosport est le mélange de madérothérapie et d'une séance de gainage !\nLes objectifs sont de modeler et sculpter le corps grâce à des techniques manuelles de drainages lymphatiques et à l’aide d’accessoires / d’outils de madérothérapie, technique colombienne. En agissant sur le système circulatoire, musculaire et lymphatique.\nZones traitées : Bras, Ventre ou Dos",
+      "description": "Le madérosport est le mélange de madérothérapie et d'une séance de gainage !\nLes objectifs sont de modeler et sculpter le corps grâce à des techniques manuelles de drainages lymphatiques et à l’aide d’accessoires / d’outils de madérothérapie, technique colombienne. En agissant sur le système circulatoire, musculaire et lymphatique.\nZones traitées : Bras, Ventre ou Dos\nContre-indications : Hyperthyroïdie, Thrombose, Peau très réactive, Problème cardiaque, Diabète, Cancer.",
       "images": ["soins-corps/plan-travail-madero.jpg"],
       "gallery": ["accueil/cabine-vue-ensemble-paysage.jpg"],
       "prestations": [

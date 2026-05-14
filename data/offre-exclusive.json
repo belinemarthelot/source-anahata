@@ -1,35 +1,39 @@
 {
-  "title": "Nouveautés",
+  "title": "Offre fête des mamans",
   "offers": [
     {
-      "title": "Escapade",
-      "description": "Une saison, un parfum.\n~ L’éveil d’Agnisia ~\nEclat, énergie et renaissance, \nInspiré du feu et des volcans, cette escapade augmente l’énergie, la vitalité et soulage les tensions. Il réchauffe tel un brasier sacré qui ravive la flamme profonde. Une escapade incandescente qui favorise une sensation de chaleur et de confort, réduisant le stress et l’anxiété. Tout en apportant une stimulation de la circulation sanguine et lymphatique.\nPour les personnes qui se sentent fatiguées, qui ont besoin d’un moment sensoriel intense et chaleureux.",
+      "title": "",
+      "description": "Pour lui montrer tout votre amour, offrez-lui un moment rien qu’à elle : un soin pour se faire chouchouter ou un coffret de produits afin qu’elle puisse prendre du temps pour elle et se détendre.",
       "price": 0,
       "price_discount": 0
     },
     {
-      "title": "Découverte sensorielle  - 1h",
-      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 30 min de massage",
-      "price": 98,
-      "price_discount": 0
+      "title": "Instant Précieux - 1h30",
+      "description": "Escapade Douce Harmonie suivit du soin visage Botanique. Offrez-vous un véritable Instant Précieux, une expérience de bien-être complète associant soin du dos et soin du visage. Un moment hors du temps pour se ressourcer pleinement.",
+      "price": 113,
+      "price_discount": 0,
+      "price_from": false
     },
     {
-      "title": "Immersion profonde  - 1h30",
-      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 1h de massage",
-      "price": 125,
-      "price_discount": 0
+      "title": "Soin visage Botanique - 1h",
+      "description": "Découvrez un soin visage inspiré des rituels de la Forêt-Noire, alliant l’art du toucher aux herbes médicinales et à la tourbe thérapeutique. Adapté à tous les types de peau, ce moment de détente vous enveloppe de douceur grâce aux pochons chauds infusés aux herbes pour apaiser les tensions et révéler l’éclat du teint.",
+      "price": 74,
+      "price_discount": 0,
+      "price_from": false
     },
     {
-      "title": "Voyage prolongé - 2h",
-      "description": "30 min de gommage (retrait de celui-ci sous la douche) puis 1h30 de massage",
-      "price": 154,
-      "price_discount": 0
+      "title": "Escapade Douce Harmonie - 30 min",
+      "description": "Offrez une véritable parenthèse de bien-être avec cette expérience dédiée au dos. Ce soin associe un gommage pour affiner le grain de peau et révéler toute sa douceur, à un massage relaxant qui aide à soulager les tensions accumulées et à détendre profondément les muscles. Un moment de relaxation idéal pour relâcher le stress et retrouver une sensation de légèreté et de confort.",
+      "price": 49,
+      "price_discount": 0,
+      "price_from": false
     },
     {
-      "title": "Etreinte minérale - 30 min (pour prolonger votre escapade)",
-      "description": "Enveloppement corps qui offre une véritable pause relaxante, un mélange riche en argile minérale, apportant à la fois purification et douceur pour reconnecter le corps et l’esprit.\nSa texture enveloppe le corps comme un cocon protecteur réconfortant et apaisant. Il aide à purifier et revitaliser la peau tout en apportant une sensation d’ancrage et de stabilité\nArgile minérale blanche, retrait de celui-ci sous la douche.",
-      "price": 39,
-      "price_discount": 0
+      "title": "Coffret produit",
+      "description": "- Coffret maquillage à confectionner soi-même - Artdéco - à partir de 30€\n- Pack Mix & Glow - Phyt's - à partir de 37€\n- Duo hydralift - Biodroga - 52€",
+      "price": 0,
+      "price_discount": 1,
+      "price_from": false
     }
   ]
 }
