@@ -1,9 +1,9 @@
 <nav class="bg-background-default border-b border-primary/20 sticky top-0 z-50">
   <div class="container mx-auto px-4">
-    <div class="flex justify-between items-center h-20">
+    <div class="flex justify-between lg:justify-center xl:justify-between items-center h-16 xl:h-20">
 
       <!-- Logo -->
-      <a href="/" class="flex items-center">
+      <a href="/" class="flex lg:hidden xl:flex items-center">
         {{ $logo := resources.Get "images/identite/logo-source.jpg" }}
         {{ if $logo }}
           <img src="{{ $logo.RelPermalink }}" alt="Logo Source d'Anāhata" class="h-16 w-auto">
@@ -13,7 +13,7 @@
       </a>
 
       <!-- Liens (Desktop) -->
-      <div class="hidden md:flex items-center space-x-8">
+      <div class="hidden lg:flex items-center space-x-3 xl:space-x-8">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           {{ if eq .Name "Prendre rendez-vous" }}
@@ -31,7 +31,7 @@
       </div>
 
       <!-- Bouton hamburger (Mobile) -->
-      <div class="md:hidden">
+      <div class="lg:hidden">
         <button id="mobile-menu-btn" type="button" class="text-gray-600 focus:outline-none" aria-label="Ouvrir le menu">
           <!-- Icone hamburger -->
           <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
